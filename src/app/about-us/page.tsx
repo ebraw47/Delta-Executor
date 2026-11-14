@@ -5,9 +5,9 @@ import { getMarkdown, stripLeadingH1 } from "@/lib/content";
 import { BRAND, ROUTES, SITE_ORIGIN } from "@/lib/siteConfig";
 
 const PAGE_URL = `${SITE_ORIGIN}${ROUTES.about}`;
-const PAGE_TITLE = "About Us | Title Case Converter";
+const PAGE_TITLE = "About Us | Delta Executor";
 const PAGE_DESCRIPTION =
-  "Learn about TitleCaseConverter.io — a free title capitalization tool for AMA, AP, APA, Bluebook, Chicago, MLA, NY Times, and Wikipedia.";
+  "About deltaexecutor.com.tr — Delta Executor download guides for Android, iOS, VNG, Windows, and Mac.";
 
 export const metadata: Metadata = {
   title: { absolute: PAGE_TITLE },

@@ -1,26 +1,37 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import ShareButton from "@/components/ShareButton";
-import { BRAND, IMAGES, ROUTES } from "@/lib/siteConfig";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
-const navLinks = [
-  { href: ROUTES.home, label: "Converter" },
-  { href: ROUTES.blog, label: "Blog" },
-  { href: ROUTES.about, label: "About Us" },
-  { href: ROUTES.contact, label: "Contact Us" },
-  { href: ROUTES.disclaimer, label: "Disclaimer" },
-  { href: ROUTES.privacy, label: "Privacy Policy" },
-];
-
+/** Client nav controls only — logo lives in SiteHeader (server). */
 export default function Header() {
   const pathname = usePathname();
+  const { t } = useLanguage();
   const [open, setOpen] = useState(false);
-  const reduce = useReducedMotion();
+
+  const topNav = [
+    { href: "/delta-executor-key", label: t.nav.key },
+    { href: "/delta-executor-windows", label: t.nav.pc },
+    { href: "/delta-executor-vng", label: t.nav.vng },
+    { href: "/delta-executor-mac", label: t.nav.mac },
+    {
+      href: "/downloads/Delta-Executor-Direct-Install.ipa",
+      label: t.nav.direct,
+      download: true as const,
+    },
+  ];
+
+  const moreNav = [
+    { href: "/", label: t.nav.download },
+    { href: "/category/blog", label: t.nav.guides },
+    { href: "/about-us", label: t.nav.about },
+    { href: "/contact-us", label: t.nav.contact },
+    { href: "/privacy-policy", label: t.nav.privacy },
+    { href: "/disclaimer", label: t.nav.disclaimer },
+  ];
 
   useEffect(() => {
     setOpen(false);
@@ -33,100 +44,78 @@ export default function Header() {
     };
   }, [open]);
 
-  const isActive = (href: string) => {
-    if (href === "/") return pathname === "/";
-    return pathname === href || pathname.startsWith(href + "/");
-  };
-
   return (
-    <header className="sticky top-0 z-50 border-b border-[rgba(32,36,44,0.05)] bg-white shadow-[0_1px_0_rgba(32,36,44,0.03)]">
-      <div className="mx-auto flex h-[3.75rem] max-w-6xl items-center justify-between gap-3 px-3 sm:h-16 sm:px-4 md:h-20 md:px-6 lg:h-[5.5rem]">
-        <Link
-          href="/"
-          className="flex min-w-0 flex-1 items-center group sm:flex-none"
-          aria-label={`${BRAND.name} home`}
-        >
-          <Image
-            src={IMAGES.headerLogo}
-            alt={`${BRAND.name} logo`}
-            width={490}
-            height={100}
-            priority
-            sizes="(max-width: 640px) 220px, (max-width: 768px) 280px, (max-width: 1024px) 340px, 420px"
-            className="h-9 w-auto max-w-[min(240px,68vw)] object-contain object-left sm:h-10 sm:max-w-[280px] md:h-12 md:max-w-[340px] lg:h-14 lg:max-w-[420px]"
-          />
-        </Link>
-
-        <div className="flex shrink-0 items-center gap-1.5 sm:gap-2 lg:gap-3">
-          <nav className="mr-1 hidden items-center gap-7 lg:flex" aria-label="Primary">
-            {navLinks.map(({ href, label }) => (
-              <Link
-                key={href}
-                href={href}
-                className={`relative pb-0.5 text-sm font-semibold transition-colors ${
-                  isActive(href) ? "text-navy-900" : "text-ink-mute hover:text-navy-900"
-                }`}
+    <>
+      <div className="flex items-center gap-2">
+        <nav className="hidden items-center gap-3 xl:flex xl:gap-4" aria-label="Platform">
+          {topNav.map((item) =>
+            item.download ? (
+              <a
+                key={item.href}
+                href={item.href}
+                download
+                className="whitespace-nowrap text-sm font-semibold text-white/90 transition hover:text-brand"
               >
-                {label}
-                <span
-                  className={`absolute -bottom-1 left-0 h-0.5 rounded-full bg-brand transition-all duration-300 ${
-                    isActive(href) ? "w-full" : "w-0"
-                  }`}
-                />
-              </Link>
-            ))}
-          </nav>
-
-          <button
-            type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-lg text-navy-900 hover:bg-navy-900/5 lg:hidden focus-ring"
-            aria-label={open ? "Close menu" : "Open menu"}
-            aria-expanded={open}
-            onClick={() => setOpen((v) => !v)}
-          >
-            {open ? (
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
+                {item.label}
+              </a>
             ) : (
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            )}
-          </button>
+              <Link
+                key={item.href}
+                href={item.href}
+                className="whitespace-nowrap text-sm font-semibold text-white/90 transition hover:text-brand"
+              >
+                {item.label}
+              </Link>
+            )
+          )}
+        </nav>
 
-          <ShareButton tone="dark" className="hidden sm:inline-flex" label />
-          <ShareButton tone="dark" className="sm:hidden !px-2" />
-        </div>
+        <LanguageSwitcher />
+
+        <button
+          type="button"
+          className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg text-white hover:bg-white/5 xl:hidden focus-ring"
+          aria-label={open ? t.nav.menuClose : t.nav.menuOpen}
+          aria-expanded={open}
+          onClick={() => setOpen((v) => !v)}
+        >
+          {open ? (
+            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          ) : (
+            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          )}
+        </button>
       </div>
 
-      <AnimatePresence initial={false}>
-        {open && (
-          <motion.div
-            className="overflow-hidden border-t border-navy-900/10 bg-white/95 backdrop-blur-xl lg:hidden"
-            initial={reduce ? false : { height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
-          >
-            <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-4" aria-label="Mobile">
-              {navLinks.map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className={`rounded-lg px-3 py-3 text-base font-semibold ${
-                    isActive(href)
-                      ? "bg-brand/10 text-navy-900"
-                      : "text-ink-soft hover:bg-navy-900/5 hover:text-navy-900"
-                  }`}
-                >
-                  {label}
+      {open ? (
+        <nav
+          className="absolute left-0 right-0 top-full z-50 flex flex-col gap-1 border-b border-white/10 bg-[#05070f] px-3 pb-3 pt-2 sm:px-4 md:px-6 xl:hidden"
+          aria-label="Mobile"
+        >
+          <div className="mx-auto flex w-full max-w-6xl flex-col gap-1">
+            {[...topNav, ...moreNav].map((item) => {
+              const className =
+                "inline-flex min-h-11 items-center rounded-lg px-3 py-2.5 text-sm font-semibold text-ink-soft hover:bg-white/5 hover:text-white";
+              if ("download" in item && item.download) {
+                return (
+                  <a key={`m-${item.href}`} href={item.href} download className={className}>
+                    {item.label}
+                  </a>
+                );
+              }
+              return (
+                <Link key={`m-${item.href}`} href={item.href} className={className}>
+                  {item.label}
                 </Link>
-              ))}
-            </nav>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </header>
+              );
+            })}
+          </div>
+        </nav>
+      ) : null}
+    </>
   );
 }

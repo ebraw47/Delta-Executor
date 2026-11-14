@@ -1,27 +1,32 @@
 import type { Metadata, Viewport } from "next";
-import { Outfit, Fraunces } from "next/font/google";
+import { Space_Grotesk, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-import Header from "@/components/Header";
+import SiteHeader from "@/components/SiteHeader";
 import Footer from "@/components/Footer";
+import Providers from "@/components/Providers";
 import ScrollToTopWrapper from "@/components/ScrollToTopWrapper";
-import WebVitalsTracker from "@/components/WebVitalsTracker";
 import { BRAND, IMAGES, SITE_ORIGIN } from "@/lib/siteConfig";
 
-const display = Fraunces({
+const display = Space_Grotesk({
   subsets: ["latin"],
-  weight: ["600", "700"],
-  display: "swap",
+  // Only weights we actually use (Tailwind bold=700). Missing weights → synthetic bold → CLS.
+  weight: ["700"],
+  // optional: under LH throttling, swap after paint was causing ~0.42 CLS on the footer.
+  display: "optional",
   variable: "--font-display",
   preload: true,
+  adjustFontFallback: true,
 });
 
-const body = Outfit({
+const body = DM_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
+  // Include 600 — Tailwind `font-semibold` is used widely; missing it causes CLS.
+  weight: ["400", "600", "700"],
+  display: "optional",
   variable: "--font-body",
   preload: true,
+  adjustFontFallback: true,
 });
 
 export const viewport: Viewport = {
@@ -29,27 +34,35 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: "#F7F5F0",
+  themeColor: "#050814",
   viewportFit: "cover",
 };
+
+const US_TITLE = "Delta Executor Download for PC, Android & iOS (USA) | Free";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_ORIGIN),
   title: {
-    default: "Title Case Converter | Free AMA, AP, APA, Chicago & MLA Tool",
+    default: US_TITLE,
     template: `%s | ${BRAND.name}`,
   },
   description: BRAND.description,
   keywords: [
-    "title case converter",
-    "title capitalization",
-    "title case",
-    "sentence case",
-    "APA title case",
-    "Chicago title case",
-    "AP style titles",
-    "MLA title case",
-    "capitalize title",
+    "Delta Executor",
+    "Delta Executor download",
+    "Delta Executor PC",
+    "Delta Executor Windows",
+    "Delta Executor Android",
+    "Delta Executor iOS",
+    "Delta Executor Mac",
+    "Delta Executor key",
+    "Delta Executor USA",
+    "Roblox executor download",
+    "Delta Direct Install",
+    "Delta Executor VNG",
+    "deltaexecutor.com.tr",
+    // Common search misspelling
+    "Delta Executer",
   ],
   authors: [{ name: BRAND.name }],
   creator: BRAND.name,
@@ -67,21 +80,23 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.png", type: "image/png", sizes: "64x64" },
-      { url: "/icon.png", type: "image/png", sizes: "192x192" },
-      { url: "/favicon-512.png", type: "image/png", sizes: "512x512" },
       { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+      { url: "/feature/favicon.webp", type: "image/webp", sizes: "192x192" },
     ],
     apple: [{ url: "/apple-icon.png", sizes: "180x180" }],
-  },
-  verification: {
-    google: "8a7c21f6e90a89ef",
+    shortcut: ["/favicon.ico"],
   },
   alternates: {
     canonical: SITE_ORIGIN,
+    languages: {
+      "en-US": SITE_ORIGIN,
+      en: SITE_ORIGIN,
+      "x-default": SITE_ORIGIN,
+    },
   },
   openGraph: {
-    title: "Title Case Converter | Free AMA, AP, APA, Chicago & MLA Tool",
+    title: US_TITLE,
     description: BRAND.description,
     url: SITE_ORIGIN,
     siteName: BRAND.name,
@@ -92,20 +107,29 @@ export const metadata: Metadata = {
         url: `${SITE_ORIGIN}${IMAGES.og}`,
         width: 1200,
         height: 630,
-        alt: `${BRAND.name} — free title capitalization tool`,
+        alt: "Delta Executor download for Windows PC, Android, and iOS in the USA",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Title Case Converter | Free AMA, AP, APA, Chicago & MLA Tool",
+    title: US_TITLE,
     description: BRAND.description,
     creator: BRAND.twitter,
     images: [`${SITE_ORIGIN}${IMAGES.twitter}`],
   },
   applicationName: BRAND.name,
-  category: "Utilities",
-  classification: "Title Case Converter & Capitalization Tool",
+  category: "Games",
+  classification: "Delta Executor Download Guides for US players",
+  other: {
+    "geo.region": "US",
+    "geo.placename": "United States",
+    language: "English",
+    rating: "general",
+    distribution: "global",
+    target: "all",
+    "revisit-after": "3 days",
+  },
 };
 
 export default function RootLayout({
@@ -116,14 +140,18 @@ export default function RootLayout({
   const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
 
   return (
-    <html lang="en" className={`${display.variable} ${body.variable}`} suppressHydrationWarning>
+    <html lang="en-US" className={`${display.variable} ${body.variable}`} suppressHydrationWarning>
       <head>
         <meta name="mobile-web-app-capable" content="yes" />
-        <link rel="icon" href="/favicon.png" type="image/png" sizes="64x64" />
-        <link rel="icon" href="/icon.png" type="image/png" sizes="192x192" />
+        <meta httpEquiv="content-language" content="en-US" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
         <link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180" />
         <link rel="manifest" href="/manifest.json" />
+        <link rel="alternate" hrefLang="en-US" href={SITE_ORIGIN} />
+        <link rel="alternate" hrefLang="en" href={SITE_ORIGIN} />
+        <link rel="alternate" hrefLang="x-default" href={SITE_ORIGIN} />
         {adsenseClient && (
           <>
             <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossOrigin="anonymous" />
@@ -159,12 +187,13 @@ export default function RootLayout({
             </>
           )}
       </head>
-      <body className={`${body.className} site-canvas antialiased min-h-screen flex flex-col text-[#20242C]`} suppressHydrationWarning>
-        <Header />
-        <main className="relative z-[1] flex-1">{children}</main>
-        <Footer />
-        <ScrollToTopWrapper />
-        <WebVitalsTracker />
+      <body className={`${body.className} site-canvas antialiased min-h-screen flex flex-col text-ink`} suppressHydrationWarning>
+        <Providers>
+          <SiteHeader />
+          <main className="relative z-[1] flex-1">{children}</main>
+          <Footer />
+          <ScrollToTopWrapper />
+        </Providers>
 
         <Script
           id="organization-schema"
@@ -178,6 +207,8 @@ export default function RootLayout({
               logo: `${SITE_ORIGIN}${IMAGES.logo}`,
               email: BRAND.email,
               description: BRAND.description,
+              areaServed: { "@type": "Country", name: "United States" },
+              availableLanguage: ["en-US", "en", "es", "pt", "tr", "ar"],
             }),
           }}
         />
@@ -190,6 +221,7 @@ export default function RootLayout({
               "@type": "WebSite",
               name: BRAND.name,
               url: SITE_ORIGIN,
+              inLanguage: "en-US",
               potentialAction: {
                 "@type": "SearchAction",
                 target: `${SITE_ORIGIN}/?q={search_term_string}`,

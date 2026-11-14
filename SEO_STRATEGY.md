@@ -1,42 +1,48 @@
-# SEO Strategy — Title Case Converter (titlecaseconverter.io)
+# SEO Strategy — Delta Executor (deltaexecutor.com.tr)
 
-## Competitor SERP set (primary query: title case converter)
+## Primary audience
 
-- titlecaseconverter.com
-- titlecasepro.com
-- titleformat.com
-- capitalizemytitle.com
-- inkplant.com/tools/title-case-converter
-- titlecapitalize.com
+**United States** English searchers (largest single-country Roblox audience).  
+Default `lang=en`, Open Graph `en_US`, hreflang `en-US` / `x-default`.
+
+## Competitor SERP set (primary query: Delta Executor)
+
+- delta-executor.com (official reference)
+- thedeltaexecutor.com
+- deltaexecutor.org
+- deltaexecutor.co
+- idelta-executor.com
+- deltamac.org
 
 ## Content coverage (no gap vs ranking pages)
 
 | Topic | Where we cover it |
 | --- | --- |
-| Live title case converter tool | Homepage converter |
-| APA / Chicago / AP / MLA styles | Converter + `/title-capitalization-rules` |
-| Sentence case / UPPER / lower | Converter style tabs |
-| Title case vs sentence case | Homepage + `/title-case-vs-sentence-case` |
-| Words to capitalize / lowercase | Homepage + `/words-to-capitalize-in-a-title` |
-| How to use the tool | Homepage steps + `/how-to-use-a-title-case-converter` |
-| Benefits / why use a converter | Homepage + `/benefits-of-title-case-converter` |
-| Audience / who it's for | Homepage + `/who-can-use-title-case-converter` |
-| SEO title length / character count | Converter stats bar |
-| FAQs / WebApplication schema | Homepage |
+| Download hub / multi-platform | Homepage platform buttons |
+| Android APK install | `/delta-executor-android` |
+| iOS + Direct Install | `/delta-executor-ios` |
+| Windows / PC / emulator (US PC players) | `/delta-executor-windows` |
+| Mac DMG | `/delta-executor-mac` |
+| Key system (24h) | `/delta-executor-key` |
+| VNG / Vietnam Roblox | `/delta-executor-vng` |
+| Fake-site warning | Homepage |
+| Premium / FAQs | Homepage FAQ + schema |
 
-## Primary keywords
+## Primary US keywords
 
-- title case converter
-- title capitalization
-- title case vs sentence case
-- APA title case
-- Chicago title case
-- capitalize title
-- title case rules
-- words to capitalize in a title
+- Delta Executor download
+- Delta Executor PC / Windows
+- Delta Executor Android
+- Delta Executor iOS / Direct Install
+- Delta Executor Mac
+- Delta Executor key
+- Roblox executor download
+- Delta Executor USA
 
 ## Technical
 
-- Canonical host: `https://titlecaseconverter.io`
+- Canonical host: `https://deltaexecutor.com.tr`
 - Sitemaps: `/sitemap-index.xml`, `/index.xml`, `/image-sitemap.xml`
-- Robots: `/robots.txt`
+- Robots: clean Allow/Disallow + Sitemap (Lighthouse-valid)
+- Schema: Organization, WebSite, SoftwareApplication, FAQPage
+- OG/Twitter cards: `/feature/og-image-1200x630.webp`

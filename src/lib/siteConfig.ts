@@ -1,16 +1,19 @@
-/** Central brand / domain config for Title Case Converter */
-export const SITE_ORIGIN = "https://titlecaseconverter.io";
+/** Central brand / domain config for Delta Executor */
+export const SITE_ORIGIN = "https://deltaexecutor.com.tr";
 
 export const BRAND = {
-  name: "Title Case Converter",
-  shortName: "TitleCase",
-  keyword: "title case converter",
-  domain: "titlecaseconverter.io",
-  email: "contact@titlecaseconverter.io",
-  twitter: "@titlecaseconv",
-  tagline: "Free Title Capitalization Tool — 8 Style Guides",
+  name: "Delta Executor",
+  shortName: "Delta",
+  keyword: "Delta Executor",
+  domain: "deltaexecutor.com.tr",
+  email: "contact@deltaexecutor.com.tr",
+  twitter: "@deltaexecutor",
+  discord: "https://discord.gg/delta",
+  version: "2.745",
+  tagline: "Download Delta Executor for Android, iOS, Windows, Mac & VNG",
+  /** Primary SERP snippet — written for US English search intent */
   description:
-    "Free title case converter for headlines, blog posts, and book titles. Convert with AMA, AP, APA, Bluebook, Chicago, MLA, NY Times, and Wikipedia — plus sentence case, options, and explanations.",
+    "Delta Executor is a popular mobile-focused (Android & iOS) third-party tool that runs custom Lua scripts in Roblox to alter gameplay or automate tasks. Free download guides for PC, Mac, and VNG on this site.",
 } as const;
 
 export const ROUTES = {
@@ -23,128 +26,372 @@ export const ROUTES = {
 } as const;
 
 export const IMAGES = {
-  logo: "/logo.webp",
-  icon: "/favicon.png",
+  logo: "/feature/favicon.webp",
+  icon: "/feature/favicon.webp",
   favicon: "/favicon.ico",
-  brandLogo: "/logo.webp",
-  banner: "/title-case-converter-hero.webp",
-  headerLogo: "/logo.webp",
-  headerLogoLight: "/logo.webp",
+  brandLogo: "/feature/header-logo-nav.png",
+  banner: "/feature/og-image-1200x630.webp",
+  headerLogo: "/feature/header-logo-nav.png",
+  headerLogoLight: "/feature/header-logo-nav.png",
   og: "/feature/og-image-1200x630.webp",
   ogSquare: "/feature/og-square-1200x1200.webp",
   twitter: "/feature/twitter-card-1200x600.webp",
-  website: "/title-case-converter-hero.webp",
-  tool: "/title-case-converter-features.webp",
-  heroAlt: "/title-case-converter-1.webp",
-  features: "/title-case-converter-features.webp",
-  howItWorks: "/how-title-case-converter-works.webp",
-  benefits: "/benefits-of-title-case-converter.webp",
-  whoCanUse: "/who-can-use-title-case-converter.webp",
-  vsSentence: "/title-case-vs-sentence-case.webp",
-  showcase: "/title-case-converter-3.webp",
+  website: "/feature/og-image-1200x630.webp",
+  tool: "/feature/og-image-1200x630.webp",
+  heroAlt: "/feature/og-image-1200x630.webp",
+  features: "/feature/og-image-1200x630.webp",
+  howItWorks: "/guides/ios-step-1.webp",
+  benefits: "/feature/og-square-1200x1200.webp",
+  whoCanUse: "/guides/ios-step-2.webp",
+  vsSentence: "/feature/twitter-card-1200x600.webp",
+  showcase: "/guides/ios-step-3.webp",
 } as const;
 
+/** Step galleries — aspect matches each screenshot so frames fit exactly. */
+export const IOS_PERFORMANCE_STEPS = [
+  {
+    src: "/guides/ios-step-1.webp",
+    alt: "iPhone Home Screen — tap Settings to open Delta performance settings",
+    caption: "Step 1 — Open Settings",
+    aspect: "301 / 600",
+  },
+  {
+    src: "/guides/ios-step-2.webp",
+    alt: "iPhone Settings — open General then Background App Refresh",
+    caption: "Step 2 — Background App Refresh",
+    aspect: "301 / 600",
+  },
+  {
+    src: "/guides/ios-step-3.webp",
+    alt: "Background App Refresh screen — turn the setting on for Delta",
+    caption: "Step 3 — Turn Background App Refresh on",
+    aspect: "301 / 600",
+  },
+  {
+    src: "/guides/ios-step-4.webp",
+    alt: "Background App Refresh — choose Wi-Fi and Mobile Data",
+    caption: "Step 4 — Wi-Fi & Mobile Data",
+    aspect: "301 / 600",
+  },
+  {
+    src: "/guides/ios-step-5.webp",
+    alt: "iPhone Settings — open Battery",
+    caption: "Step 5 — Open Battery",
+    aspect: "301 / 600",
+  },
+  {
+    src: "/guides/ios-step-6.webp",
+    alt: "Battery settings — turn Low Power Mode off for smoother Delta",
+    caption: "Step 6 — Turn Low Power Mode off",
+    aspect: "301 / 600",
+  },
+] as const;
+
+export const WINDOWS_SECURITY_STEPS = [
+  {
+    src: "/guides/windows-step-1.webp",
+    alt: "Windows Start search — find and open Windows Security",
+    caption: "Step 1 — Open Windows Security",
+    aspect: "768 / 714",
+  },
+  {
+    src: "/guides/windows-step-2.webp",
+    alt: "Windows Security — Firewall & network protection settings",
+    caption: "Step 2 — Firewall & network protection",
+    aspect: "1024 / 731",
+  },
+] as const;
+
+export const KEY_SYSTEM_STEPS = [
+  {
+    src: "/guides/key-step-1.webp",
+    alt: "Delta Android Keysystem — tap Continue to start the key checkpoints",
+    caption: "Step 1 — Continue on Keysystem",
+    aspect: "469 / 756",
+  },
+  {
+    src: "/guides/key-step-2.webp",
+    alt: "Get Delta Key — complete the survey, app, and video checkpoints",
+    caption: "Step 2 — Complete checkpoints",
+    aspect: "614 / 1024",
+  },
+  {
+    src: "/guides/key-step-3.webp",
+    alt: "Successfully whitelisted — copy your free Delta key",
+    caption: "Step 3 — Copy your key",
+    aspect: "610 / 1024",
+  },
+  {
+    src: "/guides/key-step-4.webp",
+    alt: "Delta Welcome back — paste the key into Enter key, then tap Continue",
+    caption: "Step 4 — Paste key in Delta",
+    aspect: "1024 / 455",
+  },
+  {
+    src: "/guides/key-step-5.webp",
+    alt: "Roblox — open your experience (for example Jujutsu Infinite) and tap Play",
+    caption: "Step 5 — Open Roblox and Play",
+    aspect: "455 / 1024",
+  },
+] as const;
+
 /**
- * SERP-validated blog pillars only (competitor + query research):
- * title case converter, title case vs sentence case, capitalization rules
- * (APA/Chicago/AP/MLA), words to capitalize, how converter works, who uses it.
+ * Guides + step posts. Card covers use real webp assets from /public.
  */
 export const ARTICLES = [
   {
-    slug: "title-case-vs-sentence-case",
-    title: "Title Case vs Sentence Case: What’s the Difference?",
-    metaTitle: "Title Case vs Sentence Case | Clear Examples",
+    slug: "delta-executor-android",
+    title: "Delta Executor Android Download — Install APK Guide",
+    metaTitle: "Delta Executor Android Download (USA) | Free APK Guide",
     description:
-      "Learn when to use title case vs sentence case for headlines, headings, and SEO titles — with style-guide examples and a free converter.",
-    date: "2026-11-07",
-    image: "/title-case-vs-sentence-case.webp",
+      "Download Delta Executor APK for Android in the US. Enable unknown sources, install, get your key, and run Roblox scripts safely.",
+    date: "2026-11-11",
+    image: "/feature/og-image-1200x630.webp",
+    label: "Android",
   },
   {
-    slug: "title-capitalization-rules",
-    title: "Title Capitalization Rules: APA, Chicago, AP & MLA Compared",
-    metaTitle: "Title Capitalization Rules | APA Chicago AP MLA",
+    slug: "delta-executor-ios",
+    title: "Delta Executor iOS Download — Direct Install & Sideload",
+    metaTitle: "Delta Executor iOS Direct Install (USA) | Free Guide",
     description:
-      "Compare AMA, AP, APA, Bluebook, Chicago, MLA, NY Times, and Wikipedia title case — prepositions, FANBOYS, last-word rules, and more.",
-    date: "2026-11-06",
-    image: "/title-case-converter-features.webp",
+      "Install Delta Executor on iPhone and iPad in the US with Direct Install or sideloading. Trust the profile, restart, and play.",
+    date: "2026-11-11",
+    image: "/guides/ios-step-1.webp",
+    label: "iOS",
   },
   {
-    slug: "how-to-use-a-title-case-converter",
-    title: "How to Use a Title Case Converter (Step by Step)",
-    metaTitle: "How to Use a Title Case Converter | Quick Guide",
+    slug: "delta-executor-ios-performance",
+    title: "Delta Executor iOS Performance — Step-by-Step Guide",
+    metaTitle: "Delta iOS Performance Steps (USA) | Settings Guide",
     description:
-      "Paste a headline, pick a style guide, use Convert/Clear and pro options, then copy perfect title case in seconds.",
-    date: "2026-11-05",
-    image: "/how-title-case-converter-works.webp",
+      "Step-by-step iPhone settings: Background App Refresh, Wi-Fi & Mobile Data, and turn Low Power Mode off for smoother Delta.",
+    date: "2026-11-12",
+    image: "/guides/ios-step-2.webp",
+    label: "iOS Steps",
   },
   {
-    slug: "words-to-capitalize-in-a-title",
-    title: "Words to Capitalize in a Title (and Which to Leave Lowercase)",
-    metaTitle: "Words to Capitalize in a Title | Major vs Minor",
+    slug: "delta-executor-direct-install",
+    title: "Delta Executor Direct Install — iOS Guide",
+    metaTitle: "Delta Executor Direct Install (USA) | iOS IPA Guide",
     description:
-      "Know which nouns, verbs, and short words get capitals — and when on, in, up, or by must be capitalized by context.",
-    date: "2026-11-04",
-    image: "/title-case-converter-1.webp",
+      "Install Delta Executor on iPhone or iPad with Direct Install. Trust the enterprise profile, restart, and skip sideloading apps.",
+    date: "2026-11-11",
+    image: "/guides/ios-step-3.webp",
+    label: "Direct Install",
   },
   {
-    slug: "benefits-of-title-case-converter",
-    title: "Benefits of Using a Title Case Converter",
-    metaTitle: "Benefits of a Title Case Converter",
+    slug: "delta-executor-windows",
+    title: "Delta Executor for PC / Windows — Emulator & Setup",
+    metaTitle: "Delta Executor for PC Windows Download (USA) | Free",
     description:
-      "Save time, stay consistent across style guides, and ship cleaner headlines for blogs, SEO titles, books, and marketing campaigns.",
-    date: "2026-11-03",
-    image: "/benefits-of-title-case-converter.webp",
+      "Download Delta Executor for Windows PC in the USA. Emulator setup (MuMu/LDPlayer), antivirus tips, and key activation.",
+    date: "2026-11-10",
+    image: "/feature/og-square-1200x1200.webp",
+    label: "Windows",
   },
   {
-    slug: "who-can-use-title-case-converter",
-    title: "Who Can Use a Title Case Converter?",
-    metaTitle: "Who Can Use a Title Case Converter",
+    slug: "delta-executor-windows-security",
+    title: "Delta Executor Windows Security — Step-by-Step",
+    metaTitle: "Delta Windows Security Steps | Firewall Guide",
     description:
-      "Writers, students, marketers, editors, developers, and e-commerce teams — see how each role uses a free title capitalization tool.",
-    date: "2026-11-02",
-    image: "/who-can-use-title-case-converter.webp",
+      "Step-by-step Windows Security: open Windows Security, Firewall & network protection, then install Delta safely.",
+    date: "2026-11-12",
+    image: "/guides/windows-step-1.webp",
+    label: "PC Steps",
+  },
+  {
+    slug: "delta-executor-mac",
+    title: "Delta Executor for Mac — DMG Install Guide",
+    metaTitle: "Delta Executor Mac Download (USA) | DMG Guide",
+    description:
+      "Download Delta Executor for Mac in the US. Install the DMG, drag to Applications, and run on Intel or Apple Silicon.",
+    date: "2026-11-10",
+    image: "/feature/og-image-1200x630.webp",
+    label: "Mac",
+  },
+  {
+    slug: "delta-executor-key",
+    title: "How to Get Delta Executor Key (24-Hour Key System)",
+    metaTitle: "Delta Executor Key Guide (USA) | 24-Hour Key System",
+    description:
+      "How the Delta Executor key system works for US players. Receive Key, finish checkpoints, create your key, unlock for 24 hours.",
+    date: "2026-11-09",
+    image: "/guides/ios-step-4.webp",
+    label: "Key",
+  },
+  {
+    slug: "delta-executor-key-steps",
+    title: "Delta Executor Key — Step-by-Step",
+    metaTitle: "Delta Key Steps (USA) | Receive Key Guide",
+    description:
+      "Step-by-step Delta key system: Continue, complete checkpoints, copy the key, paste into Delta, then open Roblox and Play.",
+    date: "2026-11-14",
+    image: "/guides/key-step-4.webp",
+    label: "Key Steps",
+  },
+  {
+    slug: "delta-executor-vng",
+    title: "Delta Executor VNG Download for Vietnam (Roblox VN)",
+    metaTitle: "Delta Executor VNG Download | Vietnam Roblox APK",
+    description:
+      "Download Delta Executor VNG for Roblox Vietnam. Who should use VNG, who should avoid it, and how to install the VN APK safely.",
+    date: "2026-11-09",
+    image: "/feature/og-square-1200x1200.webp",
+    label: "VNG",
+  },
+  {
+    slug: "delta-executor-premium",
+    title: "Delta Executor Premium — iOS & Key Explained",
+    metaTitle: "Delta Executor Premium (USA) | iOS & Daily Key",
+    description:
+      "What Delta Premium covers for US players: skipping the daily key and more stable iOS installs when free Direct Install revokes.",
+    date: "2026-11-11",
+    image: "/guides/ios-step-6.webp",
+    label: "Premium",
+  },
+  {
+    slug: "delta-executor-not-compatible",
+    title: "Fix: Delta Executor Isn’t Compatible With My Phone",
+    metaTitle: "Delta Executor Not Compatible Fix | 32/64-bit APK",
+    description:
+      "Fix Delta Executor app isn’t compatible or INSTALL_FAILED_UPDATE_INCOMPATIBLE by matching arm32 vs arm64 Android builds.",
+    date: "2026-11-11",
+    image: "/feature/twitter-card-1200x600.webp",
+    label: "Fix",
+  },
+  {
+    slug: "delta-executor-faq",
+    title: "Delta Executor FAQ — Downloads, Key, Premium, PC & VNG",
+    metaTitle: "Delta Executor FAQ (USA) | Download & Key Answers",
+    description:
+      "FAQ for Delta Executor downloads, Direct Install, keys, Premium, Windows, Mac, VNG, and Roblox upgrade errors — all on this site.",
+    date: "2026-11-11",
+    image: "/feature/og-image-1200x630.webp",
+    label: "FAQ",
+  },
+] as const;
+
+/**
+ * One-click downloads from /public/downloads on this domain.
+ */
+export const PLATFORMS = [
+  {
+    id: "android",
+    name: "Android",
+    blurb: "APK · tap to download",
+    file: "/downloads/Delta-Executor-Android.apk",
+    filename: "Delta-Executor-Android.apk",
+    guide: "/delta-executor-android",
+  },
+  {
+    id: "ios",
+    name: "iOS",
+    blurb: "IPA · tap to download",
+    file: "/downloads/Delta-Executor-iOS.ipa",
+    filename: "Delta-Executor-iOS.ipa",
+    guide: "/delta-executor-ios",
+  },
+  {
+    id: "vng",
+    name: "VNG",
+    blurb: "VN APK · tap to download",
+    file: "/downloads/Delta-Executor-VNG.apk",
+    filename: "Delta-Executor-VNG.apk",
+    guide: "/delta-executor-vng",
+  },
+  {
+    id: "windows",
+    name: "Windows",
+    blurb: "EXE · tap to download",
+    file: "/downloads/Delta-Executor-Windows.exe",
+    filename: "Delta-Executor-Windows.exe",
+    guide: "/delta-executor-windows",
+  },
+  {
+    id: "mac",
+    name: "Mac",
+    blurb: "DMG · tap to download",
+    file: "/downloads/Delta-Executor-Mac.dmg",
+    filename: "Delta-Executor-Mac.dmg",
+    guide: "/delta-executor-mac",
+  },
+  {
+    id: "direct",
+    name: "Direct Install",
+    blurb: "iOS · tap to download",
+    file: "/downloads/Delta-Executor-Direct-Install.ipa",
+    filename: "Delta-Executor-Direct-Install.ipa",
+    guide: "/delta-executor-direct-install",
+  },
+  {
+    id: "key",
+    name: "Delta Key",
+    blurb: "How to get your key",
+    file: null,
+    filename: null,
+    guide: "/delta-executor-key",
   },
 ] as const;
 
 export const HOME_FAQS = [
   {
-    q: "What is title case?",
-    a: "Title case (headline style) capitalizes major words in titles of books, films, songs, essays, and many headlines, while articles, short conjunctions, and short prepositions usually stay lowercase mid-title.",
+    q: "What is Delta Executor?",
+    a: "Delta Executor is a popular, predominantly mobile-focused (Android & iOS) third-party tool designed to run custom Lua scripts within Roblox games to alter gameplay or automate tasks. It injects scripts into the Roblox app so users can unlock features or gain advantages—similar to a mod menu. Windows, Mac, and VNG builds also exist.",
   },
   {
-    q: "What is a title case converter?",
-    a: "A title case converter applies style-guide capitalization rules to headlines automatically — including context for words like on, in, or by that are only sometimes prepositions.",
+    q: "How does Delta Executor work?",
+    a: "The executor sits as a layer on top of Roblox and injects custom Lua into the game’s process. On Android you install an APK; on iOS you use Direct Install or sideload an IPA. On PC many players run the Android APK in an emulator, or use a Windows build when published. After install you usually complete a key flow, join a game, then paste or load scripts and execute them.",
   },
   {
-    q: "Which style guides does this tool support?",
-    a: "TitleCaseConverter.io supports AMA, AP, APA, Bluebook, Chicago, MLA, NY Times, and Wikipedia title case, plus sentence case, upper case, and lower case.",
+    q: "Where should I download Delta Executor?",
+    a: "Download directly from this site (deltaexecutor.com.tr). Platform buttons start a one-click download of the installer hosted here — no third-party download links.",
   },
   {
-    q: "What is the difference between title case and sentence case?",
-    a: "Title case capitalizes major words (The Lord of the Rings). Sentence case capitalizes only the first word and proper nouns (The lord of the rings).",
+    q: "Is Delta Executor free on Android?",
+    a: "Yes. The Android build is free. After install you complete the daily key flow (about 24 hours per key) unless you use Delta Premium.",
   },
   {
-    q: "Which words stay lowercase in title case?",
-    a: "Articles (a, an, the), many coordinating conjunctions (and, but, or), and short prepositions (of, in, on, to) usually stay lowercase mid-title — unless the word is acting as an adverb or adjective, or a style guide capitalizes longer prepositions.",
+    q: "How does Direct Install work on iOS?",
+    a: "Direct Install lets you install Delta on iPhone or iPad without sideloading apps like ESign or KSign. After install, trust the enterprise profile under Settings → General → VPN & Device Management, then restart. Full steps are on our Direct Install guide.",
   },
   {
-    q: "How do APA and Chicago title case differ?",
-    a: "APA (and AP/AMA) typically capitalize prepositions of four or more letters (With, From, About). Chicago, Bluebook, and Wikipedia lowercase more four-letter prepositions; MLA lowercases all prepositions. Chicago also capitalizes yet and so.",
+    q: "Can I use Delta Executor on PC?",
+    a: "Yes. Many players run the Android APK inside an emulator (MuMu Player, LDPlayer, or BlueStacks). Some releases also offer a Windows build — disable conflicting antivirus before opening desktop installers.",
   },
   {
-    q: "What do the converter options do?",
-    a: "Keep Words in All Caps preserves pasted ALL CAPS in title modes. Multi-line batches titles. Show Explanations and Highlight Changes help you review. Straight Quotes and Convert When Text Is Pasted control punctuation and paste workflow.",
+    q: "Does Delta Executor work on Mac?",
+    a: "Yes. Since late 2025 Delta has shipped a Mac DMG. Download it, drag to Applications, install, then complete the key system like on mobile.",
   },
   {
-    q: "Does the converter work for SEO page titles?",
-    a: "Yes. Paste your meta title, convert, and check the live character count. Aim for roughly 50–60 characters so Google is less likely to truncate your SERP title.",
+    q: "What is Delta Executor VNG?",
+    a: "VNG is the Vietnam-specific Delta build for Roblox VN. Use it only if you play Roblox Vietnam. Global Roblox players should stick to the standard Android/iOS builds.",
   },
   {
-    q: "Can I convert multiple titles at once?",
-    a: "Yes. Enable multi-line input, paste one title per line, and convert the list in one style. Each line is capitalized independently.",
+    q: "How long does the Delta key last?",
+    a: "Free keys typically expire every 24 hours. Open Delta, tap Receive Key, finish the on-screen checkpoints, create the key, then paste it back into the app.",
   },
   {
-    q: "Is Title Case Converter free and private?",
-    a: "Yes. The tool is free, runs in your browser, needs no account, and does not upload your headlines for conversion.",
+    q: "What is Delta iOS Premium?",
+    a: "Delta iOS Premium is a paid plan that makes iOS installs more stable and can reduce free Direct Install revokes. See our Premium guide on this site — avoid random sellers.",
+  },
+  {
+    q: "Why isn’t the app compatible with my phone?",
+    a: "Usually a 32-bit vs 64-bit APK mismatch. Check your CPU architecture and re-download the matching Android build from this site’s hub.",
+  },
+  {
+    q: "Why do I get a Roblox upgrade error?",
+    a: "Roblox client updates often break older executor builds. Bookmark this site and re-download the latest Delta version for your platform after each Roblox update.",
+  },
+  {
+    q: "Is it spelled Executor or Executer?",
+    a: "The correct spelling is Delta Executor. Our site is deltaexecutor.com.tr. Search results that say “Executer” are usually typos or fake mirrors — bookmark this domain.",
+  },
+  {
+    q: "Is using Delta Executor against Roblox rules?",
+    a: "Yes. Third-party executors violate the Roblox Terms of Use and can lead to permanent account bans. Roblox also patches detection often, so older builds stop working after client updates. Read our disclaimer before installing.",
+  },
+  {
+    q: "Is Delta Executor safe to install?",
+    a: "Sideloading any unofficial APK/IPA carries malware risk—especially from random mirror sites. Download only from this domain, scan files when you can, and never enter Roblox passwords on key checkpoint pages. Executor use can still get accounts banned.",
   },
 ] as const;

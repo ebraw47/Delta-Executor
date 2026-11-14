@@ -17,14 +17,14 @@ export default function ContentPageShell({
   wide = false,
 }: Props) {
   return (
-    <div className="text-[#20242C]">
-      <header className="page-banner relative overflow-hidden border-b border-navy-900/10">
-        <PageBannerPattern opacity={0.2} />
+    <div className="text-ink">
+      <header className="page-banner relative overflow-hidden border-b border-white/10">
+        <PageBannerPattern opacity={0.15} />
         <div className={`relative mx-auto px-4 py-12 md:px-6 md:py-16 ${wide ? "max-w-6xl" : "max-w-3xl"}`}>
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-ink-mute">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-brand">
             {BRAND.name}
           </p>
-          <h1 className="font-display text-3xl font-extrabold tracking-tight text-[#20242C] md:text-4xl">
+          <h1 className="font-display text-3xl font-bold tracking-tight text-white md:text-4xl">
             {title}
           </h1>
           {description ? (

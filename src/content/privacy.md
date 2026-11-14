@@ -1,40 +1,40 @@
 # Privacy Policy
 
-**Effective date:** November 7, 2026  
-**Website:** https://titlecaseconverter.io
+Effective date: November 11, 2026
 
-Title Case Converter (“we”, “us”) respects your privacy. This policy explains what information we collect and how we use it.
+This Privacy Policy describes how **Delta Executor** (“we”, “us”) handles information on **deltaexecutor.com.tr**.
 
-## Title conversion privacy
+## Information We Collect
 
-The title case converter runs in your browser. The headlines and text you paste into the tool are **not uploaded to our servers** for conversion and are not stored by us as part of the conversion process.
+- **Usage data** — pages visited, approximate region, device/browser type via analytics (if enabled).
+- **Contact data** — name, email, and message content if you email us or use the contact form.
+- **Cookies** — optional analytics or advertising cookies when those services are configured.
 
-## Information we may collect
+We do not require an account to read guides.
 
-- **Contact form messages** you voluntarily send (name, email, message content)  
-- **Basic analytics** if enabled (pages viewed, device/browser type, approximate location) via privacy-conscious analytics or Google Analytics  
-- **Advertising data** if Google AdSense or similar partners are enabled on the site  
+## How We Use Information
 
-## Cookies
+- Improve site performance and content accuracy
+- Respond to support messages
+- Measure traffic and SEO performance
+- Show ads when AdSense (or similar) is enabled
 
-We may use cookies or similar technologies for analytics, advertising, and essential site functions. You can control cookies through your browser settings.
+## Third Parties
 
-## Third-party services
+Analytics and advertising partners may process data under their own policies. Download destinations outside this site are governed by those publishers.
 
-If we use analytics or advertising partners, those providers may process data under their own privacy policies. We do not sell your personal information.
+## Data Retention
 
-## Email
+Contact emails are kept only as long as needed to respond. Analytics retention follows the provider’s defaults.
 
-If you email us at contact@titlecaseconverter.io, we use your address only to respond to your request.
+## Your Choices
 
-## Children’s privacy
-
-This site is not directed at children under 13. We do not knowingly collect personal information from children.
+You can block cookies in your browser. You may request deletion of correspondence by emailing **contact@deltaexecutor.com.tr**.
 
 ## Changes
 
-We may update this policy from time to time. The effective date above will change when we do.
+We may update this policy; the effective date above will change when we do.
 
 ## Contact
 
-Privacy questions: [contact@titlecaseconverter.io](mailto:contact@titlecaseconverter.io)
+Email: **contact@deltaexecutor.com.tr**

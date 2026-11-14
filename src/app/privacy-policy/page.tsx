@@ -5,8 +5,8 @@ import { getMarkdown, stripLeadingH1 } from "@/lib/content";
 import { BRAND, ROUTES, SITE_ORIGIN } from "@/lib/siteConfig";
 
 const PAGE_URL = `${SITE_ORIGIN}${ROUTES.privacy}`;
-const PAGE_TITLE = "Privacy Policy - Title Case Converter";
-const PAGE_DESCRIPTION = "Privacy Policy of titlecaseconverter.io";
+const PAGE_TITLE = "Privacy Policy | Delta Executor";
+const PAGE_DESCRIPTION = "Privacy Policy for deltaexecutor.com.tr — Delta Executor guides.";
 
 export const metadata: Metadata = {
   title: { absolute: PAGE_TITLE },

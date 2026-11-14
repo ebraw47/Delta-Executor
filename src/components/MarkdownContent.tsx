@@ -1,10 +1,8 @@
-"use client";
-
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import Image from "next/image";
 import Link from "next/link";
 import type { Components } from "react-markdown";
+import GuideFigure from "@/components/GuideFigure";
 
 type Props = {
   content: string;
@@ -30,7 +28,6 @@ const components: Components = {
   ),
   h3: ({ children }) => <h3 className="prose-h3">{children}</h3>,
   h4: ({ children }) => <h4 className="prose-h4">{children}</h4>,
-  // Images become <figure>; never nest them inside <p> (invalid HTML → hydration error)
   p: ({ node, children }) =>
     paragraphHasImage(node) ? (
       <div className="prose-p-media">{children}</div>
@@ -46,6 +43,7 @@ const components: Components = {
   hr: () => <hr className="prose-hr" />,
   strong: ({ children }) => <strong className="prose-strong">{children}</strong>,
   em: ({ children }) => <em className="prose-em">{children}</em>,
+  // Text-only comparison tables are fine — never put screenshots in table cells.
   table: ({ children }) => (
     <div className="prose-table-wrap">
       <table className="prose-table">{children}</table>
@@ -55,14 +53,12 @@ const components: Components = {
   th: ({ children }) => <th>{children}</th>,
   td: ({ children }) => <td>{children}</td>,
   a: ({ href, children }) => {
-    const url = href || "#";
-    const external = url.startsWith("http");
-    if (external) {
-      return (
-        <a href={url} target="_blank" rel="noopener noreferrer" className="prose-a">
-          {children}
-        </a>
-      );
+    const raw = href || "#";
+    let url = raw;
+    if (raw.startsWith("https://deltaexecutor.com.tr") || raw.startsWith("http://deltaexecutor.com.tr")) {
+      url = raw.replace(/^https?:\/\/deltaexecutor\.com\.tr/, "") || "/";
+    } else if (/^https?:\/\//i.test(raw)) {
+      return <span className="prose-strong">{children}</span>;
     }
     return (
       <Link href={url} className="prose-a">
@@ -72,25 +68,7 @@ const components: Components = {
   },
   img: ({ src, alt }) => {
     if (!src || typeof src !== "string") return null;
-    const isLocal = src.startsWith("/");
-    return (
-      <figure className="prose-figure">
-        {isLocal ? (
-          <span className="relative block aspect-[16/9] w-full overflow-hidden">
-            <Image
-              src={src}
-              alt={alt || ""}
-              fill
-              className="object-cover"
-              sizes="(max-width:768px) 100vw, 760px"
-            />
-          </span>
-        ) : (
-          <img src={src} alt={alt || ""} loading="lazy" />
-        )}
-        {alt ? <figcaption className="prose-caption">{alt}</figcaption> : null}
-      </figure>
-    );
+    return <GuideFigure src={src} alt={alt || ""} />;
   },
 };
 

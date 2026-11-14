@@ -1,14 +1,13 @@
-# Title Case Converter
+# Delta Executor
 
-Next.js site for **[titlecaseconverter.io](https://titlecaseconverter.io)** — free title capitalization tool with APA, Chicago, AP, and MLA support, plus SERP-focused capitalization guides.
+Next.js site for **[deltaexecutor.com.tr](https://deltaexecutor.com.tr)** — Delta Executor download guides for Android, iOS, VNG, Windows, and Mac, plus key-system help.
 
 ## Features
 
-- Live title case converter (APA, Chicago, AP, MLA)
-- Sentence case, UPPERCASE, and lowercase modes
-- SEO character / word counts
-- 6 SEO guides aligned to real search demand
-- Sitemap index, image sitemap, robots, and structured data
+- Multi-platform download hub
+- SERP-aligned guides (Android, iOS, Windows, Mac, Key, VNG)
+- FAQ + structured data for SEO
+- Sitemap index, robots, and performance-focused Next.js setup
 
 ## Develop
 

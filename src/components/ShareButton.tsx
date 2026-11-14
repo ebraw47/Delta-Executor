@@ -15,7 +15,7 @@ export default function ShareButton({ className = "", tone = "dark", label = fal
 
   const shareUrl = typeof window !== "undefined" ? window.location.href : SITE_ORIGIN;
   const shareTitle = BRAND.name;
-  const shareText = `${BRAND.tagline} — free tool on ${BRAND.domain}`;
+  const shareText = `${BRAND.tagline} — ${BRAND.domain}`;
 
   const onShare = async () => {
     try {

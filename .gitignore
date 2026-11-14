@@ -39,3 +39,16 @@ next-env.d.ts
 .env*.local
 .env.local
 .tmp-verify/
+
+# lighthouse / local audits
+.lh*.json
+.lighthouse*.json
+.lighthouse-*/
+
+# Installer binaries (often >100MB — keep locally / on host, not in git)
+/public/downloads/*.apk
+/public/downloads/*.ipa
+/public/downloads/*.exe
+/public/downloads/*.dmg
+/public/downloads/*.zip
+/public/downloads/*.msi

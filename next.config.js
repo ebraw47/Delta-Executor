@@ -25,6 +25,13 @@ const nextConfig = {
       { source: "/privacy", destination: "/privacy-policy", permanent: true },
       { source: "/contact", destination: "/contact-us", permanent: true },
       { source: "/blog", destination: "/category/blog", permanent: true },
+      { source: "/image-sitemapp.xml", destination: "/image-sitemap.xml", permanent: true },
+      { source: "/title-case-vs-sentence-case", destination: "/", permanent: true },
+      { source: "/title-capitalization-rules", destination: "/", permanent: true },
+      { source: "/how-to-use-a-title-case-converter", destination: "/", permanent: true },
+      { source: "/words-to-capitalize-in-a-title", destination: "/", permanent: true },
+      { source: "/benefits-of-title-case-converter", destination: "/", permanent: true },
+      { source: "/who-can-use-title-case-converter", destination: "/", permanent: true },
     ];
   },
 
@@ -76,12 +83,22 @@ const nextConfig = {
         source: "/:path*.webp",
         headers: [{ key: "Cache-Control", value: "public, max-age=3600, must-revalidate" }],
       },
+      {
+        source: "/downloads/:file*",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=300, must-revalidate" },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "Content-Disposition", value: "attachment" },
+        ],
+      },
     ];
   },
 
   experimental: {
-    optimizeCss: true,
+    // Inline CSS into HTML to avoid FOUC/layout shift when the stylesheet paints late.
+    inlineCss: true,
     scrollRestoration: true,
+    optimizePackageImports: ["framer-motion"],
   },
 };
 

@@ -1,4 +1,13 @@
-import { ARTICLES, BRAND, IMAGES, ROUTES, SITE_ORIGIN } from "./siteConfig";
+import {
+  ARTICLES,
+  BRAND,
+  IMAGES,
+  IOS_PERFORMANCE_STEPS,
+  KEY_SYSTEM_STEPS,
+  ROUTES,
+  SITE_ORIGIN,
+  WINDOWS_SECURITY_STEPS,
+} from "./siteConfig";
 
 export type SitemapPage = {
   path: string;
@@ -14,7 +23,7 @@ export type SitemapImage = {
   caption: string;
 };
 
-const TODAY = "2026-11-07";
+const TODAY = "2026-11-14";
 
 export const SITEMAP_PAGES: SitemapPage[] = [
   { path: ROUTES.home, lastmod: TODAY, changefreq: "daily", priority: 1.0 },
@@ -22,7 +31,7 @@ export const SITEMAP_PAGES: SitemapPage[] = [
   ...ARTICLES.map((a) => ({
     path: `/${a.slug}`,
     lastmod: a.date,
-    changefreq: "monthly" as const,
+    changefreq: "weekly" as const,
     priority: 0.8,
   })),
   { path: ROUTES.about, lastmod: TODAY, changefreq: "monthly", priority: 0.6 },
@@ -36,13 +45,7 @@ export const SITEMAP_IMAGES: SitemapImage[] = [
     path: IMAGES.logo,
     pagePath: "/",
     title: `${BRAND.name} logo`,
-    caption: "Title Case Converter — free title capitalization tool",
-  },
-  {
-    path: IMAGES.website,
-    pagePath: "/",
-    title: `${BRAND.name} hero`,
-    caption: "Convert headlines to title case with AMA, AP, APA, Chicago, MLA, and more",
+    caption: "Delta Executor — download guides for Android, iOS, Windows, Mac, and VNG",
   },
   {
     path: IMAGES.og,
@@ -51,22 +54,40 @@ export const SITEMAP_IMAGES: SitemapImage[] = [
     caption: BRAND.description,
   },
   {
-    path: IMAGES.features,
+    path: IMAGES.ogSquare,
     pagePath: "/",
-    title: "Title case converter features",
-    caption: "Style guides, SEO character count, and one-click copy",
+    title: `${BRAND.name} square image`,
+    caption: BRAND.description,
   },
   {
-    path: IMAGES.vsSentence,
-    pagePath: "/title-case-vs-sentence-case",
-    title: "Title case vs sentence case",
-    caption: "Compare title case and sentence case capitalization",
+    path: IMAGES.twitter,
+    pagePath: "/",
+    title: `${BRAND.name} Twitter card`,
+    caption: BRAND.description,
   },
   ...ARTICLES.map((a) => ({
     path: a.image,
     pagePath: `/${a.slug}`,
     title: a.title,
     caption: a.description,
+  })),
+  ...IOS_PERFORMANCE_STEPS.map((step) => ({
+    path: step.src,
+    pagePath: "/delta-executor-ios-performance",
+    title: step.caption,
+    caption: step.alt,
+  })),
+  ...WINDOWS_SECURITY_STEPS.map((step) => ({
+    path: step.src,
+    pagePath: "/delta-executor-windows-security",
+    title: step.caption,
+    caption: step.alt,
+  })),
+  ...KEY_SYSTEM_STEPS.map((step) => ({
+    path: step.src,
+    pagePath: "/delta-executor-key-steps",
+    title: step.caption,
+    caption: step.alt,
   })),
 ];
 

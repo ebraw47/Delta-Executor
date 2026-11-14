@@ -1,8 +1,5 @@
 # Contact Us
 
-We’d love to hear from you. For questions about the title case converter, style-guide coverage, partnerships, or privacy, reach out anytime.
+Need help with a Delta Executor guide on **deltaexecutor.com.tr**? Send a message below or email **contact@deltaexecutor.com.tr**.
 
-**Email:** [contact@titlecaseconverter.io](mailto:contact@titlecaseconverter.io)  
-**Website:** [titlecaseconverter.io](https://titlecaseconverter.io)
-
-Use the form on this page for a quick message. We typically reply within 1–2 business days.
+We can help with broken links, outdated platform steps, or content corrections — we cannot provide unofficial key generators or cracked Premium.

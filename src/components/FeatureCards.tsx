@@ -1,8 +1,4 @@
-"use client";
-
 import type { ReactNode } from "react";
-import { motion } from "framer-motion";
-import { Stagger, StaggerItem } from "@/components/motion/Motion";
 
 type CardItem = {
   title: string;
@@ -13,9 +9,10 @@ type CardItem = {
 const iconClass = "h-7 w-7";
 
 export const FEATURE_ICONS = {
-  styles: (
+  phone: (
     <svg className={iconClass} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-      <path d="M4 6h16M4 12h10M4 18h14" />
+      <rect x="7" y="2" width="10" height="20" rx="2" />
+      <path d="M11 18h2" />
     </svg>
   ),
   bolt: (
@@ -23,16 +20,10 @@ export const FEATURE_ICONS = {
       <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z" />
     </svg>
   ),
-  copy: (
+  key: (
     <svg className={iconClass} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-      <rect x="8" y="8" width="12" height="12" rx="2" />
-      <path d="M4 16V6a2 2 0 0 1 2-2h10" />
-    </svg>
-  ),
-  chart: (
-    <svg className={iconClass} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-      <path d="M4 19V5M4 19h16" />
-      <path d="M8 15v-4M12 15V8M16 15v-6" />
+      <circle cx="8" cy="15" r="4" />
+      <path d="m11.5 12.5 8-8M17 5l2 2" />
     </svg>
   ),
   shield: (
@@ -40,21 +31,26 @@ export const FEATURE_ICONS = {
       <path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z" />
     </svg>
   ),
-  book: (
+  globe: (
     <svg className={iconClass} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-      <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5V5.5z" />
-      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
     </svg>
   ),
-  paste: (
+  refresh: (
     <svg className={iconClass} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-      <path d="M9 5h6M8 5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2" />
-      <rect x="9" y="3" width="6" height="4" rx="1" />
+      <path d="M21 12a9 9 0 1 1-2.6-6.3" />
+      <path d="M21 3v6h-6" />
+    </svg>
+  ),
+  download: (
+    <svg className={iconClass} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" />
     </svg>
   ),
   spark: (
     <svg className={iconClass} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-      <path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8" />
+      <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" />
     </svg>
   ),
   check: (
@@ -62,100 +58,83 @@ export const FEATURE_ICONS = {
       <path d="M20 6 9 17l-5-5" />
     </svg>
   ),
-} as const;
+};
 
 export const HOME_FEATURES: CardItem[] = [
   {
-    title: "Eight Style Guides",
-    description: "AMA, AP, APA, Bluebook, Chicago, MLA, NY Times, and Wikipedia — plus sentence, upper, and lower case.",
-    icon: FEATURE_ICONS.styles,
+    title: "All Major Platforms",
+    description: "Android APK, iOS Direct Install, VNG for Vietnam, Windows via emulator, and native Mac DMG support.",
+    icon: FEATURE_ICONS.phone,
   },
   {
-    title: "Pro Converter Options",
-    description: "Explanations, highlight changes, multi-line input, paste-to-convert, and straight quotes — like top SERP tools.",
+    title: "Built for Script Players",
+    description: "Built for Roblox enthusiasts who want a responsive executor UI and steady script compatibility.",
     icon: FEATURE_ICONS.bolt,
   },
   {
-    title: "One-Click Copy",
-    description: "Copy the converted headline straight to your clipboard for docs, CMS fields, or social posts.",
-    icon: FEATURE_ICONS.copy,
+    title: "Clear Key System Help",
+    description: "Step-by-step Receive Key flow so free users can unlock Delta for ~24 hours without scams.",
+    icon: FEATURE_ICONS.key,
   },
   {
-    title: "SEO Character Count",
-    description: "See live character and word counts so meta titles stay inside the 50–60 character sweet spot.",
-    icon: FEATURE_ICONS.chart,
-  },
-  {
-    title: "Private by Design",
-    description: "Capitalization runs locally in your browser. Headlines never leave your device.",
+    title: "Fake Site Warnings",
+    description: "We call out mirror spam so you stay on trusted guides instead of phishing download pages.",
     icon: FEATURE_ICONS.shield,
   },
   {
-    title: "Guides That Match Search Intent",
-    description: "Learn title vs sentence case, style-guide rules, and which words to capitalize — from our blog.",
-    icon: FEATURE_ICONS.book,
+    title: "VNG vs Global Clarity",
+    description: "Separate guidance for Roblox Vietnam (VNG) vs global Roblox so you pick the correct build.",
+    icon: FEATURE_ICONS.globe,
+  },
+  {
+    title: "Update After Patches",
+    description: "When Roblox upgrades break old builds, return here for refreshed platform install steps.",
+    icon: FEATURE_ICONS.refresh,
   },
 ];
 
 export const HOME_STEPS: CardItem[] = [
   {
-    title: "Paste Your Title",
-    description: "Drop a headline, book title, H1, or SEO meta title into the converter.",
-    icon: FEATURE_ICONS.paste,
+    title: "Choose Your Platform",
+    description: "Tap Android, iOS, VNG, Windows, Mac, Key, or Direct Install from the hub above.",
+    icon: FEATURE_ICONS.download,
   },
   {
-    title: "Pick a Style",
-    description: "Choose APA, Chicago, AP, MLA, sentence case, UPPERCASE, or lowercase.",
+    title: "Install & Trust",
+    description: "Follow the guide: APK permissions, iOS profile trust, DMG install, or emulator setup.",
     icon: FEATURE_ICONS.spark,
   },
   {
-    title: "Copy & Publish",
-    description: "Copy the result, check the character count, and paste it wherever you publish.",
+    title: "Get Key & Execute",
+    description: "Complete the daily key checkpoints, paste the key, then run your scripts.",
     icon: FEATURE_ICONS.check,
   },
 ];
 
 function IconCard({ item }: { item: CardItem }) {
   return (
-    <motion.article
-      className="group relative rounded-2xl border border-navy-900/10 bg-white/90 px-5 pb-6 pt-10 shadow-soft backdrop-blur-sm"
-      whileHover={{
-        y: -6,
-        borderColor: "#1E6FFF",
-        boxShadow: "0 18px 40px -20px rgba(30, 111, 255, 0.4)",
-      }}
-      transition={{ type: "spring", stiffness: 320, damping: 24 }}
-    >
-      <motion.div
-        className="absolute -top-6 left-5 flex h-12 w-12 items-center justify-center rounded-full border border-brand/30 bg-gradient-to-br from-white to-[#EEF5FF] text-brand shadow-soft"
+    <article className="group relative rounded-2xl border border-white/10 bg-navy-800/70 px-5 pb-6 pt-10 shadow-soft transition duration-200 hover:-translate-y-1 hover:border-brand/40 hover:shadow-soft">
+      <div
+        className="absolute -top-6 left-5 flex h-12 w-12 items-center justify-center rounded-full border border-brand/40 bg-gradient-to-br from-navy-700 to-navy-900 text-brand shadow-glow transition duration-200 group-hover:scale-105"
         aria-hidden
-        variants={{
-          rest: { scale: 1, rotate: 0 },
-          hover: { scale: 1.1, rotate: -6 },
-        }}
-        initial="rest"
-        whileHover="hover"
-        transition={{ type: "spring", stiffness: 400, damping: 16 }}
       >
         {item.icon}
-      </motion.div>
-      <h3 className="font-display text-lg font-bold tracking-tight text-[#20242C] md:text-[1.15rem]">
+      </div>
+      <h3 className="font-display text-lg font-bold tracking-tight text-white md:text-[1.15rem]">
         {item.title}
       </h3>
       <p className="mt-2 text-[0.95rem] leading-relaxed text-ink-mute">{item.description}</p>
-    </motion.article>
+    </article>
   );
 }
 
 export function FeatureCards({ items = HOME_FEATURES }: { items?: CardItem[] }) {
   return (
-    <Stagger className="grid gap-x-5 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid gap-x-5 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
       {items.map((item) => (
-        <StaggerItem key={item.title}>
-          <IconCard item={item} />
-        </StaggerItem>
+        <IconCard key={item.title} item={item} />
       ))}
-    </Stagger>
+    </div>
   );
 }
 
@@ -167,12 +146,10 @@ export function StepCards({
   className?: string;
 }) {
   return (
-    <Stagger className={className} delay={0.08}>
+    <div className={className}>
       {items.map((item) => (
-        <StaggerItem key={item.title}>
-          <IconCard item={item} />
-        </StaggerItem>
+        <IconCard key={item.title} item={item} />
       ))}
-    </Stagger>
+    </div>
   );
 }

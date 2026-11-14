@@ -1,63 +1,47 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { FadeIn, Stagger, StaggerItem } from "@/components/motion/Motion";
+import { useLanguage } from "@/lib/i18n/LanguageProvider";
 import { ARTICLES } from "@/lib/siteConfig";
 
 export default function HomeGuides() {
+  const { t } = useLanguage();
+
   return (
-    <section className="border-y border-navy-900/10 py-14 md:py-16">
+    <section className="border-y border-white/10 py-14 md:py-16">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
-        <FadeIn className="max-w-2xl">
-          <p className="section-kicker">Guides & tips</p>
-          <h2 className="font-display text-2xl font-bold text-[#20242C] md:text-3xl">
-            Title case guides
+        <div className="max-w-2xl">
+          <p className="section-kicker">{t.home.guidesKicker}</p>
+          <h2 className="font-display text-2xl font-bold text-white md:text-3xl">
+            {t.home.guidesTitle}
           </h2>
-          <p className="mt-2 text-ink-mute">
-            SERP-backed articles on style guides, sentence case, and words to capitalize.
-          </p>
-        </FadeIn>
-        <Stagger className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {ARTICLES.slice(0, 6).map((a) => (
-            <StaggerItem key={a.slug}>
-              <motion.div
-                whileHover={{ y: -4 }}
-                transition={{ type: "spring", stiffness: 320, damping: 24 }}
-              >
-                <Link
-                  href={`/${a.slug}`}
-                  className="group block overflow-hidden rounded-2xl border border-navy-900/10 bg-white/90 shadow-sm backdrop-blur-sm transition hover:border-brand/40 hover:shadow-soft"
-                >
-                  <div className="relative aspect-[16/9] overflow-hidden bg-navy-50">
-                    <Image
-                      src={a.image}
-                      alt={a.title}
-                      fill
-                      className="object-cover object-left transition duration-500 group-hover:scale-[1.02]"
-                      sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw"
-                    />
-                  </div>
-                  <div className="p-5">
-                    <h3 className="font-display text-lg font-semibold text-[#20242C] group-hover:text-brand line-clamp-2">
-                      {a.title}
-                    </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-ink-mute line-clamp-2">
-                      {a.description}
-                    </p>
-                    <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand">
-                      Read guide
-                      <span aria-hidden className="transition group-hover:translate-x-0.5">
-                        →
-                      </span>
-                    </span>
-                  </div>
-                </Link>
-              </motion.div>
-            </StaggerItem>
+          <p className="mt-2 text-ink-mute">{t.home.guidesText}</p>
+        </div>
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {ARTICLES.map((a) => (
+            <Link
+              key={a.slug}
+              href={`/${a.slug}`}
+              className="group block rounded-2xl border border-white/10 bg-navy-800/70 p-5 shadow-sm backdrop-blur-sm transition hover:-translate-y-1 hover:border-brand/40 hover:shadow-soft"
+            >
+              <span className="inline-flex rounded-full border border-brand/30 bg-brand/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-brand">
+                {a.label}
+              </span>
+              <h3 className="mt-3 font-display text-lg font-semibold text-white group-hover:text-brand line-clamp-2">
+                {a.title}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-ink-mute line-clamp-2">
+                {a.description}
+              </p>
+              <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand">
+                {t.home.readGuide}
+                <span aria-hidden className="transition group-hover:translate-x-0.5">
+                  →
+                </span>
+              </span>
+            </Link>
           ))}
-        </Stagger>
+        </div>
       </div>
     </section>
   );

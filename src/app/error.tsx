@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 export default function Error({
   reset,
@@ -8,13 +8,13 @@ export default function Error({
 }) {
   return (
     <div className="flex min-h-[60vh] flex-col items-center justify-center px-4">
-      <h2 className="font-display text-2xl font-bold text-[#20242C] mb-4">Something went wrong!</h2>
+      <h2 className="mb-4 font-display text-2xl font-bold text-white">Something went wrong!</h2>
       <p className="mb-6 text-center text-ink-mute">
         We apologize for the inconvenience. Please try again.
       </p>
       <button
         onClick={reset}
-        className="rounded-xl bg-brand px-6 py-3 font-bold text-white transition hover:bg-brand-dark focus-ring"
+        className="rounded-xl bg-brand-gradient px-6 py-3 font-bold text-navy-950 transition hover:opacity-90 focus-ring"
       >
         Try again
       </button>

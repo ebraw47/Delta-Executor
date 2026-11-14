@@ -1,27 +1,29 @@
 {
-  "name": "Title Case Converter",
-  "short_name": "TitleCase",
-  "description": "Free title case converter for APA, Chicago, AP, and MLA. Convert headlines to title case, sentence case, UPPERCASE, or lowercase.",
+  "name": "Delta Executor",
+  "short_name": "Delta",
+  "description": "Download Delta Executor for Windows PC, Android, iOS, and Mac. Free US install guides, Direct Install, and key system help.",
+  "lang": "en-US",
+  "dir": "ltr",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#F7F5F0",
-  "theme_color": "#1E6FFF",
+  "background_color": "#050814",
+  "theme_color": "#00E5FF",
   "icons": [
     {
-      "src": "/favicon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "src": "/feature/favicon.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any"
     },
     {
-      "src": "/icon.png",
-      "sizes": "192x192",
+      "src": "/favicon-48.png",
+      "sizes": "48x48",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/favicon.png",
-      "sizes": "64x64",
+      "src": "/favicon-32.png",
+      "sizes": "32x32",
       "type": "image/png",
       "purpose": "any"
     }
