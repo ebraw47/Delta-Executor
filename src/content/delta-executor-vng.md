@@ -1,44 +1,44 @@
-# Delta Executor VNG Download for Vietnam (Roblox VN)
+# Delta Executor VNG İndir — Vietnam (Roblox VN)
 
-**Delta Executor VNG** is the Vietnam-specific Delta build for **Roblox VN**. It exists because the global Roblox client is restricted in Vietnam and needs a matching executor package.
+**Delta Executor VNG**, **Roblox VN** için Vietnam’a özel Delta sürümüdür. Vietnam’da global Roblox istemcisi kısıtlı olduğu için eşleşen bir executor paketi gerekir.
 
-If you play **global** Roblox outside Vietnam, skip this page and use [Android](/delta-executor-android) or [iOS](/delta-executor-ios) instead.
+Vietnam dışında **global** Roblox oynuyorsanız bu sayfayı atlayın; bunun yerine [Android](/delta-executor-android) veya [iOS](/delta-executor-ios) kullanın.
 
-## Who Should Use VNG?
+## VNG Kimler İçin?
 
-- Players physically using **Roblox Vietnam (VNG)**
-- Users who already cannot run the global Delta + global Roblox combo in Vietnam
+- Fiziksel olarak **Roblox Vietnam (VNG)** kullanan oyuncular
+- Vietnam’da global Delta + global Roblox kombinasyonunu zaten çalıştıramayanlar
 
-## Who Should Avoid VNG?
+## VNG’den Kimler Kaçınmalı?
 
-- Anyone on the global Roblox client
-- Players who only want one Roblox install for international games
+- Global Roblox istemcisinde olanlar
+- Uluslararası oyunlar için tek Roblox kurulumu isteyenler
 
-Installing VNG on a global setup can block or conflict with the global client. Choose deliberately.
+VNG’yi global kuruluma kurmak global istemciyle çakışabilir veya engelleyebilir. Bilinçli seçin.
 
-## Download & Install (Android VNG)
+## İndirme ve Kurulum (Android VNG)
 
-1. Open the [download hub](/#download).
-2. Tap **VNG** to download the VN APK from **deltaexecutor.com.tr**.
-3. Allow unknown sources if Android prompts.
-4. Install the APK, open Delta VNG, then complete the [key flow](/delta-executor-key).
-5. Use it only with Roblox VN.
+1. [İndirme hub’ını](/#download) açın.
+2. **VNG**’ye dokunarak VN APK’sını **deltaexecutortr.com.tr** üzerinden indirin.
+3. Android isterse bilinmeyen kaynaklara izin verin.
+4. APK’yı kurun, Delta VNG’yi açın, ardından [anahtar akışını](/delta-executor-key) tamamlayın.
+5. Yalnızca Roblox VN ile kullanın.
 
-Both 32-bit and 64-bit devices are commonly supported for VNG Android builds; if you see a compatibility error, read [not compatible](/delta-executor-not-compatible).
+VNG Android sürümleri genelde hem 32 hem 64 bit cihazları destekler; uyumluluk hatası görürseniz [uyumlu değil](/delta-executor-not-compatible) sayfasına bakın.
 
-## VNG on iOS
+## iOS’ta VNG
 
-VNG iOS availability can lag behind Android. When an IPA path is offered on the hub, install with [Direct Install](/delta-executor-direct-install) or sideload per the [iOS guide](/delta-executor-ios). We note status updates on this page as builds change — check the hub buttons for what is currently hosted.
+VNG iOS kullanılabilirliği Android’in gerisinde kalabilir. Hub’da IPA yolu sunulduğunda [Direct Install](/delta-executor-direct-install) veya [iOS rehberine](/delta-executor-ios) göre sideload ile kurun. Sürümler değiştikçe bu sayfada durum notları veririz — şu an barındırılanlar için hub düğmelerine bakın.
 
-## After Install
+## Kurulum Sonrası
 
-1. Confirm you are signed into Roblox VN (not global).
-2. Open Delta VNG and finish the key checkpoints.
-3. Inject and execute scripts the same way as the global build.
+1. Roblox VN’de oturum açtığınızı doğrulayın (global değil).
+2. Delta VNG’yi açın ve anahtar kontrol noktalarını bitirin.
+3. Scriptleri global sürümle aynı şekilde enjekte edip çalıştırın.
 
-## Related Guides
+## İlgili Rehberler
 
 - [Android (global)](/delta-executor-android)
-- [Key system](/delta-executor-key)
-- [FAQ](/delta-executor-faq)
-- [Homepage hub](/)
+- [Anahtar sistemi](/delta-executor-key)
+- [SSS](/delta-executor-faq)
+- [Ana sayfa hub](/)

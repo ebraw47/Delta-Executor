@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { useForm } from 'react-hook-form';
-import { BRAND } from '@/lib/siteConfig';
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { BRAND } from "@/lib/siteConfig";
 
 type FormData = {
   name: string;
@@ -24,9 +24,9 @@ export default function ContactForm() {
   } = useForm<FormData>();
 
   const onSubmit = (data: FormData) => {
-    const subject = encodeURIComponent(`Contact from ${data.name}`);
+    const subject = encodeURIComponent(`${data.name} adlı kişiden iletişim`);
     const body = encodeURIComponent(
-      `Name: ${data.name}\nEmail: ${data.email}\n\n${data.message}`
+      `Ad: ${data.name}\nE-posta: ${data.email}\n\n${data.message}`
     );
     window.location.href = `mailto:${BRAND.email}?subject=${subject}&body=${body}`;
     setFormSubmitted(true);
@@ -36,39 +36,41 @@ export default function ContactForm() {
 
   return (
     <div className="tool-glass rounded-2xl p-6 md:p-8">
-      <h2 className="mb-6 text-center font-display text-2xl font-bold text-white">Send Us a Message</h2>
+      <h2 className="mb-6 text-center font-display text-2xl font-bold text-white">
+        Bize Mesaj Gönderin
+      </h2>
 
       {formSubmitted ? (
         <div className="mb-6 rounded-xl border border-brand/30 bg-brand/10 p-4 text-center text-brand">
-          Thanks! Your email client should open shortly. We typically reply within 24–48 hours.
+          Teşekkürler! E-posta uygulamanız kısa süre içinde açılmalı. Genelde 24–48 saat içinde yanıtlarız.
         </div>
       ) : null}
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5" noValidate>
         <div>
           <label htmlFor="name" className="mb-1.5 block text-sm font-semibold text-ink-soft">
-            Name
+            Ad
           </label>
           <input
             id="name"
             type="text"
             className={fieldClass}
-            {...register('name', { required: 'Name is required' })}
+            {...register("name", { required: "Ad gerekli" })}
           />
           {errors.name && <p className="mt-1 text-sm text-red-400">{errors.name.message}</p>}
         </div>
 
         <div>
           <label htmlFor="email" className="mb-1.5 block text-sm font-semibold text-ink-soft">
-            Email*
+            E-posta*
           </label>
           <input
             id="email"
             type="email"
             className={fieldClass}
-            {...register('email', {
-              required: 'Email is required',
-              pattern: { value: /^\S+@\S+$/i, message: 'Invalid email' },
+            {...register("email", {
+              required: "E-posta gerekli",
+              pattern: { value: /^\S+@\S+$/i, message: "Geçersiz e-posta" },
             })}
           />
           {errors.email && <p className="mt-1 text-sm text-red-400">{errors.email.message}</p>}
@@ -76,13 +78,13 @@ export default function ContactForm() {
 
         <div>
           <label htmlFor="message" className="mb-1.5 block text-sm font-semibold text-ink-soft">
-            Message*
+            Mesaj*
           </label>
           <textarea
             id="message"
             rows={5}
             className={fieldClass}
-            {...register('message', { required: 'Message is required' })}
+            {...register("message", { required: "Mesaj gerekli" })}
           />
           {errors.message && <p className="mt-1 text-sm text-red-400">{errors.message.message}</p>}
         </div>
@@ -91,7 +93,7 @@ export default function ContactForm() {
           type="submit"
           className="w-full rounded-xl bg-brand-gradient py-3.5 font-bold uppercase tracking-wide text-navy-950 transition hover:opacity-90 focus-ring"
         >
-          Submit
+          Gönder
         </button>
       </form>
     </div>

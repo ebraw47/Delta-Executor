@@ -23,12 +23,12 @@ export default function DownloadButton({
       href={platform.file}
       filename={platform.filename}
       className={`inline-flex items-center justify-center gap-2.5 rounded-xl bg-brand-gradient px-5 py-3 text-sm font-bold uppercase tracking-wide text-navy-950 transition hover:opacity-90 focus-ring ${className}`}
-      aria-label={`Download ${BRAND.name} for ${platform.name}`}
+      aria-label={`${platform.name} için ${BRAND.name} indir`}
     >
       <span className="flex h-6 w-6 items-center justify-center [&>svg]:h-5 [&>svg]:w-5">
         {PLATFORM_ICONS[platformId]}
       </span>
-      {label || `Download ${platform.name}`}
+      {label || `${platform.name} İndir`}
     </DownloadLink>
   );
 }

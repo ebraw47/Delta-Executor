@@ -1,8 +1,8 @@
 {
   "name": "Delta Executor",
   "short_name": "Delta",
-  "description": "Download Delta Executor for Windows PC, Android, iOS, and Mac. Free US install guides, Direct Install, and key system help.",
-  "lang": "en-US",
+  "description": "Android, iOS, Windows ve Mac için Delta Executor indirin. Ücretsiz kurulum rehberleri, Direkt Kurulum ve anahtar sistemi yardımı.",
+  "lang": "tr",
   "dir": "ltr",
   "start_url": "/",
   "display": "standalone",

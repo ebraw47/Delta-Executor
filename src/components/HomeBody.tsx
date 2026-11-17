@@ -64,11 +64,11 @@ export default function HomeBody({
         <div className="mx-auto max-w-6xl px-4 md:px-6">
           <div className="grid gap-10 lg:grid-cols-12 lg:gap-12">
             <div className="lg:col-span-7">
-              {locale === "en" ? (
+              {locale === "tr" ? (
                 beforeStepsContent
               ) : (
                 <div className="prose-track space-y-4">
-                  {/* Keep a single H2 in the right column (stepsTitle) — avoid duplicate headings for SEO */}
+                  {/* Full markdown is Turkish; other locales use short translated copy */}
                   <p className="prose-p">{t.hero.subtitle}</p>
                   <p className="prose-p">{t.home.hubText}</p>
                   <p className="prose-p">{t.home.tipText}</p>
@@ -95,12 +95,12 @@ export default function HomeBody({
 
           <div className="mt-12 border-t border-white/10 pt-10">
             <div className="mx-auto max-w-3xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-12 lg:gap-12">
-              {afterStepsContent && locale === "en" ? (
+              {afterStepsContent && locale === "tr" ? (
                 <div className="lg:col-span-7">{afterStepsContent}</div>
               ) : null}
               <div
                 className={`mt-8 space-y-6 lg:mt-0 ${
-                  afterStepsContent && locale === "en" ? "lg:col-span-5" : "lg:col-span-7"
+                  afterStepsContent && locale === "tr" ? "lg:col-span-5" : "lg:col-span-7"
                 }`}
               >
                 <div className="rounded-2xl border border-white/10 bg-navy-800/80 p-6 shadow-soft backdrop-blur-sm md:p-7">

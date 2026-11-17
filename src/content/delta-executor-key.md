@@ -1,35 +1,35 @@
-# How to Get Delta Executor Key (24-Hour Key System)
+# Delta Executor Anahtarı Nasıl Alınır (24 Saatlik Anahtar Sistemi)
 
-Free Delta Executor builds use a **key system**. You unlock the executor for a limited window (typically **24 hours**), then repeat the flow when the key expires. [Premium](/delta-executor-premium) removes the daily checkpoints.
+Ücretsiz Delta Executor sürümleri bir **anahtar sistemi** kullanır. Executor’ı sınırlı bir süre (genelde **24 saat**) açarsınız; anahtar bitince akışı tekrarlarsınız. [Premium](/delta-executor-premium) günlük kontrol noktalarını kaldırır.
 
-**Detailed walkthrough:** [Delta key step-by-step](/delta-executor-key-steps).
+**Ayrıntılı anlatım:** [Delta anahtar adım adım](/delta-executor-key-steps).
 
-## Before You Start
+## Başlamadan Önce
 
-- Install the latest Delta build from this site’s [hub](/#download)
-- Use a stable connection
-- Do not buy keys from Discord DMs or random sellers
+- Bu sitenin [hub’ından](/#download) en güncel Delta sürümünü kurun
+- Stabil bağlantı kullanın
+- Discord DM veya rastgele satıcılardan anahtar almayın
 
-## Quick Steps
+## Hızlı Adımlar
 
-1. Launch Delta and open a Roblox experience when asked.
-2. Tap **Receive Key**.
-3. Complete every checkpoint on the key page.
-4. Create / copy the key, paste it back into Delta.
+1. Delta’yı başlatın; istendiğinde bir Roblox deneyimine girin.
+2. **Receive Key**’e dokunun.
+3. Anahtar sayfasındaki her kontrol noktasını tamamlayın.
+4. Anahtarı oluşturun / kopyalayın, Delta’ya yapıştırın.
 
-Full screenshots: [key step-by-step post](/delta-executor-key-steps).
+Tam ekran görüntüleri: [anahtar adım adım yazısı](/delta-executor-key-steps).
 
-## Premium vs Free Key
+## Premium vs Ücretsiz Anahtar
 
-| | Free key | Premium |
+| | Ücretsiz anahtar | Premium |
 | --- | --- | --- |
-| Cost | Free | Paid plan |
-| Duration | ~24 hours | No daily key loop (per plan rules) |
-| How | In-app Receive Key | [Premium guide](/delta-executor-premium) |
+| Maliyet | Ücretsiz | Ücretli plan |
+| Süre | ~24 saat | Günlük anahtar döngüsü yok (plan kurallarına göre) |
+| Nasıl | Uygulama içi Receive Key | [Premium rehberi](/delta-executor-premium) |
 
-## Related Guides
+## İlgili Rehberler
 
-- [Key screenshots](/delta-executor-key-steps)
-- [iOS performance](/delta-executor-ios-performance)
-- [Android install](/delta-executor-android)
-- [FAQ](/delta-executor-faq)
+- [Anahtar ekran görüntüleri](/delta-executor-key-steps)
+- [iOS performans](/delta-executor-ios-performance)
+- [Android kurulum](/delta-executor-android)
+- [SSS](/delta-executor-faq)

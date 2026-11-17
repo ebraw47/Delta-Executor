@@ -1,19 +1,19 @@
 /** Central brand / domain config for Delta Executor */
-export const SITE_ORIGIN = "https://deltaexecutor.com.tr";
+export const SITE_ORIGIN = "https://deltaexecutortr.com.tr";
 
 export const BRAND = {
   name: "Delta Executor",
   shortName: "Delta",
   keyword: "Delta Executor",
-  domain: "deltaexecutor.com.tr",
-  email: "contact@deltaexecutor.com.tr",
+  domain: "deltaexecutortr.com.tr",
+  email: "contact@deltaexecutortr.com.tr",
   twitter: "@deltaexecutor",
   discord: "https://discord.gg/delta",
   version: "2.745",
-  tagline: "Download Delta Executor for Android, iOS, Windows, Mac & VNG",
-  /** Primary SERP snippet — written for US English search intent */
+  tagline: "Android, iOS, Windows, Mac ve VNG için Delta Executor indir",
+  /** Primary SERP snippet — Turkish (deltaexecutortr.com.tr) */
   description:
-    "Delta Executor is a popular mobile-focused (Android & iOS) third-party tool that runs custom Lua scripts in Roblox to alter gameplay or automate tasks. Free download guides for PC, Mac, and VNG on this site.",
+    "Delta Executor; Android ve iOS odaklı, Roblox’ta özel Lua script’leri çalıştıran popüler bir üçüncü taraf araçtır. Bu sitede PC, Mac ve VNG için ücretsiz indirme rehberleri.",
 } as const;
 
 export const ROUTES = {
@@ -51,38 +51,38 @@ export const IMAGES = {
 export const IOS_PERFORMANCE_STEPS = [
   {
     src: "/guides/ios-step-1.webp",
-    alt: "iPhone Home Screen — tap Settings to open Delta performance settings",
-    caption: "Step 1 — Open Settings",
+    alt: "iPhone Ana Ekran — Delta performans ayarları için Ayarlar’a dokunun",
+    caption: "Adım 1 — Ayarlar’ı açın",
     aspect: "301 / 600",
   },
   {
     src: "/guides/ios-step-2.webp",
-    alt: "iPhone Settings — open General then Background App Refresh",
-    caption: "Step 2 — Background App Refresh",
+    alt: "iPhone Ayarlar — Genel, ardından Arka Planda Uygulama Yenileme",
+    caption: "Adım 2 — Arka Planda Uygulama Yenileme",
     aspect: "301 / 600",
   },
   {
     src: "/guides/ios-step-3.webp",
-    alt: "Background App Refresh screen — turn the setting on for Delta",
-    caption: "Step 3 — Turn Background App Refresh on",
+    alt: "Arka Planda Uygulama Yenileme — Delta için ayarı açın",
+    caption: "Adım 3 — Arka Planda Uygulama Yenilemeyi açın",
     aspect: "301 / 600",
   },
   {
     src: "/guides/ios-step-4.webp",
-    alt: "Background App Refresh — choose Wi-Fi and Mobile Data",
-    caption: "Step 4 — Wi-Fi & Mobile Data",
+    alt: "Arka Planda Uygulama Yenileme — Wi‑Fi ve Mobil Veri seçin",
+    caption: "Adım 4 — Wi‑Fi ve Mobil Veri",
     aspect: "301 / 600",
   },
   {
     src: "/guides/ios-step-5.webp",
-    alt: "iPhone Settings — open Battery",
-    caption: "Step 5 — Open Battery",
+    alt: "iPhone Ayarlar — Pil’i açın",
+    caption: "Adım 5 — Pil’i açın",
     aspect: "301 / 600",
   },
   {
     src: "/guides/ios-step-6.webp",
-    alt: "Battery settings — turn Low Power Mode off for smoother Delta",
-    caption: "Step 6 — Turn Low Power Mode off",
+    alt: "Pil ayarları — daha akıcı Delta için Düşük Güç Modunu kapatın",
+    caption: "Adım 6 — Düşük Güç Modunu kapatın",
     aspect: "301 / 600",
   },
 ] as const;
@@ -90,14 +90,14 @@ export const IOS_PERFORMANCE_STEPS = [
 export const WINDOWS_SECURITY_STEPS = [
   {
     src: "/guides/windows-step-1.webp",
-    alt: "Windows Start search — find and open Windows Security",
-    caption: "Step 1 — Open Windows Security",
+    alt: "Windows Başlat araması — Windows Güvenliği’ni bulun ve açın",
+    caption: "Adım 1 — Windows Güvenliği’ni açın",
     aspect: "768 / 714",
   },
   {
     src: "/guides/windows-step-2.webp",
-    alt: "Windows Security — Firewall & network protection settings",
-    caption: "Step 2 — Firewall & network protection",
+    alt: "Windows Güvenliği — Güvenlik Duvarı ve ağ koruması ayarları",
+    caption: "Adım 2 — Güvenlik Duvarı ve ağ koruması",
     aspect: "1024 / 731",
   },
 ] as const;
@@ -105,32 +105,32 @@ export const WINDOWS_SECURITY_STEPS = [
 export const KEY_SYSTEM_STEPS = [
   {
     src: "/guides/key-step-1.webp",
-    alt: "Delta Android Keysystem — tap Continue to start the key checkpoints",
-    caption: "Step 1 — Continue on Keysystem",
+    alt: "Delta Android Keysystem — anahtar kontrol noktaları için Continue’a dokunun",
+    caption: "Adım 1 — Keysystem’de Continue",
     aspect: "469 / 756",
   },
   {
     src: "/guides/key-step-2.webp",
-    alt: "Get Delta Key — complete the survey, app, and video checkpoints",
-    caption: "Step 2 — Complete checkpoints",
+    alt: "Delta Anahtarı Al — anket, uygulama ve video kontrol noktalarını tamamlayın",
+    caption: "Adım 2 — Kontrol noktalarını tamamlayın",
     aspect: "614 / 1024",
   },
   {
     src: "/guides/key-step-3.webp",
-    alt: "Successfully whitelisted — copy your free Delta key",
-    caption: "Step 3 — Copy your key",
+    alt: "Başarıyla whitelist — ücretsiz Delta anahtarınızı kopyalayın",
+    caption: "Adım 3 — Anahtarınızı kopyalayın",
     aspect: "610 / 1024",
   },
   {
     src: "/guides/key-step-4.webp",
-    alt: "Delta Welcome back — paste the key into Enter key, then tap Continue",
-    caption: "Step 4 — Paste key in Delta",
+    alt: "Delta Welcome back — Enter key alanına yapıştırın, Continue’a dokunun",
+    caption: "Adım 4 — Anahtarı Delta’ya yapıştırın",
     aspect: "1024 / 455",
   },
   {
     src: "/guides/key-step-5.webp",
-    alt: "Roblox — open your experience (for example Jujutsu Infinite) and tap Play",
-    caption: "Step 5 — Open Roblox and Play",
+    alt: "Roblox — deneyiminizi açın (ör. Jujutsu Infinite) ve Play’e dokunun",
+    caption: "Adım 5 — Roblox’u açın ve Play",
     aspect: "455 / 1024",
   },
 ] as const;
@@ -141,133 +141,133 @@ export const KEY_SYSTEM_STEPS = [
 export const ARTICLES = [
   {
     slug: "delta-executor-android",
-    title: "Delta Executor Android Download — Install APK Guide",
-    metaTitle: "Delta Executor Android Download (USA) | Free APK Guide",
+    title: "Delta Executor Android İndir — APK Kurulum Rehberi",
+    metaTitle: "Delta Executor Android İndir | Ücretsiz APK Rehberi",
     description:
-      "Download Delta Executor APK for Android in the US. Enable unknown sources, install, get your key, and run Roblox scripts safely.",
+      "Android için Delta Executor APK indirin. Bilinmeyen kaynakları açın, kurun, anahtarınızı alın ve Roblox script’lerini güvenle çalıştırın.",
     date: "2026-11-11",
     image: "/feature/og-image-1200x630.webp",
     label: "Android",
   },
   {
     slug: "delta-executor-ios",
-    title: "Delta Executor iOS Download — Direct Install & Sideload",
-    metaTitle: "Delta Executor iOS Direct Install (USA) | Free Guide",
+    title: "Delta Executor iOS İndir — Direkt Kurulum ve Sideload",
+    metaTitle: "Delta Executor iOS Direkt Kurulum | Ücretsiz Rehber",
     description:
-      "Install Delta Executor on iPhone and iPad in the US with Direct Install or sideloading. Trust the profile, restart, and play.",
+      "iPhone ve iPad’de Direkt Kurulum veya sideload ile Delta Executor kurun. Profili güvenin, yeniden başlatın ve oynayın.",
     date: "2026-11-11",
     image: "/guides/ios-step-1.webp",
     label: "iOS",
   },
   {
     slug: "delta-executor-ios-performance",
-    title: "Delta Executor iOS Performance — Step-by-Step Guide",
-    metaTitle: "Delta iOS Performance Steps (USA) | Settings Guide",
+    title: "Delta Executor iOS Performans — Adım Adım Rehber",
+    metaTitle: "Delta iOS Performans Adımları | Ayarlar Rehberi",
     description:
-      "Step-by-step iPhone settings: Background App Refresh, Wi-Fi & Mobile Data, and turn Low Power Mode off for smoother Delta.",
+      "iPhone ayarları adım adım: Arka Planda Uygulama Yenileme, Wi‑Fi ve Mobil Veri, Düşük Güç Modunu kapatın.",
     date: "2026-11-12",
     image: "/guides/ios-step-2.webp",
-    label: "iOS Steps",
+    label: "iOS Adımları",
   },
   {
     slug: "delta-executor-direct-install",
-    title: "Delta Executor Direct Install — iOS Guide",
-    metaTitle: "Delta Executor Direct Install (USA) | iOS IPA Guide",
+    title: "Delta Executor Direkt Kurulum — iOS Rehberi",
+    metaTitle: "Delta Executor Direkt Kurulum | iOS IPA Rehberi",
     description:
-      "Install Delta Executor on iPhone or iPad with Direct Install. Trust the enterprise profile, restart, and skip sideloading apps.",
+      "Direkt Kurulum ile iPhone veya iPad’e Delta Executor kurun. Kurumsal profili güvenin, yeniden başlatın, sideload uygulamalarını atlayın.",
     date: "2026-11-11",
     image: "/guides/ios-step-3.webp",
-    label: "Direct Install",
+    label: "Direkt Kurulum",
   },
   {
     slug: "delta-executor-windows",
-    title: "Delta Executor for PC / Windows — Emulator & Setup",
-    metaTitle: "Delta Executor for PC Windows Download (USA) | Free",
+    title: "PC / Windows için Delta Executor — Emülatör ve Kurulum",
+    metaTitle: "Delta Executor PC Windows İndir | Ücretsiz",
     description:
-      "Download Delta Executor for Windows PC in the USA. Emulator setup (MuMu/LDPlayer), antivirus tips, and key activation.",
+      "Windows PC için Delta Executor indirin. Emülatör kurulumu (MuMu/LDPlayer), antivirüs ipuçları ve anahtar aktivasyonu.",
     date: "2026-11-10",
     image: "/feature/og-square-1200x1200.webp",
     label: "Windows",
   },
   {
     slug: "delta-executor-windows-security",
-    title: "Delta Executor Windows Security — Step-by-Step",
-    metaTitle: "Delta Windows Security Steps | Firewall Guide",
+    title: "Delta Executor Windows Güvenliği — Adım Adım",
+    metaTitle: "Delta Windows Güvenlik Adımları | Güvenlik Duvarı Rehberi",
     description:
-      "Step-by-step Windows Security: open Windows Security, Firewall & network protection, then install Delta safely.",
+      "Windows Güvenliği adım adım: Windows Güvenliği’ni açın, Güvenlik Duvarı ve ağ koruması, ardından Delta’yı güvenle kurun.",
     date: "2026-11-12",
     image: "/guides/windows-step-1.webp",
-    label: "PC Steps",
+    label: "PC Adımları",
   },
   {
     slug: "delta-executor-mac",
-    title: "Delta Executor for Mac — DMG Install Guide",
-    metaTitle: "Delta Executor Mac Download (USA) | DMG Guide",
+    title: "Mac için Delta Executor — DMG Kurulum Rehberi",
+    metaTitle: "Delta Executor Mac İndir | DMG Rehberi",
     description:
-      "Download Delta Executor for Mac in the US. Install the DMG, drag to Applications, and run on Intel or Apple Silicon.",
+      "Mac için Delta Executor indirin. DMG’yi kurun, Applications’a sürükleyin, Intel veya Apple Silicon’da çalıştırın.",
     date: "2026-11-10",
     image: "/feature/og-image-1200x630.webp",
     label: "Mac",
   },
   {
     slug: "delta-executor-key",
-    title: "How to Get Delta Executor Key (24-Hour Key System)",
-    metaTitle: "Delta Executor Key Guide (USA) | 24-Hour Key System",
+    title: "Delta Executor Anahtarı Nasıl Alınır (24 Saatlik Anahtar Sistemi)",
+    metaTitle: "Delta Executor Anahtar Rehberi | 24 Saatlik Sistem",
     description:
-      "How the Delta Executor key system works for US players. Receive Key, finish checkpoints, create your key, unlock for 24 hours.",
+      "Delta Executor anahtar sistemi nasıl çalışır. Receive Key, kontrol noktalarını bitirin, anahtarı oluşturun, 24 saat açın.",
     date: "2026-11-09",
     image: "/guides/ios-step-4.webp",
-    label: "Key",
+    label: "Anahtar",
   },
   {
     slug: "delta-executor-key-steps",
-    title: "Delta Executor Key — Step-by-Step",
-    metaTitle: "Delta Key Steps (USA) | Receive Key Guide",
+    title: "Delta Executor Anahtarı — Adım Adım",
+    metaTitle: "Delta Anahtar Adımları | Receive Key Rehberi",
     description:
-      "Step-by-step Delta key system: Continue, complete checkpoints, copy the key, paste into Delta, then open Roblox and Play.",
+      "Adım adım Delta anahtar sistemi: Continue, kontrol noktaları, anahtarı kopyala, Delta’ya yapıştır, Roblox’ta Play.",
     date: "2026-11-14",
     image: "/guides/key-step-4.webp",
-    label: "Key Steps",
+    label: "Anahtar Adımları",
   },
   {
     slug: "delta-executor-vng",
-    title: "Delta Executor VNG Download for Vietnam (Roblox VN)",
-    metaTitle: "Delta Executor VNG Download | Vietnam Roblox APK",
+    title: "Delta Executor VNG İndir — Vietnam (Roblox VN)",
+    metaTitle: "Delta Executor VNG İndir | Vietnam Roblox APK",
     description:
-      "Download Delta Executor VNG for Roblox Vietnam. Who should use VNG, who should avoid it, and how to install the VN APK safely.",
+      "Roblox Vietnam için Delta Executor VNG indirin. Kim kullanmalı, kim kullanmamalı ve VN APK’yı güvenle kurma.",
     date: "2026-11-09",
     image: "/feature/og-square-1200x1200.webp",
     label: "VNG",
   },
   {
     slug: "delta-executor-premium",
-    title: "Delta Executor Premium — iOS & Key Explained",
-    metaTitle: "Delta Executor Premium (USA) | iOS & Daily Key",
+    title: "Delta Executor Premium — iOS ve Anahtar Açıklaması",
+    metaTitle: "Delta Executor Premium | iOS ve Günlük Anahtar",
     description:
-      "What Delta Premium covers for US players: skipping the daily key and more stable iOS installs when free Direct Install revokes.",
+      "Premium neleri kapsar: günlük anahtarı atlama ve ücretsiz Direkt Kurulum iptallerinde daha stabil iOS kurulumu.",
     date: "2026-11-11",
     image: "/guides/ios-step-6.webp",
     label: "Premium",
   },
   {
     slug: "delta-executor-not-compatible",
-    title: "Fix: Delta Executor Isn’t Compatible With My Phone",
-    metaTitle: "Delta Executor Not Compatible Fix | 32/64-bit APK",
+    title: "Düzeltme: Delta Executor Telefonumla Uyumlu Değil",
+    metaTitle: "Delta Executor Uyumlu Değil | APK Düzeltmesi",
     description:
-      "Fix Delta Executor app isn’t compatible or INSTALL_FAILED_UPDATE_INCOMPATIBLE by matching arm32 vs arm64 Android builds.",
+      "Genelde 32-bit / 64-bit APK uyumsuzluğu. CPU mimarinizi kontrol edin ve bu siteden doğru Android sürümünü yeniden indirin.",
     date: "2026-11-11",
     image: "/feature/twitter-card-1200x600.webp",
-    label: "Fix",
+    label: "Uyum",
   },
   {
     slug: "delta-executor-faq",
-    title: "Delta Executor FAQ — Downloads, Key, Premium, PC & VNG",
-    metaTitle: "Delta Executor FAQ (USA) | Download & Key Answers",
+    title: "Delta Executor SSS — İndirmeler, Anahtar, Premium, PC ve VNG",
+    metaTitle: "Delta Executor SSS | İndirme ve Anahtar Yardımı",
     description:
-      "FAQ for Delta Executor downloads, Direct Install, keys, Premium, Windows, Mac, VNG, and Roblox upgrade errors — all on this site.",
+      "Delta Executor hakkında sık sorulan sorular: indirmeler, Direkt Kurulum, anahtarlar, Premium, VNG ve sahte siteler.",
     date: "2026-11-11",
     image: "/feature/og-image-1200x630.webp",
-    label: "FAQ",
+    label: "SSS",
   },
 ] as const;
 
@@ -278,7 +278,7 @@ export const PLATFORMS = [
   {
     id: "android",
     name: "Android",
-    blurb: "APK · tap to download",
+    blurb: "APK · indirmek için dokunun",
     file: "/downloads/Delta-Executor-Android.apk",
     filename: "Delta-Executor-Android.apk",
     guide: "/delta-executor-android",
@@ -286,7 +286,7 @@ export const PLATFORMS = [
   {
     id: "ios",
     name: "iOS",
-    blurb: "IPA · tap to download",
+    blurb: "IPA · indirmek için dokunun",
     file: "/downloads/Delta-Executor-iOS.ipa",
     filename: "Delta-Executor-iOS.ipa",
     guide: "/delta-executor-ios",
@@ -294,7 +294,7 @@ export const PLATFORMS = [
   {
     id: "vng",
     name: "VNG",
-    blurb: "VN APK · tap to download",
+    blurb: "VN APK · indirmek için dokunun",
     file: "/downloads/Delta-Executor-VNG.apk",
     filename: "Delta-Executor-VNG.apk",
     guide: "/delta-executor-vng",
@@ -302,7 +302,7 @@ export const PLATFORMS = [
   {
     id: "windows",
     name: "Windows",
-    blurb: "EXE · tap to download",
+    blurb: "EXE · indirmek için dokunun",
     file: "/downloads/Delta-Executor-Windows.exe",
     filename: "Delta-Executor-Windows.exe",
     guide: "/delta-executor-windows",
@@ -310,23 +310,23 @@ export const PLATFORMS = [
   {
     id: "mac",
     name: "Mac",
-    blurb: "DMG · tap to download",
+    blurb: "DMG · indirmek için dokunun",
     file: "/downloads/Delta-Executor-Mac.dmg",
     filename: "Delta-Executor-Mac.dmg",
     guide: "/delta-executor-mac",
   },
   {
     id: "direct",
-    name: "Direct Install",
-    blurb: "iOS · tap to download",
+    name: "Direkt Kurulum",
+    blurb: "iOS · indirmek için dokunun",
     file: "/downloads/Delta-Executor-Direct-Install.ipa",
     filename: "Delta-Executor-Direct-Install.ipa",
     guide: "/delta-executor-direct-install",
   },
   {
     id: "key",
-    name: "Delta Key",
-    blurb: "How to get your key",
+    name: "Delta Anahtar",
+    blurb: "Anahtarınızı nasıl alırsınız",
     file: null,
     filename: null,
     guide: "/delta-executor-key",
@@ -335,63 +335,63 @@ export const PLATFORMS = [
 
 export const HOME_FAQS = [
   {
-    q: "What is Delta Executor?",
-    a: "Delta Executor is a popular, predominantly mobile-focused (Android & iOS) third-party tool designed to run custom Lua scripts within Roblox games to alter gameplay or automate tasks. It injects scripts into the Roblox app so users can unlock features or gain advantages—similar to a mod menu. Windows, Mac, and VNG builds also exist.",
+    q: "Delta Executor nedir?",
+    a: "Delta Executor; Android ve iOS odaklı, Roblox oyunlarında özel Lua script’leri çalıştıran popüler bir üçüncü taraf araçtır. Script’leri Roblox uygulamasına enjekte eder — bir mod menüsüne benzer. Windows, Mac ve VNG sürümleri de vardır.",
   },
   {
-    q: "How does Delta Executor work?",
-    a: "The executor sits as a layer on top of Roblox and injects custom Lua into the game’s process. On Android you install an APK; on iOS you use Direct Install or sideload an IPA. On PC many players run the Android APK in an emulator, or use a Windows build when published. After install you usually complete a key flow, join a game, then paste or load scripts and execute them.",
+    q: "Delta Executor nasıl çalışır?",
+    a: "Executor, Roblox’un üstünde bir katman gibi durur ve özel Lua’yı oyun sürecine enjekte eder. Android’de APK kurarsınız; iOS’ta Direkt Kurulum veya IPA sideload kullanırsınız. PC’de birçok oyuncu Android APK’yı emülatörde çalıştırır. Kurulumdan sonra genelde anahtar akışını tamamlar, oyuna girer, script yapıştırır veya yükler ve çalıştırırsınız.",
   },
   {
-    q: "Where should I download Delta Executor?",
-    a: "Download directly from this site (deltaexecutor.com.tr). Platform buttons start a one-click download of the installer hosted here — no third-party download links.",
+    q: "Delta Executor’ı nereden indirmeliyim?",
+    a: "Doğrudan bu siteden (deltaexecutortr.com.tr) indirin. Platform düğmeleri, burada barındırılan kurulum dosyasını tek tıkla indirir — üçüncü taraf indirme bağlantısı yoktur.",
   },
   {
-    q: "Is Delta Executor free on Android?",
-    a: "Yes. The Android build is free. After install you complete the daily key flow (about 24 hours per key) unless you use Delta Premium.",
+    q: "Android’de Delta Executor ücretsiz mi?",
+    a: "Evet. Android sürümü ücretsizdir. Kurulumdan sonra günlük anahtar akışını tamamlarsınız (anahtar başına yaklaşık 24 saat), Premium kullanmazsanız.",
   },
   {
-    q: "How does Direct Install work on iOS?",
-    a: "Direct Install lets you install Delta on iPhone or iPad without sideloading apps like ESign or KSign. After install, trust the enterprise profile under Settings → General → VPN & Device Management, then restart. Full steps are on our Direct Install guide.",
+    q: "iOS’ta Direkt Kurulum nasıl çalışır?",
+    a: "Direkt Kurulum, ESign veya KSign gibi sideload uygulamaları olmadan iPhone veya iPad’e Delta kurmanıza olanak tanır. Kurulumdan sonra Ayarlar → Genel → VPN ve Cihaz Yönetimi altında kurumsal profili güvenin, sonra yeniden başlatın. Tam adımlar Direkt Kurulum rehberindedir.",
   },
   {
-    q: "Can I use Delta Executor on PC?",
-    a: "Yes. Many players run the Android APK inside an emulator (MuMu Player, LDPlayer, or BlueStacks). Some releases also offer a Windows build — disable conflicting antivirus before opening desktop installers.",
+    q: "PC’de Delta Executor kullanabilir miyim?",
+    a: "Evet. Birçok oyuncu Android APK’yı emülatörde (MuMu Player, LDPlayer veya BlueStacks) çalıştırır. Bazı sürümlerde Windows derlemesi de vardır — masaüstü kurulumlarını açmadan önce çakışan antivirüsü kapatın.",
   },
   {
-    q: "Does Delta Executor work on Mac?",
-    a: "Yes. Since late 2025 Delta has shipped a Mac DMG. Download it, drag to Applications, install, then complete the key system like on mobile.",
+    q: "Delta Executor Mac’te çalışır mı?",
+    a: "Evet. 2025 sonundan beri Delta Mac DMG yayınlıyor. İndirin, Applications’a sürükleyin, kurun, ardından mobildeki gibi anahtar sistemini tamamlayın.",
   },
   {
-    q: "What is Delta Executor VNG?",
-    a: "VNG is the Vietnam-specific Delta build for Roblox VN. Use it only if you play Roblox Vietnam. Global Roblox players should stick to the standard Android/iOS builds.",
+    q: "Delta Executor VNG nedir?",
+    a: "VNG, Roblox VN için Vietnam’a özel Delta sürümüdür. Yalnızca Roblox Vietnam oynuyorsanız kullanın. Küresel Roblox oyuncuları standart Android/iOS sürümlerinde kalsın.",
   },
   {
-    q: "How long does the Delta key last?",
-    a: "Free keys typically expire every 24 hours. Open Delta, tap Receive Key, finish the on-screen checkpoints, create the key, then paste it back into the app.",
+    q: "Delta anahtarı ne kadar sürer?",
+    a: "Ücretsiz anahtarlar genelde her 24 saatte dolar. Delta’yı açın, Receive Key’e dokunun, ekrandaki kontrol noktalarını bitirin, anahtarı oluşturun ve uygulamaya yapıştırın.",
   },
   {
-    q: "What is Delta iOS Premium?",
-    a: "Delta iOS Premium is a paid plan that makes iOS installs more stable and can reduce free Direct Install revokes. See our Premium guide on this site — avoid random sellers.",
+    q: "Delta iOS Premium nedir?",
+    a: "Delta iOS Premium; iOS kurulumlarını daha stabil kılan ve ücretsiz Direkt Kurulum iptallerini azaltabilen ücretli bir plandır. Bu sitedeki Premium rehberine bakın — rastgele satıcılardan uzak durun.",
   },
   {
-    q: "Why isn’t the app compatible with my phone?",
-    a: "Usually a 32-bit vs 64-bit APK mismatch. Check your CPU architecture and re-download the matching Android build from this site’s hub.",
+    q: "Uygulama telefonumla neden uyumlu değil?",
+    a: "Genelde 32-bit / 64-bit APK uyumsuzluğudur. CPU mimarinizi kontrol edin ve bu sitenin merkezinden eşleşen Android sürümünü yeniden indirin.",
   },
   {
-    q: "Why do I get a Roblox upgrade error?",
-    a: "Roblox client updates often break older executor builds. Bookmark this site and re-download the latest Delta version for your platform after each Roblox update.",
+    q: "Neden Roblox yükseltme hatası alıyorum?",
+    a: "Roblox istemci güncellemeleri eski executor sürümlerini sıkça bozar. Bu siteyi yer imlerine ekleyin ve her Roblox güncellemesinden sonra platformunuz için en son Delta sürümünü yeniden indirin.",
   },
   {
-    q: "Is it spelled Executor or Executer?",
-    a: "The correct spelling is Delta Executor. Our site is deltaexecutor.com.tr. Search results that say “Executer” are usually typos or fake mirrors — bookmark this domain.",
+    q: "Yazımı Executor mı Executer mı?",
+    a: "Doğru yazım Delta Executor’dır. Sitemiz deltaexecutortr.com.tr’dir. “Executer” yazan sonuçlar genelde yazım hatası veya sahte aynadır — bu alanı yer imlerine ekleyin.",
   },
   {
-    q: "Is using Delta Executor against Roblox rules?",
-    a: "Yes. Third-party executors violate the Roblox Terms of Use and can lead to permanent account bans. Roblox also patches detection often, so older builds stop working after client updates. Read our disclaimer before installing.",
+    q: "Delta Executor kullanmak Roblox kurallarına aykırı mı?",
+    a: "Evet. Üçüncü taraf executor’lar Roblox Kullanım Şartları’nı ihlal eder ve kalıcı hesap ban’ına yol açabilir. Roblox tespiti de sık günceller; eski sürümler istemci güncellemesinden sonra çalışmayı bırakır. Kurmadan önce sorumluluk reddimizi okuyun.",
   },
   {
-    q: "Is Delta Executor safe to install?",
-    a: "Sideloading any unofficial APK/IPA carries malware risk—especially from random mirror sites. Download only from this domain, scan files when you can, and never enter Roblox passwords on key checkpoint pages. Executor use can still get accounts banned.",
+    q: "Delta Executor kurmak güvenli mi?",
+    a: "Herhangi bir resmi olmayan APK/IPA sideload etmek zararlı yazılım riski taşır — özellikle rastgele ayna sitelerden. Yalnızca bu alandan indirin, mümkünse tarayın ve anahtar kontrol sayfalarında Roblox şifresi yazmayın. Executor kullanımı yine de hesapları banlayabilir.",
   },
 ] as const;

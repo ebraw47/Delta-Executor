@@ -1,53 +1,53 @@
-# Delta Executor iOS Download — Direct Install & Sideload
+# Delta Executor iOS İndir — Direct Install ve Sideload
 
-Delta Executor is available for **iPhone** and **iPad**. iOS installs differ from Android because Apple does not allow casual APK-style installs. You typically use **Direct Install** or a sideloading tool.
+Delta Executor **iPhone** ve **iPad** için mevcuttur. iOS kurulumları Android’den farklıdır; Apple gündelik APK tarzı kuruluma izin vermez. Genelde **Direct Install** veya bir sideload aracı kullanırsınız.
 
-This page covers **install options only**. Screenshot walkthroughs are separate posts:
+Bu sayfa **yalnızca kurulum seçeneklerini** kapsar. Ekran görüntülü adımlar ayrı yazılardır:
 
-- [iOS performance step-by-step](/delta-executor-ios-performance)
-- [Key step-by-step](/delta-executor-key-steps)
-- [Direct Install deep guide](/delta-executor-direct-install)
+- [iOS performans adım adım](/delta-executor-ios-performance)
+- [Anahtar adım adım](/delta-executor-key-steps)
+- [Direct Install ayrıntılı rehber](/delta-executor-direct-install)
 
-## What Changed on iOS
+## iOS’ta Ne Değişti?
 
-Earlier, many players downloaded an IPA and used sideloading apps such as **ESign**, **KSign**, or similar stores. That still works when a certificate dies, but **Direct Install** is usually quicker: install from the hub, trust the enterprise profile, restart, then open Delta.
+Eskiden birçok oyuncu IPA indirip **ESign**, **KSign** veya benzeri mağazalarla sideload yapıyordu. Sertifika düştüğünde hâlâ işe yarar; ancak **Direct Install** genelde daha hızlıdır: hub’dan kur, kurumsal profile güven, yeniden başlat, Delta’yı aç.
 
-## Method 1 — Direct Install (Recommended)
+## Yöntem 1 — Direct Install (Önerilen)
 
-1. Open the [download hub](/#download) on **deltaexecutor.com.tr**.
-2. Tap **Direct Install** (or follow the dedicated [Direct Install guide](/delta-executor-direct-install)).
-3. Confirm the install prompt on your device.
-4. Go to **Settings → General → VPN & Device Management**.
-5. Tap the enterprise / developer profile and **Trust** it.
-6. Restart when asked, then launch Delta and complete the [key steps](/delta-executor-key-steps) if prompted.
+1. **deltaexecutortr.com.tr** üzerinde [indirme merkezini](/#download) açın.
+2. **Direct Install**’a dokunun (veya özel [Direct Install rehberini](/delta-executor-direct-install) izleyin).
+3. Cihazdaki kurulum istemini onaylayın.
+4. **Ayarlar → Genel → VPN ve Cihaz Yönetimi** bölümüne gidin.
+5. Kurumsal / geliştirici profile dokunun ve **Trust** (Güven) verin.
+6. İstenirse yeniden başlatın, Delta’yı açın ve istenirse [anahtar adımlarını](/delta-executor-key-steps) tamamlayın.
 
-Free Direct Install profiles can revoke. When that happens, reinstall from this site or consider [Premium](/delta-executor-premium).
+Ücretsiz Direct Install profilleri iptal edilebilir. O olduğunda bu siteden yeniden kurun veya [Premium](/delta-executor-premium) değerlendirin.
 
-## Method 2 — IPA + Sideload
+## Yöntem 2 — IPA + Sideload
 
-1. Download the **iOS** IPA from the [hub](/#download).
-2. Import the IPA into your preferred sideloading tool.
-3. Sign and install to the device.
-4. Trust the profile if iOS asks, then open Delta.
+1. [Hub](/#download) üzerinden **iOS** IPA’sını indirin.
+2. IPA’yı tercih ettiğiniz sideload aracına aktarın.
+3. İmzalayın ve cihaza kurun.
+4. iOS isterse profile güvenin, ardından Delta’yı açın.
 
-## Using Delta After Install
+## Kurulum Sonrası Delta Kullanımı
 
-1. Open Roblox and join a supported experience.
-2. Open Delta and attach / inject when the UI asks.
-3. Paste a script and execute.
-4. For smoother performance, follow the [iOS performance screenshots](/delta-executor-ios-performance).
-5. If a key is required, follow [key step-by-step](/delta-executor-key-steps).
+1. Roblox’u açın ve desteklenen bir deneyime girin.
+2. Delta’yı açın; arayüz istediğinde bağlanın / enjekte edin.
+3. Bir script yapıştırıp çalıştırın.
+4. Daha akıcı performans için [iOS performans ekran görüntülerini](/delta-executor-ios-performance) izleyin.
+5. Anahtar gerekirse [anahtar adım adım](/delta-executor-key-steps) rehberine bakın.
 
-## Troubleshooting
+## Sorun Giderme
 
-- **Untrusted Enterprise Developer** — trust the profile under VPN & Device Management.
-- **App disappears after a few days** — free signing often expires; reinstall via Direct Install.
-- **Laggy inject** — use the [performance step post](/delta-executor-ios-performance).
-- **Wrong country build** — do not use [VNG](/delta-executor-vng) unless you play Roblox VN.
+- **Untrusted Enterprise Developer** — VPN ve Cihaz Yönetimi altında profile güvenin.
+- **Uygulama birkaç gün sonra kayboluyor** — ücretsiz imzalama sık sık sona erer; Direct Install ile yeniden kurun.
+- **Enjekte takılıyor** — [performans adımları yazısını](/delta-executor-ios-performance) kullanın.
+- **Yanlış ülke sürümü** — Roblox VN oynamıyorsanız [VNG](/delta-executor-vng) kullanmayın.
 
-## Related Guides
+## İlgili Rehberler
 
 - [Direct Install](/delta-executor-direct-install)
-- [iOS performance steps](/delta-executor-ios-performance)
-- [Key steps](/delta-executor-key-steps)
-- [FAQ](/delta-executor-faq)
+- [iOS performans adımları](/delta-executor-ios-performance)
+- [Anahtar adımları](/delta-executor-key-steps)
+- [SSS](/delta-executor-faq)

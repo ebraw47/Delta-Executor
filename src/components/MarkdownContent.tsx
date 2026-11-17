@@ -55,8 +55,11 @@ const components: Components = {
   a: ({ href, children }) => {
     const raw = href || "#";
     let url = raw;
-    if (raw.startsWith("https://deltaexecutor.com.tr") || raw.startsWith("http://deltaexecutor.com.tr")) {
-      url = raw.replace(/^https?:\/\/deltaexecutor\.com\.tr/, "") || "/";
+    if (
+      /^https?:\/\/deltaexecutortr\.com\.tr/i.test(raw) ||
+      /^https?:\/\/deltaexecutor\.com\.tr/i.test(raw)
+    ) {
+      url = raw.replace(/^https?:\/\/deltaexecutortr?\.com\.tr/i, "") || "/";
     } else if (/^https?:\/\//i.test(raw)) {
       return <span className="prose-strong">{children}</span>;
     }

@@ -18,8 +18,8 @@ export function articleMetadata(article: ArticleMeta): Metadata {
     alternates: {
       canonical: url,
       languages: {
-        "en-US": url,
-        en: url,
+        tr: url,
+        "tr-TR": url,
         "x-default": url,
       },
     },
@@ -28,7 +28,7 @@ export function articleMetadata(article: ArticleMeta): Metadata {
       description: article.description,
       url,
       siteName: BRAND.name,
-      locale: "en_US",
+      locale: "tr_TR",
       type: "article",
       publishedTime: article.date,
       images: [{ url: `${SITE_ORIGIN}${article.image}`, width: 1280, height: 720, alt: article.title }],
@@ -62,7 +62,7 @@ export default function ArticlePage({
     "@type": "Article",
     headline: article.title,
     description: article.description,
-    inLanguage: "en-US",
+    inLanguage: "tr",
     image: [`${SITE_ORIGIN}${article.image}`],
     datePublished: article.date,
     dateModified: article.date,
@@ -79,8 +79,8 @@ export default function ArticlePage({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_ORIGIN },
-      { "@type": "ListItem", position: 2, name: "Guides", item: `${SITE_ORIGIN}/category/blog` },
+      { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: SITE_ORIGIN },
+      { "@type": "ListItem", position: 2, name: "Rehberler", item: `${SITE_ORIGIN}/category/blog` },
       { "@type": "ListItem", position: 3, name: article.title, item: url },
     ],
   };
@@ -94,17 +94,17 @@ export default function ArticlePage({
         <header className="page-banner relative overflow-hidden border-b border-white/10">
           <PageBannerPattern opacity={0.15} />
           <div className="relative mx-auto max-w-3xl px-4 py-10 md:px-6 md:py-14">
-            <nav className="mb-5 text-sm text-ink-mute" aria-label="Breadcrumb">
+            <nav className="mb-5 text-sm text-ink-mute" aria-label="Gezinti">
               <ol className="flex flex-wrap items-center gap-1.5">
                 <li>
                   <Link href="/" className="hover:text-brand">
-                    Home
+                    Ana Sayfa
                   </Link>
                 </li>
                 <li aria-hidden>/</li>
                 <li>
                   <Link href="/category/blog" className="hover:text-brand">
-                    Guides
+                    Rehberler
                   </Link>
                 </li>
                 <li aria-hidden>/</li>
@@ -112,14 +112,14 @@ export default function ArticlePage({
               </ol>
             </nav>
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-brand">
-              {article.label} guide
+              {article.label} rehberi
             </p>
             <h1 className="font-display text-3xl font-bold tracking-tight text-white md:text-4xl md:leading-tight">
               {article.title}
             </h1>
             <p className="mt-5 text-sm text-ink-mute">
               <time dateTime={article.date}>
-                {new Date(article.date).toLocaleDateString("en-US", {
+                {new Date(article.date).toLocaleDateString("tr-TR", {
                   year: "numeric",
                   month: "long",
                   day: "numeric",
@@ -136,7 +136,7 @@ export default function ArticlePage({
             <div className="mb-10 flex flex-wrap items-center gap-3">
               <DownloadButton platformId={downloadPlatform.id} />
               <p className="text-sm text-ink-mute">
-                Direct download from {BRAND.domain} — no external links.
+                Doğrudan {BRAND.domain} üzerinden indirin — dış bağlantı yok.
               </p>
             </div>
           ) : null}
@@ -146,8 +146,8 @@ export default function ArticlePage({
         {related.length > 0 && (
           <aside className="section-glass border-t border-white/10 py-12 md:py-14">
             <div className="mx-auto max-w-6xl px-4 md:px-6">
-              <p className="section-kicker">Keep reading</p>
-              <h2 className="font-display text-2xl font-bold text-white">Related guides</h2>
+              <p className="section-kicker">Okumaya devam</p>
+              <h2 className="font-display text-2xl font-bold text-white">İlgili rehberler</h2>
               <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {related.map((a) => (
                   <Link

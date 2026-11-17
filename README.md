@@ -1,6 +1,6 @@
 # Delta Executor
 
-Next.js site for **[deltaexecutor.com.tr](https://deltaexecutor.com.tr)** — Delta Executor download guides for Android, iOS, VNG, Windows, and Mac, plus key-system help.
+Next.js site for **[deltaexecutortr.com.tr](https://deltaexecutortr.com.tr)** — Delta Executor download guides for Android, iOS, VNG, Windows, and Mac, plus key-system help.
 
 ## Features
 

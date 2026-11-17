@@ -1,5 +1,7 @@
-# Contact Us
+# İletişim
 
-Need help with a Delta Executor guide on **deltaexecutor.com.tr**? Send a message below or email **contact@deltaexecutor.com.tr**.
+Delta Executor indirme rehberleri, kurulum sorunları veya bu siteyle ilgili düzeltmeler için bize yazın.
 
-We can help with broken links, outdated platform steps, or content corrections — we cannot provide unofficial key generators or cracked Premium.
+**E-posta:** contact@deltaexecutortr.com.tr
+
+Aşağıdaki formu da kullanabilirsiniz. Spam veya “ömür boyu anahtar” teklifleri yanıtlanmaz — anahtarları yalnızca uygulama içi Receive Key veya resmi Premium kanallarından alın.

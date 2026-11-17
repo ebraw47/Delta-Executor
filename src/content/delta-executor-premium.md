@@ -1,44 +1,44 @@
-# Delta Executor Premium — What It Is (iOS & Key Bypass)
+# Delta Executor Premium — Nedir? (iOS ve Anahtar Atlama)
 
-**Delta Premium** is the paid tier associated with Delta Executor. Players look it up for two main reasons: skipping the daily [key system](/delta-executor-key), and getting a more stable **iOS** install when free Direct Install certificates revoke.
+**Delta Premium**, Delta Executor ile ilişkili ücretli seviyedir. Oyuncular iki ana nedenle arar: günlük [anahtar sistemini](/delta-executor-key) atlamak ve ücretsiz Direct Install sertifikaları iptal olduğunda daha kararlı **iOS** kurulumu.
 
-This page explains Premium in plain language. We do **not** send you to outside shops, Discord servers, or coupon scams — stay on **deltaexecutor.com.tr** for guides and hub downloads.
+Bu sayfa Premium’u sade bir dille açıklar. Sizi dış mağazalara, Discord sunucularına veya kupon dolandırıcılığına yönlendirmiyoruz — rehberler ve hub indirmeleri için **deltaexecutortr.com.tr** üzerinde kalın.
 
-## What Premium Usually Unlocks
+## Premium Genelde Ne Açar?
 
-- No (or reduced) daily key checkpoints on supported builds
-- On iOS, a more reliable install path compared with free Direct Install revokes
-- Access tied to a subscription window (commonly monthly or annual)
+- Desteklenen sürümlerde günlük anahtar kontrol noktaları yok (veya az)
+- iOS’ta ücretsiz Direct Install iptallerine kıyasla daha güvenilir kurulum yolu
+- Abonelik süresine bağlı erişim (genelde aylık veya yıllık)
 
-Exact plan names and prices change over time. Treat in-app or Delta-team purchase screens as the source of truth — ignore random “cheap Premium” listings.
+Plan adları ve fiyatlar zamanla değişir. Doğru kaynak uygulama içi veya Delta ekibi satın alma ekranlarıdır — rastgele “ucuz Premium” listelerini yok sayın.
 
-## Monthly vs Annual
+## Aylık vs Yıllık
 
-Players are often offered:
+Oyunculara sık sunulanlar:
 
-- **Monthly** — renews each month if you want a short commitment
-- **Annual** — paid once per year so you are not renewing every month
+- **Monthly (Aylık)** — kısa taahhüt istiyorsanız her ay yenilenir
+- **Annual (Yıllık)** — yılda bir ödeme; her ay yenileme yok
 
-If a seller claims a “lifetime key” for a few dollars via chat, assume it is a scam.
+Bir satıcı sohbette birkaç dolara “ömür boyu anahtar” iddia ediyorsa dolandırıcılık sayın.
 
-## Coupon Codes
+## Kupon Kodları
 
-Coupon codes, when they exist, are issued by the Delta team through their own channels. We do not publish third-party coupon farms here. If a code fails, do not “verify” it on an unrelated website.
+Kupon kodları varsa Delta ekibi kendi kanallarından verir. Burada üçüncü taraf kupon siteleri yayınlamıyoruz. Kod başarısız olursa alakasız bir sitede “doğrulamayın”.
 
-## Is Premium “Safe”?
+## Premium “Güvenli” mi?
 
-Paying a stranger on social media is not safe. Buying only through the purchase flow the Delta app / team presents is the usual advice in the community. This site documents how Premium differs from free — it is not a payment processor.
+Sosyal medyada yabancıya ödeme güvenli değildir. Toplulukta genel öneri yalnızca Delta uygulaması / ekibinin sunduğu satın alma akışıdır. Bu site Premium’un ücretsizden farkını anlatır — ödeme işlemcisi değildir.
 
-## Free Alternative
+## Ücretsiz Alternatif
 
-You can keep using free Delta:
+Ücretsiz Delta kullanmaya devam edebilirsiniz:
 
-1. Download from the [hub](/#download)
-2. Install with [Android](/delta-executor-android), [Direct Install](/delta-executor-direct-install), [Windows](/delta-executor-windows), or [Mac](/delta-executor-mac)
-3. Renew the [key](/delta-executor-key) about every 24 hours
+1. [Hub’dan](/#download) indirin
+2. [Android](/delta-executor-android), [Direct Install](/delta-executor-direct-install), [Windows](/delta-executor-windows) veya [Mac](/delta-executor-mac) ile kurun
+3. [Anahtarı](/delta-executor-key) yaklaşık her 24 saatte bir yenileyin
 
-## Related Guides
+## İlgili Rehberler
 
-- [Key system](/delta-executor-key)
-- [iOS overview](/delta-executor-ios)
-- [FAQ](/delta-executor-faq)
+- [Anahtar sistemi](/delta-executor-key)
+- [iOS özeti](/delta-executor-ios)
+- [SSS](/delta-executor-faq)

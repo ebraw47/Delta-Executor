@@ -1,45 +1,45 @@
-# Fix: Delta Executor Isn’t Compatible With My Phone
+# Çözüm: Delta Executor Telefonumla Uyumlu Değil
 
-Seeing **“App isn’t compatible with your phone”** or `INSTALL_FAILED_UPDATE_INCOMPATIBLE` usually means the APK architecture does not match your device — not that Delta “banned” your phone.
+**“Uygulama telefonunuzla uyumlu değil”** veya `INSTALL_FAILED_UPDATE_INCOMPATIBLE` görmek genelde APK mimarisinin cihazınızla uyuşmadığı anlamına gelir — Delta’nın telefonunuzu “yasakladığı” değil.
 
-This guide is for **Android**. For iOS trust / revoke issues, use [Direct Install](/delta-executor-direct-install).
+Bu rehber **Android** içindir. iOS güven / iptal sorunları için [Direct Install](/delta-executor-direct-install) kullanın.
 
-## Why It Happens
+## Neden Olur?
 
-Delta Android builds are commonly published for:
+Delta Android sürümleri yaygın olarak şunlar için yayınlanır:
 
-- **arm64 (64-bit)** — most modern phones
-- **arm32 (32-bit)** — older or some budget devices
+- **arm64 (64 bit)** — çoğu modern telefon
+- **arm32 (32 bit)** — eski veya bazı bütçe cihazlar
 
-Installing a 64-bit APK on a 32-bit-only device (or the reverse, depending on the package) triggers the incompatible error.
+64 bit APK’yı yalnızca 32 bit cihaza (veya pakete bağlı olarak tersi) kurmak uyumsuzluk hatasını tetikler.
 
-## How to Check 32-bit vs 64-bit
+## 32 bit vs 64 bit Nasıl Kontrol Edilir?
 
-1. Open your phone’s settings and look for **About phone → CPU / ABI** if shown.
-2. Or install a hardware info app from the Play Store (many players use CPU info utilities), open the **CPU** section, and note whether the ABI lists **arm64-v8a** (64-bit) or **armeabi-v7a** (32-bit).
-3. Match that result to the Android package you download from our [hub](/#download).
+1. Telefon ayarlarını açın; gösteriliyorsa **Telefon hakkında → CPU / ABI** bölümüne bakın.
+2. Veya Play Store’dan bir donanım bilgisi uygulaması kurun (birçok oyuncu CPU bilgi araçları kullanır), **CPU** bölümünü açın ve ABI listede **arm64-v8a** (64 bit) mi **armeabi-v7a** (32 bit) mi not edin.
+3. Sonucu [hub](/#download) üzerinden indirdiğiniz Android paketiyle eşleştirin.
 
-If the hub currently hosts a single Android APK, it is typically the **arm64** build used by most US / global players. Older 32-bit phones may need a matching arm32 package when available — check the Android guide notes after each update.
+Hub şu an tek Android APK barındırıyorsa bu genelde çoğu global oyuncunun kullandığı **arm64** sürümüdür. Eski 32 bit telefonlar mümkün olduğunda arm32 paketi gerektirebilir — her güncellemeden sonra Android rehber notlarına bakın.
 
-## Fix Steps
+## Düzeltme Adımları
 
-1. Uninstall any half-installed Delta package.
-2. Delete the old APK from Downloads.
-3. Confirm your CPU architecture (steps above).
-4. Download **Android** again from the [homepage hub](/#download).
-5. Install, then open Delta and finish the [key](/delta-executor-key) flow.
+1. Yarım kurulmuş Delta paketini kaldırın.
+2. İndirilenler’deki eski APK’yı silin.
+3. CPU mimarinizi doğrulayın (yukarıdaki adımlar).
+4. [Ana sayfa hub’ından](/#download) **Android**’i yeniden indirin.
+5. Kurun, Delta’yı açın ve [anahtar](/delta-executor-key) akışını bitirin.
 
-## Other Errors People Confuse With “Not Compatible”
+## “Uyumlu Değil” ile Karıştırılan Diğer Hatalar
 
-| Message | Likely cause | Where to go |
+| Mesaj | Olası neden | Nereye bakılır |
 | --- | --- | --- |
-| Install blocked | Unknown sources off | [Android guide](/delta-executor-android) |
-| App not installed | Corrupt download / low storage | Re-download from hub |
-| Roblox upgrade error | Outdated executor after Roblox patch | Re-download latest build |
-| Untrusted developer (iOS) | Profile not trusted | [Direct Install](/delta-executor-direct-install) |
+| Kurulum engellendi | Bilinmeyen kaynaklar kapalı | [Android rehberi](/delta-executor-android) |
+| Uygulama yüklenmedi | Bozuk indirme / düşük depolama | Hub’dan yeniden indirin |
+| Roblox güncelleme hatası | Roblox yamasından sonra eski executor | En güncel sürümü yeniden indirin |
+| Güvenilmeyen geliştirici (iOS) | Profile güvenilmedi | [Direct Install](/delta-executor-direct-install) |
 
-## Related Guides
+## İlgili Rehberler
 
-- [Android install](/delta-executor-android)
+- [Android kurulum](/delta-executor-android)
 - [VNG](/delta-executor-vng)
-- [FAQ](/delta-executor-faq)
+- [SSS](/delta-executor-faq)

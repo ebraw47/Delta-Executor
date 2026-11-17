@@ -142,6 +142,75 @@ const en: Dictionary = {
       a: "Sideloading unofficial apps can expose you to malware. Download only from this domain, avoid fake mirrors, and never enter your Roblox password on key pages.",
     },
   ],
+  features: [
+    {
+      title: "All Major Platforms",
+      description:
+        "Android APK, iOS Direct Install, VNG for Vietnam, Windows via emulator, and native Mac DMG support.",
+    },
+    {
+      title: "Built for Script Players",
+      description:
+        "Built for Roblox enthusiasts who want a responsive executor UI and steady script compatibility.",
+    },
+    {
+      title: "Clear Key System Help",
+      description:
+        "Step-by-step Receive Key flow so free users can unlock Delta for ~24 hours without scams.",
+    },
+    {
+      title: "Fake Site Warnings",
+      description:
+        "We call out mirror spam so you stay on trusted guides instead of phishing download pages.",
+    },
+    {
+      title: "VNG vs Global Clarity",
+      description:
+        "Separate guidance for Roblox Vietnam (VNG) vs global Roblox so you pick the correct build.",
+    },
+    {
+      title: "Update After Patches",
+      description:
+        "When Roblox upgrades break old builds, return here for refreshed platform install steps.",
+    },
+  ],
+  steps: [
+    {
+      title: "Choose Your Platform",
+      description: "Tap Android, iOS, VNG, Windows, Mac, Key, or Direct Install from the hub above.",
+    },
+    {
+      title: "Install & Trust",
+      description: "Follow the guide: APK permissions, iOS profile trust, DMG install, or emulator setup.",
+    },
+    {
+      title: "Get Key & Execute",
+      description: "Complete the daily key checkpoints, paste the key, then run your scripts.",
+    },
+  ],
+  galleries: {
+    ios: {
+      kicker: "iOS setup",
+      title: "Delta Executor iOS — step by step",
+      description:
+        "Follow these screenshots after install: Settings → Background App Refresh → Battery → turn Low Power Mode off.",
+      linkLabel: "Full iOS performance guide →",
+    },
+    windows: {
+      kicker: "Windows setup",
+      title: "Delta Executor Windows — step by step",
+      description:
+        "Find Windows Security, then open Firewall & network protection before running the PC installer so Defender does not block the file.",
+      linkLabel: "Full Windows security guide →",
+    },
+    key: {
+      kicker: "Key system",
+      title: "Delta Executor key — step by step",
+      description:
+        "Continue on the key page, finish the checkpoints, copy your free key, paste it into Delta, then open Roblox and Play.",
+      linkLabel: "Full key steps guide →",
+    },
+  },
 };
 
 const tr: Dictionary = {
@@ -232,7 +301,7 @@ const tr: Dictionary = {
   },
   footer: {
     blurb:
-      "Android, iOS, VNG, Windows ve Mac için Delta Executor indirme rehberleri — plus Direkt Kurulum ve anahtar yardımı.",
+      "Android, iOS, VNG, Windows ve Mac için Delta Executor indirme rehberleri — ayrıca Direkt Kurulum ve anahtar yardımı.",
     quickLinks: "Hızlı Bağlantılar",
     platformGuides: "Platform Rehberleri",
     rights: "Tüm hakları saklıdır.",
@@ -240,15 +309,120 @@ const tr: Dictionary = {
   language: "Dil",
   share: "Paylaş",
   faqs: [
-    { q: "Delta Executor nedir?", a: "Android, iOS, VNG, Windows ve Mac için popüler bir Roblox script executor’ıdır." },
-    { q: "Delta Executor’ı nereden indirmeliyim?", a: "Doğrudan bu siteden indirin. Platform düğmeleri üçüncü taraf bağlantı olmadan dosyayı indirir." },
-    { q: "Android sürümü ücretsiz mi?", a: "Evet. Kurulumdan sonra günlük anahtar akışını tamamlarsınız; Premium bunu kaldırır." },
-    { q: "iOS Direkt Kurulum nasıl çalışır?", a: "Sideload uygulamaları olmadan kurulum sağlar. Sonra profili güvenilir yapıp yeniden başlatın." },
-    { q: "PC’de kullanılabilir mi?", a: "Evet. Emülatörde Android APK veya mevcut Windows yapısı ile." },
-    { q: "Mac’te çalışır mı?", a: "Evet. DMG’yi indirip Applications’a sürükleyin, sonra anahtarı alın." },
-    { q: "Delta Executor VNG nedir?", a: "Vietnam Roblox VN için özel sürümdür. Küresel Roblox için standart sürümü kullanın." },
-    { q: "Anahtar ne kadar sürer?", a: "Ücretsiz anahtarlar genelde 24 saat sonra dolar." },
+    {
+      q: "Delta Executor nedir?",
+      a: "Delta Executor; Android ve iOS odaklı, Roblox oyunlarında özel Lua script’leri çalıştıran popüler bir üçüncü taraf araçtır. Script’leri Roblox uygulamasına enjekte eder — bir mod menüsüne benzer. Windows, Mac ve VNG sürümleri de vardır.",
+    },
+    {
+      q: "Delta Executor nasıl çalışır?",
+      a: "Roblox sürecine Lua enjekte eder. APK/IPA kurun (veya PC’de emülatörle Android kullanın), anahtar akışını tamamlayın, bir oyuna girin, script’i yapıştırın veya yükleyin ve menüden çalıştırın.",
+    },
+    {
+      q: "Delta Executor’ı nereden indirmeliyim?",
+      a: "Doğrudan bu siteden indirin. Platform düğmeleri, burada barındırılan kurulum dosyasını üçüncü taraf bağlantı olmadan indirir.",
+    },
+    {
+      q: "Android sürümü ücretsiz mi?",
+      a: "Evet. Android sürümü ücretsizdir. Kurulumdan sonra günlük anahtar akışını tamamlarsınız; Premium bunu kaldırır.",
+    },
+    {
+      q: "iOS Direkt Kurulum nasıl çalışır?",
+      a: "Direkt Kurulum, sideload uygulamaları olmadan iPhone veya iPad’e kurulum sağlar. Kurulumdan sonra kurumsal profili güvenilir yapıp cihazı yeniden başlatın.",
+    },
+    {
+      q: "PC’de kullanılabilir mi?",
+      a: "Evet. Birçok oyuncu Android APK’yı emülatörde çalıştırır veya Windows sürümünü kullanır.",
+    },
+    {
+      q: "Mac’te çalışır mı?",
+      a: "Evet. Mac DMG’yi indirin, Applications’a sürükleyin, kurun ve anahtar sistemini tamamlayın.",
+    },
+    {
+      q: "Delta Executor VNG nedir?",
+      a: "VNG, Roblox Vietnam (VN) için özel Delta sürümüdür. Küresel Roblox oyuncuları standart sürümleri kullanmalıdır.",
+    },
+    {
+      q: "Anahtar ne kadar sürer?",
+      a: "Ücretsiz anahtarlar genelde 24 saat sonra dolar. Delta’yı açın, Receive Key’e dokunun, kontrol noktalarını bitirin ve anahtarı yapıştırın.",
+    },
+    {
+      q: "Delta kullanımı Roblox kurallarına aykırı mı?",
+      a: "Evet. Executor’lar Roblox Kullanım Şartları’nı ihlal eder ve kalıcı ban’a yol açabilir. Roblox istemci güncellemelerinden sonra tespiti de sıkça günceller.",
+    },
+    {
+      q: "Delta’yı kurmak güvenli mi?",
+      a: "Resmi olmayan uygulamaları sideload etmek zararlı yazılım riski taşır. Yalnızca bu alandan indirin, sahte aynalardan kaçının ve anahtar sayfalarında Roblox şifrenizi asla yazmayın.",
+    },
   ],
+  features: [
+    {
+      title: "Tüm Ana Platformlar",
+      description:
+        "Android APK, iOS Direkt Kurulum, Vietnam için VNG, emülatörle Windows ve yerel Mac DMG desteği.",
+    },
+    {
+      title: "Script Oyuncuları İçin",
+      description:
+        "Akıcı executor arayüzü ve istikrarlı script uyumluluğu isteyen Roblox oyuncuları için tasarlandı.",
+    },
+    {
+      title: "Net Anahtar Sistemi Yardımı",
+      description:
+        "Ücretsiz kullanıcıların ~24 saatlik kilidi dolandırıcılık olmadan açması için adım adım Receive Key akışı.",
+    },
+    {
+      title: "Sahte Site Uyarıları",
+      description:
+        "Ayna spam’ini işaretleriz; oltalama indirme sayfaları yerine güvenilir rehberlerde kalırsınız.",
+    },
+    {
+      title: "VNG ve Küresel Netlik",
+      description:
+        "Roblox Vietnam (VNG) ile küresel Roblox için ayrı rehberler — doğru sürümü seçersiniz.",
+    },
+    {
+      title: "Yamadan Sonra Güncelleme",
+      description:
+        "Roblox güncellemeleri eski sürümleri bozduğunda, yenilenmiş kurulum adımları için buraya dönün.",
+    },
+  ],
+  steps: [
+    {
+      title: "Platformunuzu Seçin",
+      description: "Yukarıdaki merkezden Android, iOS, VNG, Windows, Mac, Anahtar veya Direkt Kurulum’a dokunun.",
+    },
+    {
+      title: "Kurun ve Güvenin",
+      description: "Rehberi izleyin: APK izinleri, iOS profil güveni, DMG kurulumu veya emülatör ayarı.",
+    },
+    {
+      title: "Anahtar Alın ve Çalıştırın",
+      description: "Günlük anahtar kontrol noktalarını bitirin, anahtarı yapıştırın, sonra script’lerinizi çalıştırın.",
+    },
+  ],
+  galleries: {
+    ios: {
+      kicker: "iOS kurulumu",
+      title: "Delta Executor iOS — adım adım",
+      description:
+        "Kurulumdan sonra bu ekran görüntülerini izleyin: Ayarlar → Arka Planda Uygulama Yenileme → Pil → Düşük Güç Modunu kapatın.",
+      linkLabel: "Tam iOS performans rehberi →",
+    },
+    windows: {
+      kicker: "Windows kurulumu",
+      title: "Delta Executor Windows — adım adım",
+      description:
+        "PC kurulumunu çalıştırmadan önce Windows Güvenliği’ni bulun, ardından Güvenlik Duvarı ve ağ korumasını açın ki Defender dosyayı engellemesin.",
+      linkLabel: "Tam Windows güvenlik rehberi →",
+    },
+    key: {
+      kicker: "Anahtar sistemi",
+      title: "Delta Executor anahtarı — adım adım",
+      description:
+        "Anahtar sayfasında devam edin, kontrol noktalarını bitirin, ücretsiz anahtarı kopyalayın, Delta’ya yapıştırın, sonra Roblox’u açıp Play’e basın.",
+      linkLabel: "Tam anahtar adımları rehberi →",
+    },
+  },
 };
 
 const es: Dictionary = {

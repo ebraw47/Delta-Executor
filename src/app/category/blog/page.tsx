@@ -4,9 +4,9 @@ import { PageBannerPattern } from "@/components/BoxPattern";
 import { ARTICLES, BRAND, ROUTES, SITE_ORIGIN } from "@/lib/siteConfig";
 
 const PAGE_URL = `${SITE_ORIGIN}${ROUTES.blog}`;
-const PAGE_TITLE = "Delta Executor Guides — Android, iOS, Windows, Mac, Key, VNG";
+const PAGE_TITLE = "Delta Executor Rehberleri — Android, iOS, Windows, Mac, Anahtar, VNG";
 const PAGE_DESCRIPTION =
-  "SERP-focused Delta Executor guides: Android APK, iOS Direct Install, Windows PC, Mac DMG, key system, and VNG Vietnam downloads.";
+  "Delta Executor rehberleri: Android APK, iOS Direkt Kurulum, Windows PC, Mac DMG, anahtar sistemi ve VNG Vietnam indirmeleri.";
 
 export const metadata: Metadata = {
   title: { absolute: PAGE_TITLE },
@@ -28,10 +28,10 @@ export default function BlogCategoryPage() {
         <PageBannerPattern opacity={0.15} />
         <div className="relative mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-brand">
-            Platform guides
+            Platform rehberleri
           </p>
           <h1 className="font-display text-3xl font-bold tracking-tight text-white md:text-4xl">
-            Delta Executor Guides
+            Delta Executor Rehberleri
           </h1>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink-soft md:text-lg">
             {PAGE_DESCRIPTION}
@@ -54,7 +54,7 @@ export default function BlogCategoryPage() {
                   className="mt-3 block text-xs font-semibold uppercase tracking-wide text-brand"
                   dateTime={a.date}
                 >
-                  {new Date(a.date).toLocaleDateString("en-US", {
+                  {new Date(a.date).toLocaleDateString("tr-TR", {
                     year: "numeric",
                     month: "short",
                     day: "numeric",
@@ -67,7 +67,7 @@ export default function BlogCategoryPage() {
                   {a.description}
                 </p>
                 <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand">
-                  Read More
+                  Devamını oku
                   <span aria-hidden className="transition group-hover:translate-x-0.5">
                     →
                   </span>

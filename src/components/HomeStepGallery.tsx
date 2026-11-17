@@ -1,22 +1,27 @@
+"use client";
+
 import StepGallery from "@/components/StepGallery";
+import { useLanguage } from "@/lib/i18n/LanguageProvider";
 import {
   IOS_PERFORMANCE_STEPS,
   KEY_SYSTEM_STEPS,
   WINDOWS_SECURITY_STEPS,
 } from "@/lib/siteConfig";
 
-/** Homepage step galleries — iOS phone, Windows desktop, and key flow. */
+/** Homepage step galleries — copy follows selected language. */
 export default function HomeStepGallery() {
+  const { t } = useLanguage();
+
   return (
     <>
       <StepGallery
         id="ios-steps"
-        kicker="iOS setup"
-        title="Delta Executor iOS — step by step"
-        description="Follow these screenshots after install: Settings → Background App Refresh → Battery → turn Low Power Mode off."
+        kicker={t.galleries.ios.kicker}
+        title={t.galleries.ios.title}
+        description={t.galleries.ios.description}
         steps={IOS_PERFORMANCE_STEPS}
         href="/delta-executor-ios-performance"
-        linkLabel="Full iOS performance guide →"
+        linkLabel={t.galleries.ios.linkLabel}
         maxWidthClass="max-w-[280px]"
         columnsClass="sm:grid-cols-2 lg:grid-cols-3"
         priorityCount={1}
@@ -24,24 +29,24 @@ export default function HomeStepGallery() {
 
       <StepGallery
         id="windows-steps"
-        kicker="Windows setup"
-        title="Delta Executor Windows — step by step"
-        description="Find Windows Security, then open Firewall & network protection before running the PC installer so Defender does not block the file."
+        kicker={t.galleries.windows.kicker}
+        title={t.galleries.windows.title}
+        description={t.galleries.windows.description}
         steps={WINDOWS_SECURITY_STEPS}
         href="/delta-executor-windows-security"
-        linkLabel="Full Windows security guide →"
+        linkLabel={t.galleries.windows.linkLabel}
         maxWidthClass="max-w-full"
         columnsClass="sm:grid-cols-2"
       />
 
       <StepGallery
         id="key-steps"
-        kicker="Key system"
-        title="Delta Executor key — step by step"
-        description="Continue on the key page, finish the checkpoints, copy your free key, paste it into Delta, then open Roblox and Play."
+        kicker={t.galleries.key.kicker}
+        title={t.galleries.key.title}
+        description={t.galleries.key.description}
         steps={KEY_SYSTEM_STEPS}
         href="/delta-executor-key-steps"
-        linkLabel="Full key steps guide →"
+        linkLabel={t.galleries.key.linkLabel}
         maxWidthClass="max-w-[300px]"
         columnsClass="sm:grid-cols-2 lg:grid-cols-3"
       />

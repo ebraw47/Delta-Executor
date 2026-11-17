@@ -1,42 +1,42 @@
-# Delta Executor for Mac — DMG Install Guide
+# Delta Executor Mac — DMG Kurulum Rehberi
 
-Delta Executor ships a **Mac** pathway so players on macOS can install a **DMG** instead of relying only on Windows-style emulation. The flow is similar in spirit to iOS Direct Install: download, open, place into Applications, confirm Gatekeeper, then install.
+Delta Executor, macOS’taki oyuncuların yalnızca Windows tarzı emülasyona bağlı kalmadan **DMG** kurması için bir **Mac** yolu sunar. Akış iOS Direct Install’e benzer: indir, aç, Uygulamalar’a sürükle, Gatekeeper’ı onayla, kur.
 
-Downloads are hosted on **deltaexecutor.com.tr**. For Windows PCs, use the [Windows guide](/delta-executor-windows) instead.
+İndirmeler **deltaexecutortr.com.tr** üzerinde barınır. Windows PC için bunun yerine [Windows rehberini](/delta-executor-windows) kullanın.
 
-## Requirements
+## Gereksinimler
 
-- A Mac (Intel or Apple Silicon)
-- Enough disk space for the DMG and installed app
-- Permission to open apps downloaded from the internet (Gatekeeper)
-- Roblox for Mac (or your usual Roblox workflow on that machine)
+- Bir Mac (Intel veya Apple Silicon)
+- DMG ve kurulu uygulama için yeterli disk alanı
+- İnternetten indirilen uygulamaları açma izni (Gatekeeper)
+- Mac için Roblox (veya o makinedeki alışık Roblox akışınız)
 
-## Install Delta on macOS
+## macOS’ta Delta Kurulumu
 
-1. Open the [download hub](/#download) and tap **Mac**.
-2. Wait for the **Delta .dmg** file to finish downloading.
-3. Open the DMG from Downloads.
-4. Drag the Delta installer into the **Applications** folder.
-5. Open **Applications**, then launch the Delta installer.
-6. If macOS warns that the app was downloaded from the internet, choose **Open**.
-7. In the installer window, click **Install Delta** (or the equivalent confirm button).
-8. When installation finishes, launch Delta and complete the [key system](/delta-executor-key) if asked.
+1. [İndirme hub’ını](/#download) açın ve **Mac**’e dokunun.
+2. **Delta .dmg** dosyasının inmesini bekleyin.
+3. DMG’yi İndirilenler’den açın.
+4. Delta kurulumunu **Uygulamalar** klasörüne sürükleyin.
+5. **Uygulamalar**’ı açın, ardından Delta kurulumunu başlatın.
+6. macOS uygulamanın internetten indirildiğini uyarırsa **Aç**’ı seçin.
+7. Kurulum penceresinde **Install Delta** (veya eşdeğer onay düğmesine) tıklayın.
+8. Kurulum bitince Delta’yı başlatın; istenirse [anahtar sistemini](/delta-executor-key) tamamlayın.
 
-You normally do **not** need Terminal commands for this path.
+Bu yol için genelde Terminal komutları gerekmez.
 
-## First-Run Tips
+## İlk Çalıştırma İpuçları
 
-- If Gatekeeper blocks the app, open **System Settings → Privacy & Security** and allow the blocked app, then retry.
-- Keep the DMG until you confirm Delta launches — you may need it again after a revoke or update.
-- Free key rules are the same as mobile: about **24 hours** unless you use [Premium](/delta-executor-premium).
+- Gatekeeper uygulamayı engellerse **Sistem Ayarları → Gizlilik ve Güvenlik**’ten engellenen uygulamaya izin verin, yeniden deneyin.
+- Delta’nın açıldığını doğrulayana kadar DMG’yi saklayın — iptal veya güncelleme sonrası tekrar gerekebilir.
+- Ücretsiz anahtar kuralları mobil ile aynıdır: [Premium](/delta-executor-premium) kullanmıyorsanız yaklaşık **24 saat**.
 
-## Safety Reminder
+## Güvenlik Hatırlatması
 
-Executor use can risk Roblox account action if detected. Many players use an alternate account. Install only from this site’s Mac button — random “Mac Delta” mirrors are a common scam pattern.
+Executor kullanımı tespit edilirse Roblox hesap işlemi riski taşıyabilir. Birçok oyuncu yedek hesap kullanır. Yalnızca bu sitenin Mac düğmesinden kurun — rastgele “Mac Delta” aynaları yaygın dolandırıcılık örüntüsüdür.
 
-## Related Guides
+## İlgili Rehberler
 
 - [Windows / PC](/delta-executor-windows)
 - [iOS Direct Install](/delta-executor-direct-install)
 - [Android](/delta-executor-android)
-- [FAQ](/delta-executor-faq)
+- [SSS](/delta-executor-faq)

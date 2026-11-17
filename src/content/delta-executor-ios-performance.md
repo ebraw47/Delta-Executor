@@ -1,57 +1,57 @@
-# Delta Executor iOS Performance — Step-by-Step Guide
+# Delta Executor iOS Performans — Adım Adım Rehber
 
-Use this guide after Delta is installed on iPhone or iPad. These settings help Background App Refresh and battery modes so Delta injects more smoothly.
+Bu rehberi Delta iPhone veya iPad’e kurulduktan sonra kullanın. Bu ayarlar Arka Planda Uygulama Yenileme ve pil modlarını düzenleyerek Delta’nın daha akıcı enjekte etmesine yardımcı olur.
 
-For install steps, see [iOS download](/delta-executor-ios) or [Direct Install](/delta-executor-direct-install).
+Kurulum adımları için [iOS indirme](/delta-executor-ios) veya [Direct Install](/delta-executor-direct-install) sayfalarına bakın.
 
-## Before You Start
+## Başlamadan Önce
 
-- Delta is already on your Home Screen
-- You can open **Settings**
-- You are not using Low Power Mode for gaming sessions
+- Delta zaten Ana Ekran’da
+- **Ayarlar**’ı açabiliyorsunuz
+- Oyun oturumlarında Düşük Güç Modu kapalı
 
-## Step 1 — Open Settings
+## Adım 1 — Ayarlar’ı açın
 
-Tap the **Settings** app on your Home Screen.
+Ana Ekran’dan **Ayarlar** uygulamasına dokunun.
 
-![iPhone Home Screen — tap Settings](/guides/ios-step-1.webp)
+![iPhone Ana Ekran — Ayarlar’a dokunun](/guides/ios-step-1.webp)
 
-## Step 2 — Open Background App Refresh
+## Adım 2 — Arka Planda Uygulama Yenileme’yi açın
 
-Go to **General**, then tap **Background App Refresh**.
+**Genel**’e gidin, ardından **Arka Planda Uygulama Yenileme**’ye dokunun.
 
-![iPhone Settings — open Background App Refresh](/guides/ios-step-2.webp)
+![iPhone Ayarlar — Arka Planda Uygulama Yenileme’yi açın](/guides/ios-step-2.webp)
 
-## Step 3 — Turn Background App Refresh on
+## Adım 3 — Arka Planda Uygulama Yenileme’yi açın
 
-Tap the top **Background App Refresh** row. Keep Delta allowed in the app list when it appears.
+Üstteki **Arka Planda Uygulama Yenileme** satırına dokunun. Delta listede göründüğünde izinli kalsın.
 
-![Background App Refresh — turn the setting on](/guides/ios-step-3.webp)
+![Arka Planda Uygulama Yenileme — ayarı açın](/guides/ios-step-3.webp)
 
-## Step 4 — Choose Wi‑Fi & Mobile Data
+## Adım 4 — Wi‑Fi ve Mobil Veri’yi seçin
 
-Select **Wi‑Fi & Mobile Data** so Delta can refresh on cellular as well as Wi‑Fi.
+Delta’nın hem Wi‑Fi hem hücreselde yenilenebilmesi için **Wi‑Fi ve Mobil Veri**’yi seçin.
 
-![Background App Refresh — choose Wi-Fi and Mobile Data](/guides/ios-step-4.webp)
+![Arka Planda Uygulama Yenileme — Wi‑Fi ve Mobil Veri’yi seçin](/guides/ios-step-4.webp)
 
-## Step 5 — Open Battery
+## Adım 5 — Pil’i açın
 
-Return to the main Settings list and tap **Battery**.
+Ana Ayarlar listesine dönün ve **Pil**’e dokunun.
 
-![iPhone Settings — open Battery](/guides/ios-step-5.webp)
+![iPhone Ayarlar — Pil’i açın](/guides/ios-step-5.webp)
 
-## Step 6 — Turn Low Power Mode off
+## Adım 6 — Düşük Güç Modu’nu kapatın
 
-Set **Low Power Mode** to **Off**. Low Power Mode can throttle background work and hurt script performance.
+**Düşük Güç Modu**’nu **Kapalı** yapın. Düşük Güç Modu arka plan işlerini kısıtlayıp script performansını düşürebilir.
 
-![Battery settings — turn Low Power Mode off](/guides/ios-step-6.webp)
+![Pil ayarları — Düşük Güç Modu’nu kapatın](/guides/ios-step-6.webp)
 
-## Done
+## Tamam
 
-Return to Delta and Roblox and try inject again. If the app itself is missing or untrusted, use [Direct Install](/delta-executor-direct-install). For the daily unlock flow, open the [key step-by-step post](/delta-executor-key-steps).
+Delta ve Roblox’a dönüp enjekte etmeyi yeniden deneyin. Uygulama yoksa veya güvenilmemişse [Direct Install](/delta-executor-direct-install) kullanın. Günlük açma akışı için [anahtar adım adım yazısını](/delta-executor-key-steps) açın.
 
-## Related
+## İlgili
 
-- [iOS download overview](/delta-executor-ios)
-- [Key steps](/delta-executor-key-steps)
-- [FAQ](/delta-executor-faq)
+- [iOS indirme özeti](/delta-executor-ios)
+- [Anahtar adımları](/delta-executor-key-steps)
+- [SSS](/delta-executor-faq)

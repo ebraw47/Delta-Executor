@@ -1,30 +1,30 @@
-# Delta Executor for PC / Windows — Emulator & Setup
+# Delta Executor PC / Windows — Emülatör ve Kurulum
 
-Windows players can run Delta through an **Android emulator** or a **desktop EXE** when the hub publishes one.
+Windows oyuncuları Delta’yı bir **Android emülatörü** veya hub’da yayımlandığında **masaüstü EXE** ile çalıştırabilir.
 
-**Windows Security walkthrough:** [Windows Security steps](/delta-executor-windows-security).
+**Windows Security adım adım:** [Windows Security adımları](/delta-executor-windows-security).
 
-## Recommended Path: Android Emulator
+## Önerilen Yol: Android Emülatörü
 
-1. Install a reputable Android emulator (MuMu Player, LDPlayer, or BlueStacks).
-2. Download **Android** (or **Windows**) from the [hub](/#download).
-3. Install the APK inside the emulator.
-4. Install Roblox in the same instance.
-5. Launch Delta, finish the [key steps](/delta-executor-key-steps), then inject.
+1. Güvenilir bir Android emülatörü kurun (MuMu Player, LDPlayer veya BlueStacks).
+2. [Hub](/#download) üzerinden **Android** (veya **Windows**) indirin.
+3. APK’yı emülatör içinde kurun.
+4. Aynı örnekte Roblox kurun.
+5. Delta’yı başlatın, [anahtar adımlarını](/delta-executor-key-steps) bitirin, sonra enjekte edin.
 
-## Desktop EXE Path
+## Masaüstü EXE Yolu
 
-1. Follow [Windows Security steps](/delta-executor-windows-security) so the installer is not quarantined.
-2. Download **Windows** from the hub.
-3. Run the EXE, then complete the key flow if required.
+1. Kurulum dosyası karantinaya alınmasın diye [Windows Security adımlarını](/delta-executor-windows-security) izleyin.
+2. Hub’dan **Windows** indirin.
+3. EXE’yi çalıştırın; gerekirse anahtar akışını tamamlayın.
 
-## Mac Files Do Not Run on Windows
+## Mac Dosyaları Windows’ta Çalışmaz
 
-Use the [Mac guide](/delta-executor-mac) for DMG files — not this page.
+DMG dosyaları için [Mac rehberini](/delta-executor-mac) kullanın — bu sayfayı değil.
 
-## Related Guides
+## İlgili Rehberler
 
-- [Windows Security screenshots](/delta-executor-windows-security)
-- [Key steps](/delta-executor-key-steps)
+- [Windows Security ekran görüntüleri](/delta-executor-windows-security)
+- [Anahtar adımları](/delta-executor-key-steps)
 - [Android APK](/delta-executor-android)
-- [FAQ](/delta-executor-faq)
+- [SSS](/delta-executor-faq)

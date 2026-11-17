@@ -9,49 +9,49 @@ import MarkdownContent from "@/components/MarkdownContent";
 import { getMarkdown } from "@/lib/content";
 import { BRAND, HOME_FAQS, IMAGES, SITE_ORIGIN } from "@/lib/siteConfig";
 
-const US_TITLE = "Delta Executor Download for PC, Android & iOS (USA) | Free";
+const TR_TITLE = "Delta Executor İndir — PC, Android ve iOS | Ücretsiz";
 
 export const metadata: Metadata = {
   title: {
-    absolute: US_TITLE,
+    absolute: TR_TITLE,
   },
   description: BRAND.description,
   keywords: [
-    "Delta Executor download USA",
+    "Delta Executor indir Türkiye",
     "Delta Executor PC Windows",
     "Delta Executor Android APK",
-    "Delta Executor iOS Direct Install",
+    "Delta Executor iOS Direkt Kurulum",
     "Delta Executor Mac",
-    "Delta Executor key",
-    "Roblox executor for PC",
+    "Delta Executor anahtar",
+    "Roblox executor PC",
   ],
   alternates: {
     canonical: SITE_ORIGIN,
     languages: {
-      "en-US": SITE_ORIGIN,
-      en: SITE_ORIGIN,
+      tr: SITE_ORIGIN,
+      "tr-TR": SITE_ORIGIN,
       "x-default": SITE_ORIGIN,
     },
   },
   openGraph: {
-    title: US_TITLE,
+    title: TR_TITLE,
     description: BRAND.description,
     url: SITE_ORIGIN,
     siteName: BRAND.name,
-    locale: "en_US",
+    locale: "tr_TR",
     type: "website",
     images: [
       {
         url: `${SITE_ORIGIN}${IMAGES.og}`,
         width: 1200,
         height: 630,
-        alt: "Delta Executor download for Windows PC, Android, and iOS in the USA",
+        alt: "PC, Android ve iOS için Delta Executor indirme",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: US_TITLE,
+    title: TR_TITLE,
     description: BRAND.description,
     images: [`${SITE_ORIGIN}${IMAGES.twitter}`],
   },
@@ -61,12 +61,13 @@ function prepareHomeContent(raw: string) {
   let md = raw
     .replace(/\n## \*\*Frequently Asked Questions\*\*[\s\S]*$/, "")
     .replace(/\n## Frequently Asked Questions[\s\S]*$/, "")
+    .replace(/\n## Sıkça Sorulan Sorular[\s\S]*$/, "")
     .replace(/^#\s+\*?\*?[^\n]+\*?\*?\s*\n+/, "")
     .replace(/\n## Explore Our Guides[\s\S]*?(?=\n## |\s*$)/, "\n")
     .replace(/\n## Stay Updated\n[\s\S]*$/, "\n")
     .trim();
 
-  const stepsMarker = "## How to download Delta Executor step by step";
+  const stepsMarker = "## Delta Executor’ı adım adım indirme";
   const idx = md.indexOf(stepsMarker);
   if (idx === -1) {
     return { beforeSteps: md, afterSteps: "" };
@@ -102,13 +103,13 @@ export default function HomePage() {
     url: SITE_ORIGIN,
     applicationCategory: "GameApplication",
     operatingSystem: "Android, iOS, Windows, macOS",
-    inLanguage: "en-US",
-    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    inLanguage: "tr",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "TRY" },
     description: BRAND.description,
     softwareVersion: BRAND.version,
     audience: {
       "@type": "Audience",
-      geographicArea: { "@type": "Country", name: "United States" },
+      geographicArea: { "@type": "Country", name: "Turkey" },
     },
   };
 

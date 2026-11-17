@@ -1,4 +1,4 @@
-# SEO Strategy — Delta Executor (deltaexecutor.com.tr)
+# SEO Strategy — Delta Executor (deltaexecutortr.com.tr)
 
 ## Primary audience
 
@@ -41,7 +41,7 @@ Default `lang=en`, Open Graph `en_US`, hreflang `en-US` / `x-default`.
 
 ## Technical
 
-- Canonical host: `https://deltaexecutor.com.tr`
+- Canonical host: `https://deltaexecutortr.com.tr`
 - Sitemaps: `/sitemap-index.xml`, `/index.xml`, `/image-sitemap.xml`
 - Robots: clean Allow/Disallow + Sitemap (Lighthouse-valid)
 - Schema: Organization, WebSite, SoftwareApplication, FAQPage

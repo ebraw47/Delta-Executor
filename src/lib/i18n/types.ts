@@ -91,6 +91,13 @@ export type Dictionary = {
   language: string;
   share: string;
   faqs: { q: string; a: string }[];
+  features: { title: string; description: string }[];
+  steps: { title: string; description: string }[];
+  galleries: {
+    ios: { kicker: string; title: string; description: string; linkLabel: string };
+    windows: { kicker: string; title: string; description: string; linkLabel: string };
+    key: { kicker: string; title: string; description: string; linkLabel: string };
+  };
 };
 
 export const LOCALES: {
@@ -100,11 +107,12 @@ export const LOCALES: {
   flag: string;
   dir: "ltr" | "rtl";
 }[] = [
-  { code: "en", label: "English", native: "English", flag: "🇺🇸", dir: "ltr" },
   { code: "tr", label: "Turkish", native: "Türkçe", flag: "🇹🇷", dir: "ltr" },
+  { code: "en", label: "English", native: "English", flag: "🇺🇸", dir: "ltr" },
   { code: "es", label: "Spanish", native: "Español", flag: "🇪🇸", dir: "ltr" },
   { code: "pt", label: "Portuguese", native: "Português", flag: "🇧🇷", dir: "ltr" },
   { code: "ar", label: "Arabic", native: "العربية", flag: "🇸🇦", dir: "rtl" },
 ];
 
-export const DEFAULT_LOCALE: Locale = "en";
+/** Site default language — Turkish (deltaexecutortr.com.tr). */
+export const DEFAULT_LOCALE: Locale = "tr";

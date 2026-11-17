@@ -38,30 +38,29 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
-const US_TITLE = "Delta Executor Download for PC, Android & iOS (USA) | Free";
+const TR_TITLE = "Delta Executor İndir — PC, Android ve iOS | Ücretsiz";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_ORIGIN),
   title: {
-    default: US_TITLE,
+    default: TR_TITLE,
     template: `%s | ${BRAND.name}`,
   },
   description: BRAND.description,
   keywords: [
     "Delta Executor",
-    "Delta Executor download",
+    "Delta Executor indir",
     "Delta Executor PC",
     "Delta Executor Windows",
     "Delta Executor Android",
     "Delta Executor iOS",
     "Delta Executor Mac",
-    "Delta Executor key",
-    "Delta Executor USA",
-    "Roblox executor download",
-    "Delta Direct Install",
+    "Delta Executor anahtar",
+    "Delta Executor Türkiye",
+    "Roblox executor indir",
+    "Delta Direkt Kurulum",
     "Delta Executor VNG",
-    "deltaexecutor.com.tr",
-    // Common search misspelling
+    "deltaexecutortr.com.tr",
     "Delta Executer",
   ],
   authors: [{ name: BRAND.name }],
@@ -90,41 +89,41 @@ export const metadata: Metadata = {
   alternates: {
     canonical: SITE_ORIGIN,
     languages: {
-      "en-US": SITE_ORIGIN,
-      en: SITE_ORIGIN,
+      tr: SITE_ORIGIN,
+      "tr-TR": SITE_ORIGIN,
       "x-default": SITE_ORIGIN,
     },
   },
   openGraph: {
-    title: US_TITLE,
+    title: TR_TITLE,
     description: BRAND.description,
     url: SITE_ORIGIN,
     siteName: BRAND.name,
-    locale: "en_US",
+    locale: "tr_TR",
     type: "website",
     images: [
       {
         url: `${SITE_ORIGIN}${IMAGES.og}`,
         width: 1200,
         height: 630,
-        alt: "Delta Executor download for Windows PC, Android, and iOS in the USA",
+        alt: "PC, Android ve iOS için Delta Executor indirme",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: US_TITLE,
+    title: TR_TITLE,
     description: BRAND.description,
     creator: BRAND.twitter,
     images: [`${SITE_ORIGIN}${IMAGES.twitter}`],
   },
   applicationName: BRAND.name,
   category: "Games",
-  classification: "Delta Executor Download Guides for US players",
+  classification: "Delta Executor indirme rehberleri (Türkiye)",
   other: {
-    "geo.region": "US",
-    "geo.placename": "United States",
-    language: "English",
+    "geo.region": "TR",
+    "geo.placename": "Türkiye",
+    language: "Turkish",
     rating: "general",
     distribution: "global",
     target: "all",
@@ -140,17 +139,17 @@ export default function RootLayout({
   const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
 
   return (
-    <html lang="en-US" className={`${display.variable} ${body.variable}`} suppressHydrationWarning>
+    <html lang="tr" className={`${display.variable} ${body.variable}`} suppressHydrationWarning>
       <head>
         <meta name="mobile-web-app-capable" content="yes" />
-        <meta httpEquiv="content-language" content="en-US" />
+        <meta httpEquiv="content-language" content="tr" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
         <link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180" />
         <link rel="manifest" href="/manifest.json" />
-        <link rel="alternate" hrefLang="en-US" href={SITE_ORIGIN} />
-        <link rel="alternate" hrefLang="en" href={SITE_ORIGIN} />
+        <link rel="alternate" hrefLang="tr" href={SITE_ORIGIN} />
+        <link rel="alternate" hrefLang="tr-TR" href={SITE_ORIGIN} />
         <link rel="alternate" hrefLang="x-default" href={SITE_ORIGIN} />
         {adsenseClient && (
           <>
@@ -207,8 +206,8 @@ export default function RootLayout({
               logo: `${SITE_ORIGIN}${IMAGES.logo}`,
               email: BRAND.email,
               description: BRAND.description,
-              areaServed: { "@type": "Country", name: "United States" },
-              availableLanguage: ["en-US", "en", "es", "pt", "tr", "ar"],
+              areaServed: { "@type": "Country", name: "Turkey" },
+              availableLanguage: ["tr", "en", "es", "pt", "ar"],
             }),
           }}
         />
@@ -221,7 +220,7 @@ export default function RootLayout({
               "@type": "WebSite",
               name: BRAND.name,
               url: SITE_ORIGIN,
-              inLanguage: "en-US",
+              inLanguage: "tr",
               potentialAction: {
                 "@type": "SearchAction",
                 target: `${SITE_ORIGIN}/?q={search_term_string}`,

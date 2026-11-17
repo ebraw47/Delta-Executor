@@ -1,61 +1,61 @@
-# Delta Executor Android Download — Install APK Guide
+# Delta Executor Android İndir — APK Kurulum Rehberi
 
-Delta Executor on Android is the most common way to run Delta Mobile. You install an APK (not from the Play Store), launch it, attach to Roblox, then unlock script execution with the daily key — unless you use Premium.
+Delta Executor Android’de Delta Mobile çalıştırmanın en yaygın yoludur. Play Store dışından bir APK kurarsınız, uygulamayı açar, Roblox’a bağlanır ve script çalıştırmayı günlük anahtarla açarsınız — Premium kullanmıyorsanız.
 
-This page is the deep Android walkthrough. For the hub and other platforms, go back to the [homepage](/).
+Bu sayfa ayrıntılı Android rehberidir. Hub ve diğer platformlar için [ana sayfaya](/) dönün.
 
-## What You Need
+## İhtiyacınız Olanlar
 
-- An Android phone or tablet (Android 5.0+ is typical; most current builds target **64-bit / arm64**)
-- Enough free storage for a ~150–170 MB APK plus install space
-- Roblox (global) installed for standard Android — use [VNG](/delta-executor-vng) only if you play Roblox Vietnam
-- A stable connection for the key checkpoints after install
+- Bir Android telefon veya tablet (genelde Android 5.0+; çoğu güncel sürüm **64 bit / arm64** hedefler)
+- Yaklaşık 150–170 MB APK ve kurulum için yeterli boş depolama
+- Standart Android için global Roblox kurulu — yalnızca Roblox Vietnam oynuyorsanız [VNG](/delta-executor-vng) kullanın
+- Kurulum sonrası anahtar kontrol noktaları için stabil bağlantı
 
-## Download Delta Executor APK (On This Site)
+## Delta Executor APK İndir (Bu Sitede)
 
-1. Open the [download hub](/#download).
-2. Tap **Android** — the APK downloads directly from **deltaexecutor.com.tr**.
-3. Open the file from notifications or your Downloads folder.
-4. If Android blocks the install, allow **Install unknown apps** for your browser or file manager, then open the APK again.
-5. Confirm install, then open Delta and grant first-launch permissions.
+1. [İndirme merkezini](/#download) açın.
+2. **Android**’e dokunun — APK doğrudan **deltaexecutortr.com.tr** üzerinden iner.
+3. Dosyayı bildirimlerden veya İndirilenler klasöründen açın.
+4. Android kurulumu engellerse tarayıcı veya dosya yöneticiniz için **Bilinmeyen uygulamaları yükle** iznini verin, ardından APK’yı yeniden açın.
+5. Kurulumu onaylayın, Delta’yı açın ve ilk açılış izinlerini verin.
 
-You do not need root. You should not chase random “Delta X” mirrors — stick to the hub button on this domain.
+Root gerekmez. Rastgele “Delta X” aynalarının peşine düşmeyin — bu alandaki hub düğmesini kullanın.
 
-## After Install: Key, Inject, Execute
+## Kurulum Sonrası: Anahtar, Enjekte, Çalıştır
 
-1. Launch Delta, then open Roblox (or open a game first, then return to Delta — follow the in-app prompts).
-2. When asked for a key, tap **Receive Key** and complete the on-screen checkpoints. Full detail: [key guide](/delta-executor-key).
-3. Paste the key back into Delta and continue.
-4. Open the script / controller area, paste a Lua script, then tap **Execute**.
+1. Delta’yı başlatın, ardından Roblox’u açın (veya önce bir oyuna girin, sonra Delta’ya dönün — uygulama içi yönlendirmeleri izleyin).
+2. Anahtar istendiğinde **Receive Key**’e dokunun ve ekrandaki kontrol noktalarını tamamlayın. Ayrıntı: [anahtar rehberi](/delta-executor-key).
+3. Anahtarı Delta’ya yapıştırıp devam edin.
+4. Script / kontrol alanını açın, bir Lua script yapıştırın, sonra **Execute**’a dokunun.
 
-Keys for free users usually last about **24 hours**. Premium skips the daily loop — see [Premium](/delta-executor-premium).
+Ücretsiz kullanıcılar için anahtarlar genelde yaklaşık **24 saat** sürer. Premium günlük döngüyü atlar — bkz. [Premium](/delta-executor-premium).
 
-## 32-bit vs 64-bit (App Not Compatible)
+## 32 bit vs 64 bit (Uygulama Uyumsuz)
 
-If install fails with “not compatible” or `INSTALL_FAILED_UPDATE_INCOMPATIBLE`, you likely grabbed the wrong CPU architecture. Most modern phones are **arm64**. Older or budget devices may still be **arm32**.
+Kurulum “uyumsuz” veya `INSTALL_FAILED_UPDATE_INCOMPATIBLE` ile başarısız olursa muhtemelen yanlış CPU mimarisini indirdiniz. Çoğu modern telefon **arm64**’tür. Eski veya bütçe cihazlar hâlâ **arm32** olabilir.
 
-How to check and fix: [Delta Executor not compatible with my phone](/delta-executor-not-compatible).
+Nasıl kontrol edilir ve düzeltilir: [Delta Executor telefonumla uyumlu değil](/delta-executor-not-compatible).
 
-## Common Android Problems
+## Yaygın Android Sorunları
 
-| Problem | What to try |
+| Sorun | Denenecekler |
 | --- | --- |
-| Install blocked | Enable unknown sources for the app that opened the APK |
-| App not installed | Delete the partial file, free storage, re-download from the hub |
-| Opens then crashes | Confirm you used the matching architecture; reinstall |
-| Roblox upgrade / inject fail | Re-download the latest Android build after a Roblox patch |
-| Key page stuck | Finish every checkpoint, wait for green ticks, then Create Key |
+| Kurulum engellendi | APK’yı açan uygulama için bilinmeyen kaynakları etkinleştirin |
+| Uygulama yüklenmedi | Yarım dosyayı silin, depolama açın, hub’dan yeniden indirin |
+| Açılıp çöküyor | Doğru mimariyi kullandığınızı doğrulayın; yeniden kurun |
+| Roblox güncelleme / enjekte hatası | Roblox yamasından sonra en güncel Android sürümünü yeniden indirin |
+| Anahtar sayfası takıldı | Tüm kontrol noktalarını bitirin, yeşil tikleri bekleyin, sonra Create Key |
 
-## Safety Notes
+## Güvenlik Notları
 
-- Antivirus may flag script executors because of injection behavior — that alone is not proof of malware, but always download from this site’s hub.
-- Using executors can violate Roblox rules and risk account action. Prefer an alternate account if you experiment.
-- Avoid Discord sellers, Telegram “cracks,” and key-generator sites. Use the in-app Receive Key flow or [Premium](/delta-executor-premium) paths we document here.
+- Antivirüsler enjeksiyon davranışı nedeniyle script executor’ları işaretleyebilir — bu tek başına kötü amaçlı yazılım kanıtı değildir; yine de yalnızca bu sitenin hub’ından indirin.
+- Executor kullanmak Roblox kurallarını ihlal edebilir ve hesap işlemi riski taşır. Deneme yapıyorsanız yedek bir hesap tercih edin.
+- Discord satıcıları, Telegram “crack”leri ve anahtar üretici sitelerinden kaçının. Uygulama içi Receive Key akışını veya burada belgelenen [Premium](/delta-executor-premium) yollarını kullanın.
 
-## Related Guides
+## İlgili Rehberler
 
-- [iOS & sideload overview](/delta-executor-ios)
-- [Direct Install for iPhone / iPad](/delta-executor-direct-install)
+- [iOS ve sideload özeti](/delta-executor-ios)
+- [iPhone / iPad için Direct Install](/delta-executor-direct-install)
 - [Windows / PC](/delta-executor-windows)
-- [VNG for Vietnam](/delta-executor-vng)
-- [Full FAQ](/delta-executor-faq)
+- [Vietnam için VNG](/delta-executor-vng)
+- [Tam SSS](/delta-executor-faq)

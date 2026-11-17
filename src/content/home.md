@@ -1,71 +1,71 @@
-**Delta Executor** is a popular, predominantly mobile-focused (**Android** & **iOS**) third-party tool designed to run custom Lua scripts within Roblox games to alter gameplay or automate tasks. It injects scripts into the Roblox app—similar to a mod menu. Builds also cover **VNG**, **Windows**, and **Mac**.
+**Delta Executor**, ağırlıklı olarak **Android** ve **iOS** odaklı, Roblox oyunlarında özel Lua script’lerini çalıştırarak oynanışı değiştirmek veya görevleri otomatikleştirmek için tasarlanmış popüler bir üçüncü taraf araçtır. Script’leri Roblox uygulamasına enjekte eder — bir mod menüsüne benzer. **VNG**, **Windows** ve **Mac** sürümleri de vardır.
 
-Use the download buttons at the top of this page for one-click installers hosted on **deltaexecutor.com.tr**, then open the matching guide for full steps.
+Bu sayfanın üstündeki indirme düğmeleriyle **deltaexecutortr.com.tr** üzerinde barındırılan tek tıkla kurulum dosyalarını alın, ardından tam adımlar için ilgili rehberi açın.
 
-## How Delta Executor works
+## Delta Executor nasıl çalışır
 
-### Script injection
+### Script enjeksiyonu
 
-The executor acts as a layer on top of Roblox, injecting custom Lua into the game’s process so scripts can run inside supported experiences.
+Executor, Roblox’un üstünde bir katman gibi çalışır ve özel Lua’yı oyun sürecine enjekte ederek script’lerin desteklenen deneyimlerde çalışmasını sağlar.
 
-### Android and iOS
+### Android ve iOS
 
-Most players use an **APK** on Android. iOS support uses **Direct Install** or sideloaded **IPA** builds when certificates allow. Full steps: [Android](/delta-executor-android) · [iOS](/delta-executor-ios) · [Direct Install](/delta-executor-direct-install).
+Çoğu oyuncu Android’de **APK** kullanır. iOS’ta sertifikalar izin verdiğinde **Direkt Kurulum** veya sideload **IPA** kullanılır. Tam adımlar: [Android](/delta-executor-android) · [iOS](/delta-executor-ios) · [Direkt Kurulum](/delta-executor-direct-install).
 
-### PC and Mac
+### PC ve Mac
 
-A Windows EXE may be published on this hub, or players run the Android APK inside an emulator (MuMu, LDPlayer, BlueStacks). Mac uses a **DMG**. Guides: [Windows](/delta-executor-windows) · [Mac](/delta-executor-mac).
+Bu merkezde bir Windows EXE yayınlanabilir veya oyuncular Android APK’yı emülatörde (MuMu, LDPlayer, BlueStacks) çalıştırır. Mac için **DMG** kullanılır. Rehberler: [Windows](/delta-executor-windows) · [Mac](/delta-executor-mac).
 
-### Key system
+### Anahtar sistemi
 
-Free use usually requires a **Receive Key** flow. On this site we document the common **~24-hour** free unlock; Premium removes the daily loop. See the [key guide](/delta-executor-key).
+Ücretsiz kullanım genelde **Receive Key** akışı ister. Bu sitede yaygın **~24 saatlik** ücretsiz kilidi anlatıyoruz; Premium günlük döngüyü kaldırır. [Anahtar rehberine](/delta-executor-key) bakın.
 
-## Typical workflow
+## Tipik iş akışı
 
-1. **Download** the APK, IPA, EXE, or DMG from the hub on this page — files are hosted on **deltaexecutor.com.tr** only.
-2. **Install / sideload** — Android needs unknown sources; iOS needs profile trust; Mac needs Gatekeeper confirmation.
-3. **Get a key** — Open Delta, tap Receive Key, finish checkpoints, copy the key, paste it back into the app.
-4. **Execute scripts** — Join a Roblox game, open the Delta menu, paste or load a script, then execute.
+1. **İndirin** — bu sayfadaki merkezden APK, IPA, EXE veya DMG alın; dosyalar yalnızca **deltaexecutortr.com.tr** üzerindedir.
+2. **Kurun / sideload edin** — Android’de bilinmeyen kaynaklar; iOS’ta profil güveni; Mac’te Gatekeeper onayı gerekir.
+3. **Anahtar alın** — Delta’yı açın, Receive Key’e dokunun, kontrol noktalarını bitirin, anahtarı kopyalayıp uygulamaya yapıştırın.
+4. **Script çalıştırın** — bir Roblox oyununa girin, Delta menüsünü açın, script’i yapıştırın veya yükleyin, ardından çalıştırın.
 
-## Avoid fake mirror sites
+## Sahte ayna sitelerden kaçının
 
-Search results are crowded with sites that claim to be the only “official” Delta source. Many push malware, phishing pages, or broken builds. Bookmark **[deltaexecutor.com.tr](/)** for platform guides, [Direct Install](/delta-executor-direct-install), the [key system](/delta-executor-key), [Premium](/delta-executor-premium), and the [FAQ](/delta-executor-faq).
+Arama sonuçlarında kendisini “tek resmi” Delta kaynağı gibi gösteren birçok site vardır. Birçoğu zararlı yazılım, oltalama veya bozuk sürüm sunar. Platform rehberleri, [Direkt Kurulum](/delta-executor-direct-install), [anahtar sistemi](/delta-executor-key), [Premium](/delta-executor-premium) ve [SSS](/delta-executor-faq) için **[deltaexecutortr.com.tr](/)** adresini yer imlerine ekleyin.
 
-## Platform guide index
+## Platform rehber dizini
 
-| Platform | What you get | Full guide |
+| Platform | Ne alırsınız | Tam rehber |
 | --- | --- | --- |
-| Android | Free APK install + daily key | [Android guide](/delta-executor-android) |
-| iOS | IPA + Direct Install / sideload | [iOS guide](/delta-executor-ios) |
-| Direct Install | Fastest iPhone / iPad path | [Direct Install guide](/delta-executor-direct-install) |
-| VNG | Vietnam Roblox VN build only | [VNG guide](/delta-executor-vng) |
-| Windows / PC | EXE or emulator workflow | [Windows guide](/delta-executor-windows) |
-| Mac | DMG install for macOS | [Mac guide](/delta-executor-mac) |
-| Key | 24-hour free unlock flow | [Key guide](/delta-executor-key) |
-| iOS performance | Background refresh + battery tips | [iOS steps](/delta-executor-ios-performance) |
-| Key steps | Receive Key → copy → paste → Play | [Key steps](/delta-executor-key-steps) |
-| Windows Security | Firewall / Defender tips | [PC security steps](/delta-executor-windows-security) |
+| Android | Ücretsiz APK + günlük anahtar | [Android rehberi](/delta-executor-android) |
+| iOS | IPA + Direkt Kurulum / sideload | [iOS rehberi](/delta-executor-ios) |
+| Direkt Kurulum | En hızlı iPhone / iPad yolu | [Direkt Kurulum rehberi](/delta-executor-direct-install) |
+| VNG | Yalnızca Vietnam Roblox VN | [VNG rehberi](/delta-executor-vng) |
+| Windows / PC | EXE veya emülatör akışı | [Windows rehberi](/delta-executor-windows) |
+| Mac | macOS için DMG kurulumu | [Mac rehberi](/delta-executor-mac) |
+| Anahtar | 24 saatlik ücretsiz kilit açma | [Anahtar rehberi](/delta-executor-key) |
+| iOS performans | Arka plan yenileme + pil ipuçları | [iOS adımları](/delta-executor-ios-performance) |
+| Anahtar adımları | Receive Key → kopyala → yapıştır → Play | [Anahtar adımları](/delta-executor-key-steps) |
+| Windows Güvenliği | Güvenlik duvarı / Defender ipuçları | [PC güvenlik adımları](/delta-executor-windows-security) |
 
-## How to download Delta Executor step by step
+## Delta Executor’ı adım adım indirme
 
-1. Open the download hub on this homepage.
-2. Tap **Android**, **iOS**, **VNG**, **Windows**, **Mac**, or **Direct Install** — the installer downloads from this site only.
-3. Follow the matching guide for permissions, profile trust, or Gatekeeper prompts.
-4. When prompted for a key, use **Receive Key** and complete the checkpoints in the [key guide](/delta-executor-key).
+1. Bu ana sayfadaki indirme merkezini açın.
+2. **Android**, **iOS**, **VNG**, **Windows**, **Mac** veya **Direkt Kurulum**’a dokunun — kurulum dosyası yalnızca bu siteden iner.
+3. İzinler, profil güveni veya Gatekeeper istemleri için ilgili rehberi izleyin.
+4. Anahtar istendiğinde **Receive Key** kullanın ve [anahtar rehberindeki](/delta-executor-key) kontrol noktalarını tamamlayın.
 
-## Delta key system and Premium
+## Delta anahtar sistemi ve Premium
 
-Free users unlock Delta for about **24 hours** at a time. Premium removes the daily key loop and can stabilize iOS installs when free certificates revoke. Read [how to get a key](/delta-executor-key) and [Premium explained](/delta-executor-premium). Never buy “lifetime keys” from random sellers.
+Ücretsiz kullanıcılar Delta’yı yaklaşık **24 saat** için açar. Premium günlük anahtar döngüsünü kaldırır ve ücretsiz sertifikalar iptal olduğunda iOS kurulumlarını daha stabil tutabilir. [Anahtar nasıl alınır](/delta-executor-key) ve [Premium açıklaması](/delta-executor-premium) okuyun. Rastgele satıcılardan “ömür boyu anahtar” almayın.
 
-## After a Roblox upgrade error
+## Roblox yükseltme hatasından sonra
 
-Roblox client updates break older executor builds often. When you see an upgrade or inject error, return here, re-download the latest file for your platform, and reinstall. Tips: [not compatible fix](/delta-executor-not-compatible) · [iOS performance](/delta-executor-ios-performance).
+Roblox istemci güncellemeleri eski executor sürümlerini sıkça bozar. Yükseltme veya enjekte hatası görürseniz buraya dönün, platformunuz için en son dosyayı yeniden indirip kurun. İpuçları: [uyumlu değil düzeltmesi](/delta-executor-not-compatible) · [iOS performans](/delta-executor-ios-performance).
 
-## Safety notes
+## Güvenlik notları
 
-- Using any third-party executor **violates the Roblox Terms of Use** and can lead to permanent account bans.
-- Sideloading unofficial APKs/IPAs can expose devices to **malware**—especially from random mirror sites.
-- Roblox patches detection often; after a client update you may need to **re-download** the latest Delta build from this hub.
-- Prefer an **alternate account**, download only from **deltaexecutor.com.tr**, and never type your Roblox password on key checkpoint pages.
+- Herhangi bir üçüncü taraf executor kullanmak **Roblox Kullanım Şartları’nı ihlal eder** ve kalıcı hesap ban’ına yol açabilir.
+- Resmi olmayan APK/IPA sideload etmek — özellikle rastgele ayna sitelerden — cihazları **zararlı yazılıma** açık bırakabilir.
+- Roblox tespiti sık günceller; istemci güncellemesinden sonra bu merkezden en son Delta sürümünü **yeniden indirmeniz** gerekebilir.
+- Tercihen **alternatif hesap** kullanın, yalnızca **deltaexecutortr.com.tr** adresinden indirin ve anahtar kontrol sayfalarında Roblox şifrenizi asla yazmayın.
 
-Full legal wording: [Disclaimer](/disclaimer).
+Tam yasal metin: [Sorumluluk Reddi](/disclaimer).

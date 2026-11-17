@@ -1,36 +1,36 @@
-# Delta Executor Windows Security — Step-by-Step
+# Delta Executor Windows Security — Adım Adım
 
-Windows often quarantines executor installers. Follow these **Windows Security** steps before installing. Full PC setup lives on the [Windows guide](/delta-executor-windows).
+Windows executor kurulumlarını sık sık karantinaya alır. Kurmadan önce bu **Windows Security** adımlarını izleyin. Tam PC kurulumu [Windows rehberinde](/delta-executor-windows).
 
-Pause protection only while installing, then turn it back on.
+Korumayı yalnızca kurulum sırasında duraklatın, sonra yeniden açın.
 
-## Step 1 — Open Windows Security
+## Adım 1 — Windows Security’yi açın
 
-1. Press the **Windows** key.
-2. Type **Windows Security**.
-3. Open the System app from the Best match result.
+1. **Windows** tuşuna basın.
+2. **Windows Security** yazın.
+3. En iyi eşleşme sonucundan Sistem uygulamasını açın.
 
-![Windows Start search — find Windows Security](/guides/windows-step-1.webp)
+![Windows Başlat araması — Windows Security bulun](/guides/windows-step-1.webp)
 
-## Step 2 — Open Firewall & network protection
+## Adım 2 — Güvenlik duvarı ve ağ korumasını açın
 
-In Windows Security, open **Firewall & network protection**. Use **Allow an app through firewall** if Delta is blocked, or temporarily adjust the active network profile while you install from the [download hub](/#download).
+Windows Security içinde **Güvenlik duvarı ve ağ koruması**’nı açın. Delta engelleniyorsa **Uygulamaya güvenlik duvarı üzerinden izin ver** kullanın veya [indirme hub’ından](/#download) kurarken etkin ağ profilini geçici ayarlayın.
 
-![Windows Security — Firewall & network protection](/guides/windows-step-2.webp)
+![Windows Security — Güvenlik duvarı ve ağ koruması](/guides/windows-step-2.webp)
 
-## Step 3 — Pause real-time protection if needed
+## Adım 3 — Gerekirse gerçek zamanlı korumayı duraklatın
 
-1. Open **Virus & threat protection**.
-2. Tap **Manage settings**.
-3. Temporarily turn off **Real-time protection** if Windows deletes the installer.
-4. Install Delta, then turn protection back on.
+1. **Virüs ve tehdit koruması**’nı açın.
+2. **Ayarları yönet**’e dokunun.
+3. Windows kurulum dosyasını siliyorsa geçici olarak **Gerçek zamanlı koruma**’yı kapatın.
+4. Delta’yı kurun, sonra korumayı yeniden açın.
 
-## After Install
+## Kurulum Sonrası
 
-Continue with emulator or EXE steps on the [Windows / PC guide](/delta-executor-windows), then unlock with the [key step-by-step post](/delta-executor-key-steps).
+[Windows / PC rehberinde](/delta-executor-windows) emülatör veya EXE adımlarına devam edin, ardından [anahtar adım adım yazısı](/delta-executor-key-steps) ile kilidi açın.
 
-## Related
+## İlgili
 
-- [Windows download guide](/delta-executor-windows)
-- [Key steps](/delta-executor-key-steps)
-- [FAQ](/delta-executor-faq)
+- [Windows indirme rehberi](/delta-executor-windows)
+- [Anahtar adımları](/delta-executor-key-steps)
+- [SSS](/delta-executor-faq)

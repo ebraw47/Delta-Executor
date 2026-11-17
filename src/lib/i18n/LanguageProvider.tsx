@@ -66,7 +66,7 @@ function readStoredLocale(): Locale | null {
 }
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  // SSR + first paint stay EN; restore saved locale after mount (avoids hydration mismatch).
+  // SSR + first paint use Turkish default; restore saved locale after mount.
   const [locale, setLocaleState] = useState<Locale>(DEFAULT_LOCALE);
   const [ready, setReady] = useState(false);
 
@@ -74,6 +74,13 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     const saved = readStoredLocale();
     if (saved && saved !== DEFAULT_LOCALE) {
       setLocaleState(saved);
+    } else if (!saved) {
+      writeLocaleCookie(DEFAULT_LOCALE);
+      try {
+        localStorage.setItem(STORAGE_KEY, DEFAULT_LOCALE);
+      } catch {
+        // ignore
+      }
     }
     setReady(true);
   }, []);
@@ -92,7 +99,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     if (!ready) return;
-    document.documentElement.lang = locale === "en" ? "en-US" : locale;
+    document.documentElement.lang =
+      locale === "tr" ? "tr" : locale === "en" ? "en-US" : locale;
     document.documentElement.dir = meta.dir;
   }, [locale, meta.dir, ready]);
 

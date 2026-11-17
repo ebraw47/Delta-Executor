@@ -1,46 +1,46 @@
-# Delta Executor Key — Step-by-Step
+# Delta Executor Anahtarı — Adım Adım
 
-This post covers the **Receive Key** flow. Free keys usually last about **24 hours**. Premium skips the daily loop — see [Premium](/delta-executor-premium).
+Bu yazı **Receive Key** akışını kapsar. Ücretsiz anahtarlar genelde yaklaşık **24 saat** sürer. Premium günlük döngüyü atlar — [Premium](/delta-executor-premium) bakın.
 
-Install Delta first from the [download hub](/#download), then follow these steps.
+Önce [indirme merkezinden](/#download) Delta’yı kurun, sonra bu adımları izleyin.
 
-## Step 1 — Open the key system page
+## Adım 1 — Anahtar sistemi sayfasını açın
 
-1. Launch Delta.
-2. Join a Roblox experience when asked.
-3. Tap **Receive Key**. Your browser opens the key-system page.
-4. Tap **Continue** (ads or pop-ups may appear — finish the flow).
+1. Delta’yı başlatın.
+2. İstendiğinde bir Roblox deneyimine girin.
+3. **Receive Key**’e dokunun. Tarayıcı anahtar sistemi sayfasını açar.
+4. **Continue**’a dokunun (reklam veya açılır pencereler çıkabilir — akışı bitirin).
 
-![Delta Android Keysystem — tap Continue](/guides/key-step-1.webp)
+![Delta Android Keysystem — Continue’a dokunun](/guides/key-step-1.webp)
 
-## Step 2 — Complete every checkpoint
+## Adım 2 — Her kontrol noktasını tamamlayın
 
-Finish each action row (survey, app, video). Wait for countdowns. When tasks are done, green ticks appear — then tap **Unlock Content**.
+Her işlem satırını (anket, uygulama, video) bitirin. Geri sayımları bekleyin. Görevler bitince yeşil tikler görünür — sonra **Unlock Content**’e dokunun.
 
-![Get Delta Key — complete checkpoints then Unlock Content](/guides/key-step-2.webp)
+![Delta Anahtarı Al — kontrol noktalarını tamamlayın](/guides/key-step-2.webp)
 
-## Step 3 — Copy the key
+## Adım 3 — Anahtarı kopyalayın
 
-On the **Successfully whitelisted** screen, tap **Copy**. Free access typically lasts about 24 hours.
+**Successfully whitelisted** ekranında **Copy**’e dokunun. Ücretsiz erişim genelde yaklaşık 24 saat sürer.
 
-![Successfully whitelisted — copy your free Delta key](/guides/key-step-3.webp)
+![Başarıyla whitelist — ücretsiz Delta anahtarınızı kopyalayın](/guides/key-step-3.webp)
 
-## Step 4 — Paste the key in Delta
+## Adım 4 — Anahtarı Delta’ya yapıştırın
 
-Switch back to Delta. On the **Welcome back** screen, paste into **Enter key**, then tap **Continue**. Use **Receive Key** again only if you still need a new key.
+Delta’ya dönün. **Welcome back** ekranında **Enter key** alanına yapıştırın, sonra **Continue**’a dokunun. Yalnızca yeni anahtar gerekiyorsa yeniden **Receive Key** kullanın.
 
-![Delta Welcome back — paste the key into Enter key](/guides/key-step-4.webp)
+![Delta Welcome back — Enter key alanına yapıştırın](/guides/key-step-4.webp)
 
-## Step 5 — Open Roblox and Play
+## Adım 5 — Roblox’u açın ve Play
 
-Open Roblox, pick your experience, and tap **Play**. After the game loads, return to Delta to inject when the executor is unlocked.
+Roblox’u açın, deneyiminizi seçin ve **Play**’e dokunun. Oyun yüklendikten sonra executor açıkken enjekte etmek için Delta’ya dönün.
 
-![Roblox — open your experience and tap Play](/guides/key-step-5.webp)
+![Roblox — deneyiminizi açın ve Play’e dokunun](/guides/key-step-5.webp)
 
-## Tips
+## İpuçları
 
-- Do not skip checkpoints — the page often resets if you jump ahead
-- If the page loops, close it and tap Receive Key again from Delta
-- Never buy “keys” from random chat sellers
+- Kontrol noktalarını atlamayın — erken atlarsanız sayfa sıkça sıfırlanır
+- Sayfa döngüye girerse kapatıp Delta’dan tekrar Receive Key’e dokunun
+- Rastgele sohbet satıcılarından “anahtar” asla satın almayın
 
-Also see the [key overview](/delta-executor-key), [iOS performance steps](/delta-executor-ios-performance), [Premium](/delta-executor-premium), and [FAQ](/delta-executor-faq).
+Ayrıca [anahtar genel bakış](/delta-executor-key), [iOS performans adımları](/delta-executor-ios-performance), [Premium](/delta-executor-premium) ve [SSS](/delta-executor-faq) sayfalarına bakın.

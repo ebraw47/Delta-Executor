@@ -6,7 +6,7 @@ import { BRAND, ROUTES, SITE_ORIGIN } from "@/lib/siteConfig";
 
 const PAGE_URL = `${SITE_ORIGIN}${ROUTES.privacy}`;
 const PAGE_TITLE = "Privacy Policy | Delta Executor";
-const PAGE_DESCRIPTION = "Privacy Policy for deltaexecutor.com.tr — Delta Executor guides.";
+const PAGE_DESCRIPTION = "Privacy Policy for deltaexecutortr.com.tr — Delta Executor guides.";
 
 export const metadata: Metadata = {
   title: { absolute: PAGE_TITLE },

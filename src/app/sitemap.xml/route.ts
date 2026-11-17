@@ -9,8 +9,8 @@ export function GET() {
     <lastmod>${escapeXml(page.lastmod)}</lastmod>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="${escapeXml(loc)}" />
-    <xhtml:link rel="alternate" hreflang="en" href="${escapeXml(loc)}" />
+    <xhtml:link rel="alternate" hreflang="tr" href="${escapeXml(loc)}" />
+    <xhtml:link rel="alternate" hreflang="tr-TR" href="${escapeXml(loc)}" />
     <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(loc)}" />
   </url>`;
   }).join("\n");

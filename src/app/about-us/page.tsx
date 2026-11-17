@@ -7,7 +7,7 @@ import { BRAND, ROUTES, SITE_ORIGIN } from "@/lib/siteConfig";
 const PAGE_URL = `${SITE_ORIGIN}${ROUTES.about}`;
 const PAGE_TITLE = "About Us | Delta Executor";
 const PAGE_DESCRIPTION =
-  "About deltaexecutor.com.tr — Delta Executor download guides for Android, iOS, VNG, Windows, and Mac.";
+  "About deltaexecutortr.com.tr — Delta Executor download guides for Android, iOS, VNG, Windows, and Mac.";
 
 export const metadata: Metadata = {
   title: { absolute: PAGE_TITLE },
