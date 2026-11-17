@@ -55,11 +55,8 @@ const components: Components = {
   a: ({ href, children }) => {
     const raw = href || "#";
     let url = raw;
-    if (
-      /^https?:\/\/deltaexecutortr\.com\.tr/i.test(raw) ||
-      /^https?:\/\/deltaexecutor\.com\.tr/i.test(raw)
-    ) {
-      url = raw.replace(/^https?:\/\/deltaexecutortr?\.com\.tr/i, "") || "/";
+    if (/^https?:\/\/(deltaexecutortr|deltaexecutor)\.com\.tr/i.test(raw)) {
+      url = raw.replace(/^https?:\/\/(deltaexecutortr|deltaexecutor)\.com\.tr/i, "") || "/";
     } else if (/^https?:\/\//i.test(raw)) {
       return <span className="prose-strong">{children}</span>;
     }
